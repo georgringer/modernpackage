@@ -1,0 +1,35 @@
+{namespace n=Tx_News_ViewHelpers}
+<f:layout name="General" />
+<!--
+	=====================
+		Templates/News/List.html
+-->
+
+<f:section name="content">
+<f:if condition="{news}">
+	<f:then>
+
+		<f:if condition="{settings.isLatest}">
+			<f:then>
+				<div class="news well news-latest-view">
+					<f:for each="{news}" as="newsItem">
+						<f:render partial="List/Item-latest" arguments="{newsItem: newsItem, settings:settings}"/>
+					</f:for>
+				</div>
+			</f:then>
+			<f:else>
+				<div class="news news-list-view">
+					<n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}">
+							<f:for each="{paginatedNews}" as="newsItem">
+								<f:render partial="List/Item-list" arguments="{newsItem: newsItem, settings:settings}"/>
+							</f:for>
+					</n:widget.paginate>
+				</div>
+			</f:else>
+		</f:if>
+	</f:then>
+	<f:else>
+		<div class="no-news-found"><f:translate key="list_nonewsfound" /></div>
+	</f:else>
+</f:if>
+</f:section>

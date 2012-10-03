@@ -1,0 +1,1 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/TypoScript/constants-development.ts">

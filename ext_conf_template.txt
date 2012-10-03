@@ -1,0 +1,5 @@
+ 	# cat=basic/enable/101; type=boolean; label=Set PageTsConfig:If set, the Page TsConfig is automatically included
+setPageTSconfig = 1
+
+ 	# cat=basic/enable/101; type=boolean; label=Set UserTsConfig:If set, the User TsConfig is automatically included
+setUserTSconfig = 1

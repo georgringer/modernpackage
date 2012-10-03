@@ -1,0 +1,187 @@
+@import 'fonts/share.css';
+
+/* Background */
+body#typo3-index-php {
+	background: #017a95 url(../img/background.png) no-repeat top left;
+}
+
+/* Hide some not necessary things */
+body#typo3-index-php #loginimage,
+body#typo3-index-php #loginbox-image,
+table#logintable p.c-info {
+	display: none;
+}
+
+/* main frame */
+body#typo3-index-php #t3-login-form {
+	margin: 0;
+	padding: 25px 40px 35px 250px;
+	position: absolute;
+	top: 250px;
+	left: 0;
+	background: rgba(1, 51, 60, 0.8);
+}
+body#typo3-index-php .refresh #t3-login-form {
+	top:200px;
+	padding-left: 200px;
+}
+
+/* inner frame holding the background image */
+#t3-login-form-outer {
+
+}
+
+body#typo3-index-php div#t3-login-image,
+.t3-login-box-border-bottom,
+body#typo3-index-php #t3-login-openIdLogo {
+	display: none;
+}
+
+.t3-login-box {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+body#typo3-index-php .t3-headline {
+	background: transparent;
+	border: 0;
+	/*	visibility: hidden;*/
+}
+
+.t3-login-box-body {
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+
+body#typo3-index-php #t3-login-form-fields {
+	padding: 0;
+	margin-left: 40px;
+}
+
+body#typo3-index-php .t3-headline {
+	margin-top: 5px;
+}
+
+body#typo3-index-php .t3-headline h2 {
+	background: none;
+	color: #fff;
+	font-size: 27px !important;
+	font-family: 'Share-BoldRegular', Helvetica, sans-serif;
+	font-weight: normal;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding-left: 10px;
+	height: 25px;
+	overflow: hidden;
+}
+
+body#typo3-index-php #t3-login-process h2 {
+	margin: 0;
+	color: #fff;
+	font-style: italic;
+	font-weight: normal;
+	background-image: url(../img/ajax-loader.gif);
+}
+
+body#typo3-index-php .t3-login-field {
+	margin-top: 5px;
+}
+
+body#typo3-index-php .t3-login-field label {
+	color: #fff;
+	font-family: 'Share-Regular', Helvetica, sans-serif;
+	text-align: right;
+	margin-top: 2px;
+}
+
+body#typo3-index-php .t3-login-field input {
+	background-color: #ccc;
+	height: 16px;
+	font-size: 10px;
+}
+
+body#typo3-index-php .t3-login-submit {
+	padding: 2px 8px;
+	margin-top: 8px;
+}
+
+body#typo3-index-php .t3-login-field .t3-login-clearInputField a {
+	display: block;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+body#typo3-index-php .t3-login-field .t3-login-clearInputField img {
+	display: none;
+}
+
+body#typo3-index-php #t3-footer {
+	/*width: 580px;*/
+	/*margin: 0 150px 0;*/
+	/*border: 0;*/
+	/*top: 470px;*/
+	/*position: absolute;*/
+	border-color: #01333c;
+	background: rgba(1, 51, 60, 0.8);
+	margin: -50px 0 0 0;
+	padding: 0 10px;
+	height: 38px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+body#typo3-index-php div#t3-copyright-notice {
+	margin-top: 4px;
+}
+
+body#typo3-index-php .t3-login-form-footer {
+	width: 116px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 85px;
+	left: 342px;
+}
+
+body#typo3-index-php .t3-login-form-footer a.switchToOpenId {
+	text-decoration: none;
+	color: #fff;
+}
+
+body#typo3-index-php div#t3-copyright-notice {
+	color: #eee;
+}
+
+body#typo3-index-php div#t3-copyright-notice a, body#typo3-index-php div#t3-copyright-notice a:hover {
+	color: #ccc;
+	text-decoration: none;
+}
+
+body#typo3-index-php .t3-login-form-footer a.switchToOpenId:hover,
+body#typo3-index-php #t3-meta-links a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+body#typo3-index-php #t3-meta-links a {
+	color: #ffff;
+}
+
+#t3-meta-links {
+	display: none;
+}
+
+.shadow-box-top-428, .shadow-box-bottom-424 {
+	display: none;
+}
+
+/* Login Error */
+.t3-login-alert-error {
+	opacity: 0.9;
+	position: absolute;
+	top: -105px;
+}

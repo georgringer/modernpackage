@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'news'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<!-- Backend -->
+			<label index="belayout.3col">3 columns</label>
+			<label index="belayout.2col">2 columns</label>
+			<label index="belayout.columns.main">Main content</label>
+			<label index="belayout.columns.left">Left side</label>
+			<label index="belayout.columns.right">Right side</label>
+
+			<label index="tt_content.layout.quotation">Quotation</label>
+			<label index="tt_content.layout.information">Information</label>
+			<label index="tt_content.layout.box-warning">Box Warning</label>
+			<label index="tt_content.layout.box-success">Box Success</label>
+			<label index="tt_content.layout.box-info">Box Info</label>
+			<label index="tt_content.layout.box-error">Box Error</label>
+
+			<!-- Frontend -->
+			<label index="search-placeholder">Search text</label>
+			<label index="search-submit">Search</label>
+			<label index="language_switch-label">Language</label>
+			<label index="copyright">© Georg Ringer, distributed under GPL</label>
+			<label index="print">Print</label>
+			<label index="language">Language</label>
+			<label index="toplink">To the top</label>
+			<label index="printlink">Print this page</label>
+			<label index="tip">Recommend page</label>
+			<label index="pdflink">As PDF</label>
+			<label index="download">Download</label>
+		</languageKey>
+
+<!-- DE -->
+		<languageKey index="de" type="array">
+			<label index="print">Drucken</label>
+			<label index="language">Sprache</label>
+			<label index="toplink">Zum Seitenanfang</label>
+			<label index="printlink">Diese Seite drucken</label>
+			<label index="tip">Seite weiterempfehlen</label>
+			<label index="pdflink">Als PDF</label>
+			<label index="download">Download</label>
+		</languageKey>
+
+
+		<languageKey index="fi" type="array">
+			<label index="print">Tulosta</label>
+			<label index="language">Kieli</label>
+			<label index="toplink">Sivun alkuun</label>
+			<label index="printlink">Tulosta tämä sivu</label>
+			<label index="tip">Suosittele sivustoa</label>
+			<label index="pdflink">PDF-versio</label>
+			<label index="download">Lataa</label>
+		</languageKey>
+
+		<languageKey index="es" type="array">
+			<label index="print">Imprimir</label>
+			<label index="language">Idioma</label>
+			<label index="toplink">Al principio de la página</label>
+			<label index="printlink">Imprimir esta página</label>
+			<label index="tip">Recomendar esta página</label>
+			<label index="pdflink">Como PDF</label>
+			<label index="download">Descarga</label>
+		</languageKey>
+
+		<languageKey index="pt" type="array">
+			<label index="print">Imprimir</label>
+			<label index="language">Idioma</label>
+			<label index="toplink">Ir para o topo</label>
+			<label index="printlink">Imprimir esta página</label>
+			<label index="tip">Recomendar página</label>
+			<label index="pdflink">Como PDF</label>
+			<label index="download">Transferir</label>
+		</languageKey>
+
+		<languageKey index="pl" type="array">
+			<label index="print">Drukuj</label>
+			<label index="language">Język</label>
+			<label index="toplink">Przejdź na początek strony</label>
+			<label index="printlink">Wydrukuj tę stronę</label>
+			<label index="tip">Poleć stronę</label>
+			<label index="pdflink">Jako plik PDF</label>
+			<label index="download">Pobierz</label>
+		</languageKey>
+
+		<languageKey index="it" type="array">
+			<label index="print">Stampa</label>
+			<label index="language">Lingua</label>
+			<label index="toplink">Vai all&apos;inizio della pagina</label>
+			<label index="printlink">Stampa questa pagina</label>
+			<label index="tip">Consiglia questa pagina</label>
+			<label index="pdflink">in formato PDF</label>
+			<label index="download">Download</label>
+		</languageKey>
+
+
+		<languageKey index="fr" type="array">
+			<label index="print">Imprimer</label>
+			<label index="language">Langue</label>
+			<label index="toplink">Retour début de page</label>
+			<label index="printlink">Imprimer cette page</label>
+			<label index="tip">Recommander cette page</label>
+			<label index="pdflink">Au format PDF</label>
+			<label index="download">Télécharger</label>
+		</languageKey>
+
+		<languageKey index="nl" type="array">
+			<label index="print">Afdrukken</label>
+			<label index="language">Taal</label>
+			<label index="toplink">Naar boven</label>
+			<label index="printlink">Deze pagina afdrukken</label>
+			<label index="tip">Pagina aanbevelen</label>
+			<label index="pdflink">Als PDF</label>
+			<label index="download">Download</label>
+		</languageKey>
+
+		<languageKey index="cs" type="array">
+			<label index="print">Tisknout</label>
+			<label index="language">Jazyk</label>
+			<label index="toplink">Na začátek stránky</label>
+			<label index="printlink">Vytisknout tuto stránku</label>
+			<label index="tip">Doporučit tuto stránku</label>
+			<label index="pdflink">Jako PDF</label>
+		</languageKey>
+
+
+		<languageKey index="sk" type="array">
+			<label index="print">Tlač</label>
+			<label index="language">Jazyk</label>
+			<label index="toplink">Na začiatok strany</label>
+			<label index="printlink">Tlač aktuálnej strany</label>
+			<label index="tip">Stránku odporúčať ďalej</label>
+			<label index="pdflink">Ako PDF</label>
+			<label index="download">Sťahovanie</label>
+		</languageKey>
+
+		<languageKey index="el" type="array">
+			<label index="print">Εκτύπωση</label>
+			<label index="language">Γλώσσα</label>
+			<label index="toplink">Μετάβαση στην αρχή της σελίδας</label>
+			<label index="printlink">Εκτύπωση σελίδας</label>
+			<label index="tip">Σύσταση σελίδας</label>
+			<label index="pdflink">Ως PDF</label>
+			<label index="download">Λήψη</label>
+		</languageKey>
+	</data>
+</T3locallang>

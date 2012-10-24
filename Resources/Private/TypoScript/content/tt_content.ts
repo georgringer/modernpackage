@@ -152,7 +152,7 @@ lib.stdheader.3.headerClass.cObject.25 {
 
 
 
-/* still in alpha/beta */
+# !!! still in alpha/beta !!!
 tt_content.mailform.20 {
   stdWrap.wrap >
   postProcessor.1.messages.success = TEXT

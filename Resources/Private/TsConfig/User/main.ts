@@ -6,6 +6,22 @@
 #	either version 2 of the License, or at your option) any later version.
 # ******************************************************************************
 
+# General
+#################
+# Disable condensed mode
+setup.default.condensedMode = 0
+setup.override.condensedMode = 0
+
+# Extended view (secondary options)
+setup.default.extendedView = 1
+setup.override.extendedView = 1
+
+# Allow creation of new folders in Element Browser
+options.createFoldersInEB = 1
+
+
+# Pagetree
+#################
 options.pageTree {
 	# Shows the user db mount path above the mount itself (useful if you work a lot with user db mounts)
 	showPathAboveMounts = 1

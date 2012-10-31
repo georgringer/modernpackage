@@ -40,4 +40,7 @@ options.pageTree {
 
 	# Shows the domain name as a suffix of the title if available
 	showDomainNameWithTitle = 1
+
+	#  List of pages with a dedicated color for permanent highlighting in the tree
+	#backgroundColor.<pid> = red
 }

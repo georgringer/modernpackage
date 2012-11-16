@@ -59,12 +59,12 @@ config {
 	content_from_pid_allowOutsideDomain = 1
 
 	# Awstats
-	stat = 1
-	stat_apache = 1
-	stat_apache_logfile = stat.log
-	stat_excludeBEuserHits = 1
-	stat_mysql = 1
-	stat_typeNumList = 0
+	#stat = 1
+	#stat_apache = 1
+	#stat_apache_logfile = stat.log
+	#stat_excludeBEuserHits = 1
+	#stat_mysql = 1
+	#stat_typeNumList = 0
 
 	headerComment (
 ######################################################################

@@ -26,9 +26,9 @@ TCEFORM.pages {
 	backend_layout.PAGE_TSCONFIG_ID < lib.constants.layouts.pid
 	backend_layout_next_level.PAGE_TSCONFIG_ID < lib.constants.layouts.pid
 
-	# Hide no backend layout label
-	backend_layout.removeItems = 0,-1
-	backend_layout_next_level.removeItems = -1
+	# Hide no backend layout label, deactivated by default!
+	#backend_layout.removeItems = 0,-1
+	#backend_layout_next_level.removeItems = -1
 }
 
 #-------------------------------------------------------------------------------

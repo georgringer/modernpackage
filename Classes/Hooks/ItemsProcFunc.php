@@ -26,8 +26,6 @@
  * ItemsProcFunc to make backend_layout fields
  * multilanguage aware if the name starts with 'LLL:'
  *
- * @package TYPO3
- * @subpackage tx_modernpackage
  */
 class Tx_Modernpackage_Hooks_ItemsProcFunc {
 

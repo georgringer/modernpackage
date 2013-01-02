@@ -13,9 +13,7 @@
 
 page {
 	meta.viewport = width=100%, minimum-scale=1.0, maximum-scale=1.0
-	#Favicon
-	headerData.4 = TEXT
-	headerData.4.value = <link rel="shortcut icon" href="{$plugin.theme_configuration.url}typo3conf/ext/modernpackage/Resources/Public/favicon.ico" />
+	shortcutIcon = EXT:modernpackage/Resources/Public/Icons/favicon.ico
 }
 
 config {

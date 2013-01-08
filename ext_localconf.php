@@ -21,11 +21,11 @@ $TYPO3_CONF_VARS['GFX']['png_truecolor'] = '1';
 
 
 $settings = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY]);
-if ($settings['setPageTSconfig']) {
+if (!empty($settings['setPageTSconfig'])) {
 	t3lib_extMgm::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Resources/Private/TsConfig/Page/main.ts">');
 }
 
-if ($_EXTCONF['setUserTSconfig']) {
+if (!empty($settings['setUserTSconfig'])) {
 	t3lib_extMgm::addUserTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Resources/Private/TsConfig/User/main.ts">');
 }
 

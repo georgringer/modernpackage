@@ -8,7 +8,7 @@ RTE.classes {
 
 #
 # *** Entfernt das Bild vor den Links
-RTE.classesAnchor {
+RTE.default.buttons.link.properties.class.allowedClasses {
 	internalLink {
 		class = internal-link
 		type = page
@@ -149,7 +149,7 @@ RTE.default {
 				#img >
 
 				# Unbedingt nötig für Farben mit Firefox
-				span.fixAttrib.style.unset
+				span.fixAttrib.style.unset = 1
 
 				font.allowedAttribs = color, face, size
 			}
@@ -158,26 +158,25 @@ RTE.default {
 	}
 
 	# Classes: Ausrichtung
-	classesParagraph (
+	buttons.blockstyle.tags.div.allowedClasses (
 		green
 	)
+	buttons.blockstyle.tags.p.allowedClasses < buttons.blockstyle.tags.div.allowedClasses
 
 	# Classes: Eigene Stile
-	classesCharacter = green
-	classesImage= rte_image
+	buttons.textstyle.tags.span.allowedClasses = green
+	buttons.image.properties.class.allowedClasses = rte_image
 
 
 	# Classes für Links (These classes should also be in the list of allowedClasses)
-	classesAnchor = external-link, external-link-new-window, internal-link, internal-link-new-window, download, mail
-	classesAnchor.default {
-		page = internal-link
-		url = external-link-new-window
-		file = download
-		mail = mail
-	}
+	buttons.link.page.properties.class.default =
+	buttons.link.url.properties.class.default =
+	buttons.link.file.properties.class.default =
+	buttons.link.mail.properties.class.default =
 
 	# zeigt alle CSS-Klassen die in formate.css vorhanden sind
-	showTagFreeClasses = 1
+	buttons.blockstyle.showTagFreeClasses = 1
+	buttons.textstyle.showTagFreeClasses = 1
 
 	# Do not allow insertion of the following tags
 	hideTags = font

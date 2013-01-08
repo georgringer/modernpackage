@@ -29,7 +29,10 @@ config {
 	# remove inline CSS/JS to external
 	removeDefaultJS = external
 	inlineStyle2TempFile = 1
-	minifyJS = 1
+	compressJs = {$plugin.theme_configuration.assets.compress}
+	compressCss = {$plugin.theme_configuration.assets.compress}
+	concatenateJs = {$plugin.theme_configuration.assets.merge}
+	concatenateCss = {$plugin.theme_configuration.assets.merge}
 
 	# RealURL
 	simulateStaticDocuments = 0

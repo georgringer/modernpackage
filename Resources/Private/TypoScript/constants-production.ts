@@ -25,6 +25,9 @@ plugin.theme_configuration.navigation.footer-right = 1,254,274,250
 plugin.theme_configuration.navigation.footer-left = 249
 plugin.theme_configuration.general.copyright_information.link = 242
 
+plugin.theme_configuration.assets.merge = 1
+plugin.theme_configuration.assets.compress = 1
+
 plugin.theme_configuration.extensions.indexed_search.form-target = 241
 plugin.theme_configuration.extensions.news.latest {
 	limit = 3

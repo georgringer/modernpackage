@@ -11,9 +11,6 @@
 # Debug stuff
 # **********************************************************
 
-config.no_cache = 1
-
-
 page.headerData.5 = COA
 page.headerData.5 {
 	5 = TEXT

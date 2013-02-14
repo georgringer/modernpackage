@@ -5,19 +5,16 @@ body#typo3-index-php {
 	background: #017a95;
 }
 
-/* main frame */
-body#typo3-index-php #t3-login-form {
-	margin: 0;
-	padding: 25px 40px 35px 250px;
-	position: absolute;
-	top: 200px;
-	left: 0;
-	background: rgba(1, 51, 60, 0.6);
+/* Hide some not necessary things */
+body#typo3-index-php #loginimage,
+body#typo3-index-php #loginbox-image,
+table#logintable p.c-info {
+	display: none;
 }
 
-body#typo3-index-php .refresh #t3-login-form {
-	top: 150px;
-	padding-left: 200px;
+/* main frame */
+body#typo3-index-php #t3-login-form {
+	max-width: 430px;
 }
 
 /* inner frame holding the background image */
@@ -40,7 +37,7 @@ body#typo3-index-php #t3-login-openIdLogo {
 body#typo3-index-php .t3-headline {
 	background: transparent;
 	border: 0;
-	padding:5px 10px 0 10px;
+	/*	visibility: hidden;*/
 }
 
 .t3-login-box-body {
@@ -51,13 +48,19 @@ body#typo3-index-php .t3-headline {
 
 body#typo3-index-php #t3-login-form-fields {
 	padding: 0;
-	margin-left: 40px;
+	margin-left: 30px;
 }
 
+body#typo3-index-php .t3-headline {
+	margin-top: 5px;
+}
+#typo3-index-php .t3-login-field input.t3-login-submit {
+	margin: 0 30px;
+}
 body#typo3-index-php .t3-headline h2 {
 	background: none;
 	color: #fff;
-	font-size: 23px !important;
+	font-size: 16px !important;
 	font-family: 'Share-BoldRegular', Helvetica, sans-serif;
 	font-weight: normal;
 	letter-spacing: 1px;
@@ -65,6 +68,11 @@ body#typo3-index-php .t3-headline h2 {
 	padding-left: 10px;
 	height: 25px;
 	overflow: hidden;
+	text-align:center
+}
+#typo3-index-php .shadow {
+	background: rgba(0, 0, 0, .3);
+	padding: 20px 10px;
 }
 
 body#typo3-index-php #t3-login-process h2 {
@@ -92,12 +100,41 @@ body#typo3-index-php .t3-login-field input {
 	font-size: 10px;
 }
 
-#typo3-index-php .t3-login-field input.t3-login-submit {
-	margin-right: 20px;
+body#typo3-index-php .t3-login-submit {
+	padding: 2px 8px;
+	margin-top: 8px;
 }
 
-#t3-username-clearIcon, #t3-password-clearIcon {
+body#typo3-index-php .t3-login-field .t3-login-clearInputField a {
+	display: block;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+body#typo3-index-php .t3-login-field .t3-login-clearInputField img {
 	display: none;
+}
+
+body#typo3-index-php #t3-footer {
+	/*width: 580px;*/
+	/*margin: 0 150px 0;*/
+	/*border: 0;*/
+	/*top: 470px;*/
+	/*position: absolute;*/
+	border-color: #01333c;
+	background: rgba(1, 51, 60, 0.8);
+	margin: -50px 0 0 0;
+	padding: 0 10px;
+	height: 38px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+#typo3-index-php div#t3-copyright-notice {
+	border-top: 0;
+	margin-top: 4px;
 }
 
 body#typo3-index-php .t3-login-form-footer {
@@ -114,17 +151,32 @@ body#typo3-index-php .t3-login-form-footer a.switchToOpenId {
 	color: #fff;
 }
 
-body#typo3-index-php div#t3-copyright-notice {
+#typo3-index-php div#t3-copyright-notice {
 	color: #eee;
 }
 
-body#typo3-index-php div#t3-copyright-notice a, body#typo3-index-php div#t3-copyright-notice a:hover {
+#typo3-index-php div#t3-copyright-notice a,
+#typo3-index-php div#t3-copyright-notice a:hover {
 	color: #ccc;
 	text-decoration: none;
 }
 
+body#typo3-index-php .t3-login-form-footer a.switchToOpenId:hover,
+body#typo3-index-php #t3-meta-links a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
 body#typo3-index-php #t3-meta-links a {
 	color: #fff;
+}
+
+#t3-meta-links {
+	display: none;
+}
+
+.shadow-box-top-428, .shadow-box-bottom-424 {
+	display: none;
 }
 
 /* Login Error */

@@ -81,8 +81,8 @@ tt_content {
 		
 		20 = TEXT
 		20 {
-			wrap = <p class="pull-right">|</p>
-			data = LLL:EXT:theme_government/Resources/Private/Language/locallang.xml:toplink
+			wrap = <p class="csc-linkToTop no-print">|</p>
+			data = LLL:EXT:css_styled_content/pi1/locallang.xml:label.toTop
 			typolink {
 			parameter.dataWrap = {getIndpEnv:TYPO3_REQUEST_URL}#top
 			}

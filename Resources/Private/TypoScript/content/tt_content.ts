@@ -70,7 +70,24 @@ tt_content {
 		11.value = <div class="alert alert-error alert-block">|</div>
 	}
 
-	stdWrap.innerWrap2 = | <p class="csc-linkToTop no-print"><a href="#"><i class="icon-eject"></i>{LLL:EXT:css_styled_content/pi1/locallang.xml:label.toTop}</a></p>
+	#stdWrap.innerWrap2 = | <p class="csc-linkToTop no-print"><a href="#"><i class="icon-eject"></i>{LLL:EXT:css_styled_content/pi1/locallang.xml:label.toTop}</a></p>
+	# works also without having prefixLocalAnchors = all
+	stdWrap.innerWrap2.cObject = COA
+	stdWrap.innerWrap2.cObject {
+		10 = TEXT
+		10 {
+			value = |
+		}
+		
+		20 = TEXT
+		20 {
+			wrap = <p class="csc-linkToTop no-print">|</p>
+			data = LLL:EXT:css_styled_content/pi1/locallang.xml:label.toTop
+			typolink {
+			parameter.dataWrap = {getIndpEnv:TYPO3_REQUEST_URL}#top
+			}
+		}
+	}
 
 	# Define different wrappers for content elements depending on the page column
 	#stdWrap.outerWrap.cObject = CASE

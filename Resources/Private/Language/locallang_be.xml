@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>locallang_be.xml</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<!-- Page Tree Icons -->
+			<label index="pagetree.records">Record Collection</label>
+		</languageKey>
+	</data>
+</T3locallang>

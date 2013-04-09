@@ -21,4 +21,19 @@ $GLOBALS['TCA']['backend_layout']['ctrl']['label_userFunc'] = 'Tx_Modernpackage_
  */
 $GLOBALS['TBE_STYLES']['inDocStyles_TBEstyle'] .= '@import "' . t3lib_extMgm::extRelPath($_EXTKEY) . 'Resources/Public/Backend/css/login.css";';
 
+/***************
+ * Add icons to the page tree
+ */
+$availableIcons = array('records');
+foreach($availableIcons as $icon) {
+	t3lib_SpriteManager::addTcaTypeIcon(
+		'pages',
+		'contains-' . $icon,
+		t3lib_extMgm::extRelPath($_EXTKEY) . 'Resources/Public/Icons/PageTree/' . $icon . '.png');
+	$GLOBALS['TCA']['pages']['columns']['module']['config']['items'][] = array(
+		0 => 'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_be.xml:pagetree.' . $icon ,
+		1 => $icon,
+	);
+}
+
 ?>

@@ -11,27 +11,41 @@
 # Constants of the PRODUCTION mode
 # **********************************************************
 
-plugin.theme_configuration.company = Modern Package
-plugin.theme_configuration.popup = &copy; - Modern Package
-plugin.theme_configuration.title = Modern Package
-plugin.theme_configuration.url = http://localhost/master/
+plugin.theme_configuration {
+	company = Modern Package
+	popup = &copy; - Modern Package
+	title = Modern Package
+	url = http://localhost/master/
 
+	general {
+		copyright_information.link = 242
+	}
+
+	assets {
+		merge = 1
+		compress = 1
+	}
+
+	navigation {
+		footer = 12
+	}
+
+	extensions {
+		indexed_search {
+			form-target = 241
+		}
+		news {
+			latest {
+				limit = 3
+				detailPid = 259
+				startingpoint = 260
+				cropMaxCharacters = 120
+			}
+		}
+	}
+}
 
 plugin.theme_configuration.navigation_service = 232
 plugin.theme_configuration.navigation_service-right = 238
 plugin.theme_configuration.navigation_languageswitch.languages = 0,1,2
 plugin.theme_configuration.navigation_languageswitch.labels = English |*| German |*| Italian
-plugin.theme_configuration.navigation.footer-right = 1,254,274,250
-plugin.theme_configuration.navigation.footer-left = 249
-plugin.theme_configuration.general.copyright_information.link = 242
-
-plugin.theme_configuration.assets.merge = 1
-plugin.theme_configuration.assets.compress = 1
-
-plugin.theme_configuration.extensions.indexed_search.form-target = 241
-plugin.theme_configuration.extensions.news.latest {
-	limit = 3
-	detailPid = 259
-	startingpoint = 260
-	cropMaxCharacters = 120
-}

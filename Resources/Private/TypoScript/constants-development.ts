@@ -13,4 +13,12 @@
 #     which differ to this section!
 # *******************************************************************
 
-#plugin.theme_configuration.url = http://localhost/dev/sitestarter/
+plugin.theme_configuration {
+	#url = http://localhost/dev/sitestarter/
+
+	assets {
+		merge = 0
+		compress = 0
+	}
+}
+

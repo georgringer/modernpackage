@@ -13,7 +13,7 @@
 #	* Breadcrumb
 #	* Sidebar
 #	* Language switch
-#	* Footer menu (left & right)
+#	* Footer menu
 #	* Social Media
 # **********************************************************
 
@@ -201,17 +201,14 @@ lib.navigation.languageswitch {
 
 
 #-------------------------------------------------------------------------------
-#	NAVIGATION: Footer (left)
+#	NAVIGATION: Footer
 #-------------------------------------------------------------------------------
-lib.navigation.footer-left = COA
-lib.navigation.footer-left {
-	stdWrap.wrap = <ul>|</ul>
-
+lib.navigation.footer = COA
+lib.navigation.footer {
 	10 = HMENU
 	10 {
-
 		special = list
-		special.value = {$plugin.theme_configuration.navigation.footer-left}
+		special.value = {$plugin.theme_configuration.navigation.footer}
 
 		1 = TMENU
 		1 {
@@ -235,32 +232,6 @@ lib.navigation.footer-left {
 		2.wrap = <ul>|</ul>
 		3 <.1
 		3.wrap = <ul>|</ul>
-	}
-}
-
-#-------------------------------------------------------------------------------
-#	NAVIGATION: Footer (right)
-#-------------------------------------------------------------------------------
-lib.navigation.footer-right = COA
-lib.navigation.footer-right {
-	stdWrap.wrap = <ul>|</ul>
-
-	10 = HMENU
-	10 {
-
-		special = list
-		special.value = {$plugin.theme_configuration.navigation.footer-right}
-
-		1 = TMENU
-		1 {
-			noBlur = 1
-
-			NO {
-					wrapItemAndSub = <li>|</li>
-					ATagTitle.field = subtitle // title
-					stdWrap.htmlSpecialChars = 1
-			}
-		}
 	}
 }
 

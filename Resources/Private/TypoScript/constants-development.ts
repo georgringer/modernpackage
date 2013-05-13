@@ -13,3 +13,4 @@
 #     which differ to this section!
 # *******************************************************************
 
+#plugin.theme_configuration.url = http://localhost/dev/sitestarter/

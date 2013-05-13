@@ -75,7 +75,6 @@ page {
 			wrap = template-|
 			data = levelfield:-1, backend_layout_next_level, slide
 			override.field = backend_layout
-			noTrimWrap = || |
 		}
 
 		# Add uid of FE-layout
@@ -84,6 +83,7 @@ page {
 			fieldRequired = layout
 			value = layout-{field:layout}
 			insertData = 1
+			noTrimWrap = | ||
 		}
 	}
 

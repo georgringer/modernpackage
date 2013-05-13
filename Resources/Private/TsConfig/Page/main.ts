@@ -54,27 +54,20 @@ TCEFORM.tt_content {
 	# Reduce header layouts to default,1,2,3
 	header_layout.removeItems = 5
 
-	# Erzeuge bei Elemente Einträge im Section Framedropdown
-#	section_frame.removeItems = 1,2,5,6,10,11,12,20,21,66
-#	section_frame.addItems.101 = Profi-Features-Liste
-#	section_frame.addItems.102 = Factsheet-Button
-#	section_frame.addItems.102 = Kundenzitat
+	# Remove sections
+	section_frame.removeItems = 1,2,5,6,10,11,12,20,21,66
 
-	# Erzeuge bei Elemente Einträge im Layoutdropdown für DIVs
-	layout.altLabels {
-		1 = Box
-		2 = Box News
-		3 = Box Download
-	}
-	layout.addItems {
-		4 = Box Link-Liste
-		5 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.information
-		6 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.quotation
-		#7 = Link-Liste
-		8 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.box-warning
-		9 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.box-success
-		10 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.box-info
-		11 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.box-error
+	# Change layouts
+	layout {
+		removeItems = 1,2,3
+		addItems {
+			20 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.information
+			21 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.quotation
+			22 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.box-warning
+			23 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.box-success
+			24 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.box-info
+			25 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.box-error
+		}
 	}
 }
 

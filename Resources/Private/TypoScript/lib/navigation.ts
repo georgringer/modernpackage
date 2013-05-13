@@ -207,7 +207,7 @@ lib.navigation.footer = COA
 lib.navigation.footer {
 	10 = HMENU
 	10 {
-		special = list
+		special = directory
 		special.value = {$plugin.theme_configuration.navigation.footer}
 
 		1 = TMENU
@@ -217,21 +217,11 @@ lib.navigation.footer {
 
 			NO = 1
 			NO {
-					wrapItemAndSub = <li>|</li>
-					ATagTitle.field = subtitle // title
-					stdWrap.htmlSpecialChars = 1
-			}
-
-			IFSUB <.NO
-			IFSUB {
-				wrapItemAndSub = <li class="subpages">|</li>
+				wrapItemAndSub = <li>|</li>
+				ATagTitle.field = subtitle // title
+				stdWrap.htmlSpecialChars = 1
 			}
 		}
-
-		2 <.1
-		2.wrap = <ul>|</ul>
-		3 <.1
-		3.wrap = <ul>|</ul>
 	}
 }
 
@@ -245,7 +235,7 @@ lib.navigation.socialmedia {
 	10 {
 		file = EXT:modernpackage/Resources/Public/Template/img/icons/facebook.jpg
 		altText = Facebook
-		stdWrap.typolink.parameter = http://facebook.ktm.com
+		stdWrap.typolink.parameter = http://www.facebook.com
 		stdWrap.typolink.target = _blank
 		#stdWrap.typolink.ATagParams = onclick="_gaq.push(['_trackSocial', 'facebook', 'socialicon']);"
 	}
@@ -253,7 +243,7 @@ lib.navigation.socialmedia {
 	20 {
 		file = EXT:modernpackage/Resources/Public/Template/img/icons/youtube.jpg
 		altText = Youtube
-		stdWrap.typolink.parameter = http://www.youtube.com/ktm
+		stdWrap.typolink.parameter = http://www.youtube.com/
 		stdWrap.typolink.target = _blank
 		#stdWrap.typolink.ATagParams = onclick="_gaq.push(['_trackSocial', 'youtube', 'socialicon']);"
 	}
@@ -261,7 +251,7 @@ lib.navigation.socialmedia {
 	30 {
 		file =  EXT:modernpackage/Resources/Public/Template/img/icons/twitter.jpg
 		altText = Twitter
-		stdWrap.typolink.parameter = http://twitter.com/ktm_racing
+		stdWrap.typolink.parameter = http://twitter.com/
 		stdWrap.typolink.target = _blank
 		#stdWrap.typolink.ATagParams = onclick="_gaq.push(['_trackSocial', 'twitter', 'socialicon']);"
 	}

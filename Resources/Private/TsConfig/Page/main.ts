@@ -9,7 +9,6 @@
 # **********************************************************
 # Constants
 # **********************************************************
-lib.constants.layouts.pid = 20
 lib.constants.permissions.groupid = 1
 
 
@@ -23,8 +22,8 @@ lib.constants.permissions.groupid = 1
 #-------------------------------------------------------------------------------
 TCEFORM.pages {
 	# Storagepage of layouts
-	backend_layout.PAGE_TSCONFIG_ID < lib.constants.layouts.pid
-	backend_layout_next_level.PAGE_TSCONFIG_ID < lib.constants.layouts.pid
+	backend_layout.PAGE_TSCONFIG_ID >
+	backend_layout_next_level.PAGE_TSCONFIG_ID >
 
 	# Hide no backend layout label, deactivated by default!
 	#backend_layout.removeItems = 0,-1

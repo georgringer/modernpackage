@@ -14,6 +14,7 @@
 #	* Sidebar
 #	* Language switch
 #	* Footer menu (left & right)
+#	* Social Media
 # **********************************************************
 
 #-------------------------------------------------------------------------------
@@ -263,3 +264,34 @@ lib.navigation.footer-right {
 	}
 }
 
+
+#-------------------------------------------------------------------------------
+#	NAVIGATION: Social media icons
+#-------------------------------------------------------------------------------
+lib.navigation.socialmedia = COA
+lib.navigation.socialmedia {
+	10 = IMAGE
+	10 {
+		file = EXT:modernpackage/Resources/Public/Template/img/icons/facebook.jpg
+		altText = Facebook
+		stdWrap.typolink.parameter = http://facebook.ktm.com
+		stdWrap.typolink.target = _blank
+		#stdWrap.typolink.ATagParams = onclick="_gaq.push(['_trackSocial', 'facebook', 'socialicon']);"
+	}
+	20 = IMAGE
+	20 {
+		file = EXT:modernpackage/Resources/Public/Template/img/icons/youtube.jpg
+		altText = Youtube
+		stdWrap.typolink.parameter = http://www.youtube.com/ktm
+		stdWrap.typolink.target = _blank
+		#stdWrap.typolink.ATagParams = onclick="_gaq.push(['_trackSocial', 'youtube', 'socialicon']);"
+	}
+	30 = IMAGE
+	30 {
+		file =  EXT:modernpackage/Resources/Public/Template/img/icons/twitter.jpg
+		altText = Twitter
+		stdWrap.typolink.parameter = http://twitter.com/ktm_racing
+		stdWrap.typolink.target = _blank
+		#stdWrap.typolink.ATagParams = onclick="_gaq.push(['_trackSocial', 'twitter', 'socialicon']);"
+	}
+}

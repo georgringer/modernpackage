@@ -19,7 +19,18 @@ plugin.tx_news {
         widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath = EXT:modernpackage/Resources/Private/Extensions/news/
 	}
 
-	settings.list.paginate.insertAbove = 0
+	settings {
+		cssFile >
+		list {
+			paginate.insertAbove = 0
+			media {
+				image {
+					maxWidth = 400
+					maxHeight = 350
+				}
+			}
+		}
+	}
 }
 
 

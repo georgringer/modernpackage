@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<f:layout name="Default" />
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>TYPO3 Sitestarter Content</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/mediaqueries.css" rel="stylesheet">
+	<link href="css/yoxview.css" rel="stylesheet">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- Le fav and touch icons -->
+	<link rel="shortcut icon" href="img/favicon.png">
+
+</head>
+
+<body>
+<f:section name="body">
+
+	<div class="container"><!-- BEGIN: container -->
+		<f:render partial="Page/header" />
+
+		<div class="content"><!-- BEGIN: CONTENT -->
+			<nav class="hidden-phone"><!-- BREADCRUMB -->
+				<ul class="breadcrumb">
+					<f:cObject typoscriptObjectPath="lib.navigation.breadcrumb">
+						<li><a href="#">Startseite</a> <span class="divider">/</span></li>
+						<li class="active">News</li>
+					</f:cObject>
+				</ul>
+			</nav>
+
+			<div class="row-fluid content"><!-- BEGIN: WRAPPER -->
+				<section class="span12"><!-- BEGIN: MAINCONTENT -->
+					<f:cObject typoscriptObjectPath="lib.content.main">
+
+						<h2>Inhaltsseite</h2>
+
+						<h3>Das ist eine Subheadline</h3>
+
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+							fermentum
+							massa
+							justo sit amet risus. Etiam porta sem malesuada magna.
+							Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+							fermentum
+							massa
+							justo sit amet risus. Etiam porta sem malesuada magna. </p>
+
+						<div class="thumbnails yoxview img">
+							<figure>
+								<a href="img/placeholder/01_image.png"><img src="img/placeholder/01_image_thumb.jpg" alt="Life +-" title="Life +-" /> </a>
+								<figcaption>Example Text</figcaption>
+							</figure>
+							<figure>
+								<a href="img/placeholder/02_image.png"><img src="img/placeholder/02_image_thumb.jpg" alt="It's Not Your Turn" title="It's Not Your Turn" /></a>
+								<figcaption>Example Text</figcaption>
+							</figure>
+							<figure>
+								<a href="img/placeholder/03_image.png"><img src="img/placeholder/03_image_thumb.jpg" alt="Oh, How I Hoped That When He Came, He Would Come For Me." title="Oh, How I Hoped That When He Came, He Would Come For Me." /></a>
+								<figcaption>Example Text</figcaption>
+							</figure>
+						</div>
+
+						<h4>Das ist eine Zwischenüberschrift</h4>
+
+						<p>
+							Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+							fermentum
+							massa
+							justo sit amet risus. Etiam porta sem malesuada magna.
+							Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+							fermentum
+							massa
+							justo sit amet risus. Etiam porta sem malesuada magna. </p>
+
+						<ul>
+							<li>List Item 1</li>
+							<li>Longer List Item 2</li>
+							<li>List Item 2</li>
+							<li>List Item 3</li>
+							<li>List Item 4</li>
+						</ul>
+
+						<table class="table table-striped">
+							<thead>
+							<tr>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Job Title</th>
+								<th>Favorite Color</th>
+								<th>Wars or Trek?</th>
+								<th>Porn Name</th>
+								<th>Date of Birth</th>
+								<th>Dream Vacation City</th>
+								<th>GPA</th>
+								<th>Arbitrary Data</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>James</td>
+								<td>Matman</td>
+								<td>Chief Sandwich Eater</td>
+								<td>Lettuce Green</td>
+								<td>Trek</td>
+								<td>Digby Green</td>
+								<td>January 13, 1979</td>
+								<td>Gotham City</td>
+								<td>3.1</td>
+								<td>RBX-12</td>
+							</tr>
+							<tr>
+								<td>The</td>
+								<td>Tick</td>
+								<td>Crimefighter Sorta</td>
+								<td>Blue</td>
+								<td>Wars</td>
+								<td>John Smith</td>
+								<td>July 19, 1968</td>
+								<td>Athens</td>
+								<td>N/A</td>
+								<td>Edlund, Ben (July 1996).</td>
+							</tr>
+							<tr>
+								<td>Jokey</td>
+								<td>Smurf</td>
+								<td>Giving Exploding Presents</td>
+								<td>Smurflow</td>
+								<td>Smurf</td>
+								<td>Smurflane Smurfmutt</td>
+								<td>Smurfuary Smurfteenth, 1945</td>
+								<td>New Smurf City</td>
+								<td>4.Smurf</td>
+								<td>One</td>
+							</tr>
+							<tr>
+								<td>Cindy</td>
+								<td>Beyler</td>
+								<td>Sales Representative</td>
+								<td>Red</td>
+								<td>Wars</td>
+								<td>Lori Quivey</td>
+								<td>July 5, 1956</td>
+								<td>Paris</td>
+								<td>3.4</td>
+								<td>3451</td>
+							</tr>
+							<tr>
+								<td>Captain</td>
+								<td>Cool</td>
+								<td>Tree Crusher</td>
+								<td>Blue</td>
+								<td>Wars</td>
+								<td>Steve 42nd</td>
+								<td>December 13, 1982</td>
+								<td>Las Vegas</td>
+								<td>1.9</td>
+								<td>Under the couch</td>
+							</tr>
+							</tbody>
+						</table>
+
+					</f:cObject>
+				</section>
+			</div>
+			<!-- END: WRAPPER -->
+
+			<div class="row-fluid">
+				<a id="up" href="" class="pull-right">to top</a>
+			</div>
+			<hr>
+
+		</div>
+		<!-- END: CONTENT -->
+
+		<f:render partial="Page/footer" />
+
+	</div>
+	<!-- END: container -->
+</f:section>
+
+<!-- Le javascript
+================================================== -->
+<!-- ???  -->
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<!-- jquery -->
+<script src="js/jquery-1.9.1.js"></script>
+<!-- bootstrap -->
+<script src="js/bootstrap.js"></script>
+<!-- flexslider (gallery) -->
+<script src="js/jquery.flexslider-min.js"></script>
+<!-- Lightbox -->
+<script src="js/jquery.yoxview-2.21.min.js"></script>
+<!-- placeholder script (forms) -->
+<script src="js/placeholder.js"></script>
+<!-- custom scripts -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+{namespace n=Tx_News_ViewHelpers}<!--
+	=====================
+		Partials/List/Item.html
+-->
+
+<article class="articletype-{newsItem.type}{f:if(condition: newsItem.istopnews, then: ' topnews')}">
+	<n:excludeDisplayedNews newsItem="{newsItem}" />
+	<header>
+		<span class="newsinfo pull-right muted"><small>
+			<f:format.date format="d.m.Y">{newsItem.datetime}</f:format.date>
+		</small></span>
+
+		<h3>
+			<n:link newsItem="{newsItem}" settings="{settings}">
+				{newsItem.title}
+			</n:link>
+		</h3>
+	</header>
+
+	<div class="row-fluid">
+		<f:if condition="{newsItem.mediaPreviews}">
+			<f:then>
+				<div class="span4">
+					<n:link newsItem="{newsItem}" settings="{settings}">
+						<f:alias map="{mediaElement: newsItem.mediaPreviews.0}">
+							<f:if condition="{mediaElement.type} == 0">
+								<f:image src="uploads/tx_news/{mediaElement.image}" title="{mediaElement.title}" alt="{mediaElement.alt}" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+							</f:if>
+							<f:if condition="{mediaElement.type} == 1">
+								<f:render partial="Detail/MediaVideo" arguments="{mediaElement: mediaElement}" />
+							</f:if>
+						</f:alias>
+					</n:link>
+				</div>
+				<div class="span8">
+					<f:render section="text" arguments="{_all}" />
+				</div>
+			</f:then>
+			<f:else>
+				<div class="span12">
+					<f:render section="text" arguments="{_all}" />
+				</div>
+			</f:else>
+		</f:if>
+	</div>
+
+	<hr>
+</article>
+
+<f:section name="text">
+	<f:if condition="{newsItem.firstCategory}">
+		<!-- first category -->
+		<h4>{newsItem.firstCategory.title}</h4>
+	</f:if>
+
+	<f:if condition="{newsItem.teaser}">
+		<f:then>
+			<f:format.html>
+				<f:format.crop maxCharacters="{settings.cropMaxCharacters}" respectWordBoundaries="1">{newsItem.teaser}</f:format.crop>
+			</f:format.html>
+		</f:then>
+		<f:else>
+			<f:format.html>
+				<f:format.crop maxCharacters="{settings.cropMaxCharacters}" respectWordBoundaries="1">{newsItem.bodytext}</f:format.crop>
+			</f:format.html>
+		</f:else>
+	</f:if>
+
+	<p>
+		<n:link newsItem="{newsItem}" settings="{settings}" class="btn pull-right">
+			<f:translate key="more-link" />&raquo;</n:link>
+	</p>
+</f:section>

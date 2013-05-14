@@ -25,8 +25,8 @@ page {
 
 			default = TEXT
 			default.value = EXT:modernpackage/Resources/Private/Templates/content-2col-60-40.html
-			#2 = TEXT
-			#2.value = EXT:modernpackage/Resources/Private/Templates/modern_2col.html
+			1 = TEXT
+			1.value = EXT:modernpackage/Resources/Private/Templates/content-1col.html
 		}
 		#partialRootPath = EXT:modernpackage/Resources/Private/Templates/
 		layoutRootPath = EXT:modernpackage/Resources/Private/Templates/Layouts/

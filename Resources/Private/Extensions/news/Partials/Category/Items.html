@@ -1,16 +1,17 @@
 <!-- categories -->
-<span class="hidden">. </span>
-<span class="news-list-category">
+<ul class="news-list-category">
 	<f:for each="{categories}" as="category">
-		<f:if condition="{category.shortcut}">
-			<f:then>
-				<f:link.page pageUid="{category.shortcut}">
+		<li>
+			<f:if condition="{category.shortcut}">
+				<f:then>
+					<f:link.page pageUid="{category.shortcut}">
+						{category.title}
+					</f:link.page>
+				</f:then>
+				<f:else>
 					{category.title}
-				</f:link.page>
-			</f:then>
-			<f:else>
-				{category.title}
-			</f:else>
-		</f:if>
+				</f:else>
+			</f:if>
+		</li>
 	</f:for>
-</span>
+</ul>

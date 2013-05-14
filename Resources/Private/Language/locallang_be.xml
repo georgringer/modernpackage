@@ -8,6 +8,23 @@
 		<languageKey index="default" type="array">
 			<!-- Page Tree Icons -->
 			<label index="pagetree.records">Record Collection</label>
+
+			<!-- table classes -->
+			<label index="tableclasses.default">Default</label>
+			<label index="tableclasses.striped">Striped</label>
+			<label index="tableclasses.condensed">Condensed</label>
+
+			<label index="belayout.3col">3 columns</label>
+			<label index="belayout.2col">2 columns</label>
+			<label index="belayout.columns.main">Main content</label>
+			<label index="belayout.columns.left">Left side</label>
+			<label index="belayout.columns.right">Right side</label>
+
+			<label index="tt_content.layout.quotation">Quotation</label>
+			<label index="tt_content.layout.box-warning">Box Warning</label>
+			<label index="tt_content.layout.box-success">Box Success</label>
+			<label index="tt_content.layout.box-info">Box Info</label>
+			<label index="tt_content.layout.box-error">Box Error</label>
 		</languageKey>
 	</data>
 </T3locallang>

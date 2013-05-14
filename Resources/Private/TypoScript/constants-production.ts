@@ -19,6 +19,8 @@ plugin.theme_configuration {
 
 	general {
 		copyright_information.link = 242
+		googleanalytics = 1
+		googleanalytics.code = UA-XXXXXXXXXXX
 	}
 
 	assets {
@@ -27,10 +29,13 @@ plugin.theme_configuration {
 	}
 
 	navigation {
+		top = 17
 		footer = 12
 	}
 
 	extensions {
+		realurl = 1
+
 		indexed_search {
 			form-target = 241
 		}

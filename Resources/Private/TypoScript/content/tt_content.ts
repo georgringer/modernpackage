@@ -14,77 +14,44 @@
 tt_content {
 
 	# Every content element is wrapped inside a div
-	stdWrap.outerWrap = <div class="ce">|</div>
-
-	# Disable image rendering and jumpurl for filelist element
-	uploads.20 {
-		linkProc.combinedLink = 0
-		itemRendering.10.data = register:linkedLabel
-		linkProc.jumpurl >
-	}
+	stdWrap.outerWrap = <div class="element">|</div>
 
 	# Make some modifications to the rendering of the standard MAIL form records
 	mailform.20 {
 		accessibility = 1
 	}
 
-	# Remove the ancient onfocus="blurLink(this);" from sitemap links
-	# Unfortunately this hasn't been fully implemented in css_styled_content yet
-	menu.20 {
-		default.1.noBlur = 1
-		1.1.noBlur = 1
-		4.1.noBlur = 1
-		5.1.noBlur = 1
-		6.1.noBlur = 1
-		7.1.noBlur = 1
-		7.2.noBlur = 1
-	}
-
 	stdWrap.innerWrap.cObject = CASE
 	stdWrap.innerWrap.cObject {
 		key.field = layout
 		default=TEXT
-		default.value = |
+		default.field = layout
 
-		1 = TEXT
-		1.value = <div class="box">|</div>
-		2 = TEXT
-		2.value = <div class="box news">|</div>
-		3 = TEXT
-		3.value = <div class="box download">|</div>
-		4 = TEXT
-		4.value = <div class="box link-list">|</div>
-		5 = TEXT
-		5.value = <div class="box info">|</div>
-		6 = TEXT
-		6.value = <blockquote class="box citation">|</blockquote>
-		7 = TEXT
-		7.value = <div class="link-list-only">|</div>
-		8 = TEXT
-		8.value = <div class="alert alert-block">|</div>
-		9 = TEXT
-		9.value = <div class="alert alert-success alert-block">|</div>
-		10 = TEXT
-		10.value = <div class="alert alert-info alert-block">|</div>
-		11 = TEXT
-		11.value = <div class="alert alert-error alert-block">|</div>
+		21 = TEXT
+		21.value = <blockquote class="box citation">|</blockquote>
+		22 = TEXT
+		22.value = <div class="alert alert-block">|</div>
+		23 = TEXT
+		23.value = <div class="alert alert-success alert-block">|</div>
+		24 = TEXT
+		24.value = <div class="alert alert-info alert-block">|</div>
+		25 = TEXT
+		25.value = <div class="alert alert-error alert-block">|</div>
 	}
 
-	#stdWrap.innerWrap2 = | <p class="csc-linkToTop no-print"><a href="#"><i class="icon-eject"></i>{LLL:EXT:css_styled_content/pi1/locallang.xml:label.toTop}</a></p>
-	# works also without having prefixLocalAnchors = all
 	stdWrap.innerWrap2.cObject = COA
 	stdWrap.innerWrap2.cObject {
 		10 = TEXT
 		10 {
 			value = |
 		}
-		
+
 		20 = TEXT
 		20 {
 			wrap = <p class="csc-linkToTop no-print">|</p>
 			data = LLL:EXT:css_styled_content/pi1/locallang.xml:label.toTop
 			typolink {
-			parameter.dataWrap = {getIndpEnv:TYPO3_REQUEST_URL}#top
+				parameter.dataWrap = {getIndpEnv:TYPO3_REQUEST_URL}#top
 			}
 		}
 	}
@@ -155,18 +122,18 @@ tt_content {
 }
 
 
-# Add a header class for the error elements
-lib.stdheader.3.headerClass.cObject.25 = TEXT
-lib.stdheader.3.headerClass.cObject.25 {
-	value = alert-heading
-	noTrimWrap = | ||
-
+lib.stdheader.10.stdWrap.override {
 	if {
-		value = 8,9,10
+		value = 21,22,23,24,25
 		isInList.field = layout
 	}
+	cObject = TEXT
+	cObject {
+		field = header
+		htmlSpecialChars = 1
+		wrap = <h6 class="header">|</h6>
+	}
 }
-
 
 
 # !!! still in alpha/beta !!!

@@ -9,13 +9,70 @@
 # **********************************************************
 # Library for TypoScript about navigations.
 # Content:
+#	* Main navigation
 #	* Service navigation (top)
 #	* Breadcrumb
 #	* Sidebar
 #	* Language switch
+#	* Top menu
 #	* Footer menu
 #	* Social Media
 # **********************************************************
+
+
+#-------------------------------------------------------------------------------
+#	NAVIGATION: Main
+#-------------------------------------------------------------------------------
+lib.navigation.main = COA
+lib.navigation.main {
+
+	10 = HMENU
+	10 {
+		1 = TMENU
+		1 {
+			noBlur = 1
+			expAll = 1
+
+			NO = 1
+			NO {
+					wrapItemAndSub = <li>|</li>
+					ATagTitle.field = subtitle // title
+					stdWrap.htmlSpecialChars = 1
+			}
+
+			ACT <.NO
+			ACT.wrapItemAndSub = <li class="active">|</li>
+			ACT.ATagParams = class="active"
+			ACT.ATagBeforeWrap = 1
+
+			CUR <.ACT
+
+			IFSUB <.NO
+			IFSUB {
+				wrapItemAndSub = <li class="dropdown">|</li>
+				ATagParams = class="dropdown-toggle" data-toggle="dropdown"
+
+				linkWrap = |<span class="caret"></span>
+				ATagBeforeWrap = 1
+			}
+
+			ACTIFSUB <.ACT
+			ACTIFSUB.wrapItemAndSub = <li class="active dropdown">|</li>
+
+		}
+
+		2 <.1
+		2 {
+			wrap = <ul class="dropdown-menu">|</ul>
+
+			SPC <.NO
+			SPC.wrapItemAndSub = <li class="divider">|</li>
+		}
+
+		3 <.2
+	}
+}
+
 
 #-------------------------------------------------------------------------------
 #	NAVIGATION: Service navigation TOP
@@ -68,7 +125,6 @@ lib.navigation.service-top-right {
 #-------------------------------------------------------------------------------
 lib.navigation.breadcrumb = COA
 lib.navigation.breadcrumb {
-	stdWrap.wrap = <ul class="breadcrumb">|</ul>
 
 	10 = HMENU
 	10 {
@@ -81,7 +137,7 @@ lib.navigation.breadcrumb {
 
 			NO = 1
 			NO {
-				wrapItemAndSub = <li>|</li>
+				wrapItemAndSub = <li>| <span class="divider">/</span></li>
 				ATagTitle.field = subtitle // title
 				stdWrap.htmlSpecialChars = 1
 			}
@@ -201,6 +257,36 @@ lib.navigation.languageswitch {
 
 
 #-------------------------------------------------------------------------------
+#	NAVIGATION: Top
+#-------------------------------------------------------------------------------
+lib.navigation.top = COA
+lib.navigation.top {
+	10 = HMENU
+	10 {
+		special = directory
+		special.value = {$plugin.theme_configuration.navigation.top}
+
+		1 = TMENU
+		1 {
+			noBlur = 1
+			expAll = 1
+
+			NO = 1
+			NO {
+				wrapItemAndSub = <li>|</li>
+				ATagTitle.field = subtitle // title
+				stdWrap.htmlSpecialChars = 1
+			}
+		}
+	}
+
+	20 = TEXT
+	20 {
+	}
+}
+
+
+#-------------------------------------------------------------------------------
 #	NAVIGATION: Footer
 #-------------------------------------------------------------------------------
 lib.navigation.footer = COA
@@ -222,6 +308,12 @@ lib.navigation.footer {
 				stdWrap.htmlSpecialChars = 1
 			}
 		}
+	}
+
+	20 = TEXT
+	20 {
+		data = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:print
+		wrap = <li class="hidden-phone"><a href="javascript:window.print()">|</a></li>
 	}
 }
 

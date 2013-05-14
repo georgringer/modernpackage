@@ -14,11 +14,19 @@
 # *******************************************************************
 
 plugin.theme_configuration {
-	#url = http://localhost/dev/sitestarter/
+	#url = http://dev.project.local/
 
 	assets {
 		merge = 0
 		compress = 0
+	}
+
+	general {
+		googleanalytics = 0
+	}
+
+	extensions {
+		realurl = 1
 	}
 }
 

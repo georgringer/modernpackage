@@ -10,7 +10,7 @@
 # Library for TypoScript about general library objects.
 # Content:
 #	* Copyright Information
-#	* Header slogan
+#	* Logo
 #	* Footer image
 # **********************************************************
 
@@ -31,13 +31,14 @@ lib.copyright_information {
 }
 
 #-------------------------------------------------------------------------------
-#	GENERAL: Header slogan
+#	GENERAL: Logo
 #-------------------------------------------------------------------------------
-lib.header_slogan = COA
-lib.header_slogan {
-	10 = TEXT
+lib.general.logo = COA
+lib.general.logo {
+	10 = IMAGE
 	10 {
-		value = III Modern <div>package</div>
+		file = EXT:modernpackage/Resources/Public/Template/img/logo.png
+		stdWrap.typolink.parameter = {$plugin.theme_configuration.url}
 	}
 }
 
@@ -46,6 +47,7 @@ lib.header_slogan {
 #-------------------------------------------------------------------------------
 lib.footer_logo = COA
 lib.footer_logo {
+	stdWrap.wrap = <h1>|</h1>
 	10 = IMAGE
 	10 {
 		file = EXT:modernpackage/Resources/Public/Template/img/logo-government-package-footer.png

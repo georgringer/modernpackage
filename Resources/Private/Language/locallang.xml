@@ -6,21 +6,6 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
-			<!-- Backend -->
-			<label index="belayout.3col">3 columns</label>
-			<label index="belayout.2col">2 columns</label>
-			<label index="belayout.columns.main">Main content</label>
-			<label index="belayout.columns.left">Left side</label>
-			<label index="belayout.columns.right">Right side</label>
-
-			<label index="tt_content.layout.quotation">Quotation</label>
-			<label index="tt_content.layout.information">Information</label>
-			<label index="tt_content.layout.box-warning">Box Warning</label>
-			<label index="tt_content.layout.box-success">Box Success</label>
-			<label index="tt_content.layout.box-info">Box Info</label>
-			<label index="tt_content.layout.box-error">Box Error</label>
-
-			<!-- Frontend -->
 			<label index="search-placeholder">Search text</label>
 			<label index="search-submit">Search</label>
 			<label index="language_switch-label">Language</label>

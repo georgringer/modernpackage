@@ -59,8 +59,8 @@ RTE.default {
 	buttons.formatblock.removeItems = h1,h2,h5,h6,pre,address, DIV, P
 
 	# Buttons die gezeigt/versteckt werden
-	showButtons = formatblock, blockstyle, blockstylelabel, bold, italic, orderedlist, unorderedlist, insertcharacter, link, image, removeformat, table, tableproperties, rowproperties, rowAinsertabove, rowinsertunder, rowdelete, rowsplit, columninsertbefore, columninsertafter, columndelete, columnsplit, cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge, findreplace, undo, redo, toggleborders
-	hideButtons = textstyle, textstylelabel, line, left, center, right, underline, insertparagraphafter, insertparagraphbefore, fontstyle, fontsize, strikethrough, lefttoright, righttoleft, bgcolor, textindicator, emoticon, user, spellcheck, inserttag, subscript, superscript, acronym, about, chMode, showhelp, copy, cut, paste, justifyfull, outdent, indent, textcolor
+	showButtons = bold, italic, orderedlist, unorderedlist, link, removeformat, cellmerge, findreplace, undo, redo
+	hideButtons = formatblock, blockstyle, blockstylelabel, textstyle, textstylelabel, insertcharacter,image,line, left, center, right, underline, insertparagraphafter, insertparagraphbefore, fontstyle, fontsize, strikethrough, lefttoright, righttoleft, bgcolor, textindicator, emoticon, user, spellcheck, inserttag, subscript, superscript, acronym, about, chMode, showhelp, copy, cut, paste, justifyfull, outdent, indent, textcolor, table, tableproperties, rowproperties, rowAinsertabove, rowinsertunder, rowdelete, rowsplit, columninsertbefore, columninsertafter, columndelete, columnsplit, cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, toggleborders
 
 
 	# Hält die RTE Icons gegroupt zusammen

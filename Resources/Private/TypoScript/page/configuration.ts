@@ -38,7 +38,7 @@ config {
 	simulateStaticDocuments = 0
 	baseURL = {$plugin.theme_configuration.url}
 	absRefPrefix = {$plugin.theme_configuration.url}
-	tx_realurl_enable = 0
+	tx_realurl_enable = {$plugin.theme_configuration.extensions.realurl}
 	prefixLocalAnchors = all
 	prefixLocalAnchors >
 
@@ -58,14 +58,6 @@ config {
 	typolinkEnableLinksAcrossDomains = 1
 	typolinkCheckRootline = 1
 	content_from_pid_allowOutsideDomain = 1
-
-	# Awstats
-	#stat = 1
-	#stat_apache = 1
-	#stat_apache_logfile = stat.log
-	#stat_excludeBEuserHits = 1
-	#stat_mysql = 1
-	#stat_typeNumList = 0
 
 	headerComment (
 ######################################################################

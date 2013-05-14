@@ -54,6 +54,7 @@ class Tx_Modernpackage_Hooks_T3libBefunc {
 			'items' => array(
 				array('LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tableclasses.default', 'table'),
 				array('LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tableclasses.striped', 'table table-striped'),
+				array('LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tableclasses.condensed', 'table table-condensed'),
 			),
 			'size' => 1,
 			'maxitems' => 1,

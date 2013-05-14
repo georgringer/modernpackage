@@ -24,9 +24,9 @@ page {
 			key.override.field = backend_layout
 
 			default = TEXT
-			default.value = EXT:modernpackage/Resources/Private/Templates/modern_3col.html
-			2 = TEXT
-			2.value = EXT:modernpackage/Resources/Private/Templates/modern_2col.html
+			default.value = EXT:modernpackage/Resources/Private/Templates/content-2col-60-40.html
+			#2 = TEXT
+			#2.value = EXT:modernpackage/Resources/Private/Templates/modern_2col.html
 		}
 		#partialRootPath = EXT:modernpackage/Resources/Private/Templates/
 		layoutRootPath = EXT:modernpackage/Resources/Private/Templates/Layouts/
@@ -41,8 +41,12 @@ page {
 		file1.media = screen,print
 		file2 = EXT:modernpackage/Resources/Public/Template/css/bootstrap-responsive.css
 		file2.media = screen,print
-		file3 = EXT:modernpackage/Resources/Public/Template/css/app.css
+		file3 = EXT:modernpackage/Resources/Public/Template/css/style.css
 		file3.media = screen,print
+		file4 = EXT:modernpackage/Resources/Public/Template/css/mediaqueries.css
+		file4.media = screen,print
+		file5 = EXT:modernpackage/Resources/Public/Template/css/flexslider.css
+		file5.media = screen,print
 	}
 
 	# JS files to be included
@@ -77,7 +81,7 @@ page {
 			override.field = backend_layout
 		}
 
-		# Add uid of FE-layout
+		# Add uid of optional FE-layout
 		30 = TEXT
 		30 {
 			fieldRequired = layout
@@ -88,3 +92,4 @@ page {
 	}
 
 }
+

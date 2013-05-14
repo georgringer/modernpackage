@@ -12,11 +12,6 @@
 lib.constants.permissions.groupid = 1
 
 
-# *******************************************************
-# Page TsConfig
-# **********************************************************
-
-
 #-------------------------------------------------------------------------------
 #	Backend Layouts
 #-------------------------------------------------------------------------------
@@ -33,19 +28,17 @@ TCEFORM.pages {
 #-------------------------------------------------------------------------------
 #	Page module
 #-------------------------------------------------------------------------------
-# Show only the chosen columns in the page module
-# 0=normal, 1=left, 2=right, 3=border
-# mod.SHARED.colPos_list = 1,0,2
-
-# Remove the 'border' option from selectbox 'column' in content records
-# TCEFORM.tt_content.colPos.keepItems = 1,0,2
-
 # Set the default label and flag
-mod.SHARED.defaultLanguageLabel = English
-mod.SHARED.defaultLanguageFlag = gb.gif
+mod {
+	# Show the content element wizard with tabs
+	wizards.newContentElement.renderMode = tabs
 
-# Show the content element wizard with tabs (for consistency)
-mod.wizards.newContentElement.renderMode = tabs
+	# Default flag
+	SHARED {
+		defaultLanguageLabel = English
+		defaultLanguageFlag = gb.gif
+	}
+}
 
 #-------------------------------------------------------------------------------
 #	Content elements
@@ -61,27 +54,26 @@ TCEFORM.tt_content {
 	layout {
 		removeItems = 1,2,3
 		addItems {
-			20 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.information
-			21 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.quotation
-			22 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.box-warning
-			23 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.box-success
-			24 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.box-info
-			25 = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:tt_content.layout.box-error
+			21 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.quotation
+			22 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.box-warning
+			23 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.box-success
+			24 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.box-info
+			25 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.box-error
 		}
 	}
 }
 
 
 #-------------------------------------------------------------------------------
-# Special backend condition to set defaults to "h4" and "box" if
-# a new element in the right column is to be created
+# Special backend condition to set defaults for elements created
+# in non main column
 #-------------------------------------------------------------------------------
-[globalVar = GP:defVals|tt_content|colPos = 2]
+[globalVar = GP:defVals|tt_content|colPos = 1|2|3|4|5]
 TCAdefaults.tt_content {
-  header_layout = 4
-  layout = 1
+	header_layout = 3
 }
 [end]
+
 
 
 #-------------------------------------------------------------------------------
@@ -90,15 +82,8 @@ TCAdefaults.tt_content {
 # There is no need for the Alias field in page properties when we use RealURL
 TCEFORM.pages.alias.disabled = 1
 
-
 #-------------------------------------------------------------------------------
-#	RTE
-#-------------------------------------------------------------------------------
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/TsConfig/Page/Rte/default.ts">
-
-
-#-------------------------------------------------------------------------------
-#	Rights
+#	Permissions
 #-------------------------------------------------------------------------------
 TCEMAIN.permissions {
 	# owner
@@ -108,3 +93,9 @@ TCEMAIN.permissions {
 	# all rights for group
 	group = 31
 }
+
+#-------------------------------------------------------------------------------
+#	RTE
+#-------------------------------------------------------------------------------
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/TsConfig/Page/Rte/default.ts">
+

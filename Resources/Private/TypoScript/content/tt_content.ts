@@ -12,39 +12,52 @@
 # **********************************************************
 
 tt_content {
-
-	# Every content element is wrapped inside a div
-	stdWrap.outerWrap = <div class="element">|</div>
-
 	# Make some modifications to the rendering of the standard MAIL form records
 	mailform.20 {
 		accessibility = 1
 	}
 
-	stdWrap.innerWrap.cObject.default.20.40 = CASE
-	stdWrap.innerWrap.cObject.default.20.40 {
-		key.field = layout
+	# Every content element is wrapped inside a div
+	stdWrap.outerWrap = <div class="element">|</div>
+	stdWrap.outerWrap.override {
+		if {
+			value = 26,27,28,29,30
+			isInList.field = section_frame
+		}
+		cObject = CASE
+		cObject {
+			#stdWrap.noTrimWrap = |<div class="element |">|</div>|
+			key.field = section_frame
 
-		21 = TEXT
-		21.value = box citation
-		22 = TEXT
-		22.value = alert alert-block
-		23 = TEXT
-		23.value = alert alert-success alert-block
-		24 = TEXT
-		24.value = alert alert-info alert-block
-		25 = TEXT
-		25.value = alert alert-error alert-block
-		26 = TEXT
-		26.value = hidden
-		27 = TEXT
-		27.value = visible-phone
-		28 = TEXT
-		28.value = visible-tablet
-		29 = TEXT
-		29.value = hidden-desktop
-		30 = TEXT
-		30.value = visible-desktop
+			26 = TEXT
+			26.value = <div class="element hidden">|</div>
+			27 = TEXT
+			27.value = <div class="element visible-phone">|</div>
+			28 = TEXT
+			28.value = <div class="element visible-tablet">|</div>
+			29 = TEXT
+			29.value = <div class="element hidden-desktop">|</div>
+			30 = TEXT
+			30.value = <div class="element visible-desktop">|</div>
+		}
+	}
+
+	stdWrap.innerWrap.cObject {
+		default.20.40 = CASE
+		default.20.40 {
+			key.field = layout
+
+			21 = TEXT
+			21.value = box citation
+			22 = TEXT
+			22.value = alert alert-block
+			23 = TEXT
+			23.value = alert alert-success alert-block
+			24 = TEXT
+			24.value = alert alert-info alert-block
+			25 = TEXT
+			25.value = alert alert-error alert-block
+		}
 	}
 
 	stdWrap.innerWrap2.cObject = COA

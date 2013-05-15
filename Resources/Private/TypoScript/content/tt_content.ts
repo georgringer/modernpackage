@@ -35,6 +35,16 @@ tt_content {
 		24.value = alert alert-info alert-block
 		25 = TEXT
 		25.value = alert alert-error alert-block
+		26 = TEXT
+		26.value = hidden
+		27 = TEXT
+		27.value = visible-phone
+		28 = TEXT
+		28.value = visible-tablet
+		29 = TEXT
+		29.value = hidden-desktop
+		30 = TEXT
+		30.value = visible-desktop
 	}
 
 	stdWrap.innerWrap2.cObject = COA

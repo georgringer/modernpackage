@@ -47,8 +47,17 @@ TCEFORM.tt_content {
 	# Reduce header layouts to default,1,2,3
 	header_layout.removeItems = 5
 
-	# Remove sections
-	#section_frame.removeItems = 1,2,5,6,10,11,12,20,21,66
+	# Sections
+	section_frame {
+		removeItems = 11,12,20,21,66
+		addItems {
+			26 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.section.hidden
+			27 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.section.visible-phone
+			28 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.section.visible-tablet
+			29 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.section.hidden-desktop
+			30 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.section.visible-desktop
+		}
+	}
 
 	# Change layouts
 	layout {

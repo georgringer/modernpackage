@@ -22,11 +22,19 @@
 			<label index="belayout.columns.left">Left side</label>
 			<label index="belayout.columns.right">Right side</label>
 
+			<!-- Content element: Layout -->
 			<label index="tt_content.layout.quotation">Quotation</label>
 			<label index="tt_content.layout.box-warning">Box Warning</label>
 			<label index="tt_content.layout.box-success">Box Success</label>
 			<label index="tt_content.layout.box-info">Box Info</label>
 			<label index="tt_content.layout.box-error">Box Error</label>
+
+			<!-- Content element: Section -->
+			<label index="tt_content.section.hidden">Hidden</label>
+			<label index="tt_content.section.visible-phone">Visible on phones</label>
+			<label index="tt_content.section.visible-tablet">Visible on tablets</label>
+			<label index="tt_content.section.hidden-desktop">Hidden on desktops</label>
+			<label index="tt_content.section.visible-desktop">Visible on desktops</label>
 		</languageKey>
 	</data>
 </T3locallang>

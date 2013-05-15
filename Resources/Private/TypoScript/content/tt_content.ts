@@ -21,22 +21,20 @@ tt_content {
 		accessibility = 1
 	}
 
-	stdWrap.innerWrap.cObject = CASE
-	stdWrap.innerWrap.cObject {
+	stdWrap.innerWrap.cObject.default.20.40 = CASE
+	stdWrap.innerWrap.cObject.default.20.40 {
 		key.field = layout
-		default=TEXT
-		default.field = layout
 
 		21 = TEXT
-		21.value = <blockquote class="box citation">|</blockquote>
+		21.value = box citation
 		22 = TEXT
-		22.value = <div class="alert alert-block">|</div>
+		22.value = alert alert-block
 		23 = TEXT
-		23.value = <div class="alert alert-success alert-block">|</div>
+		23.value = alert alert-success alert-block
 		24 = TEXT
-		24.value = <div class="alert alert-info alert-block">|</div>
+		24.value = alert alert-info alert-block
 		25 = TEXT
-		25.value = <div class="alert alert-error alert-block">|</div>
+		25.value = alert alert-error alert-block
 	}
 
 	stdWrap.innerWrap2.cObject = COA

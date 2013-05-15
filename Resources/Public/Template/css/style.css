@@ -32,8 +32,8 @@ video {
     width:        400px;
 }
 
-/* 
- * Header 
+/*
+ * Header
 */
 
 .topheader {
@@ -65,7 +65,7 @@ video {
 }
 
 /*
- * Sidebar 
+ * Sidebar
 */
 .sidebar h2 {
     font-size:   1.2em;
@@ -116,8 +116,8 @@ video {
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /* Template Variants
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/* 
- * Startseite 
+/*
+ * Startseite
 */
 .contactdata {
     background-color: #EEE;
@@ -140,8 +140,8 @@ video {
     font-size: 1.4em;
 }
 
-/* 
- * News 
+/*
+ * News
 */
 .hidden-news {
     display: none;
@@ -189,8 +189,8 @@ video {
     cursor: pointer;
 }
 
-/* 
- * Content 
+/*
+ * Content
 */
 .img figure {
     float:  left;
@@ -207,3 +207,19 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
     line-height: 1.6em;
 }
 
+
+
+.csc-frame-rulerBefore {
+	border-top: 1px solid #ccc;
+}
+
+
+.csc-frame-rulerAfter {
+	border-bottom: 1px solid #ccc;
+}
+
+.citation {
+  padding: 0 0 0 15px;
+  margin: 0 0 20px;
+  border-left: 5px solid #eeeeee;
+}

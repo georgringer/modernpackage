@@ -48,7 +48,7 @@ TCEFORM.tt_content {
 	header_layout.removeItems = 5
 
 	# Remove sections
-	section_frame.removeItems = 1,2,5,6,10,11,12,20,21,66
+	#section_frame.removeItems = 1,2,5,6,10,11,12,20,21,66
 
 	# Change layouts
 	layout {

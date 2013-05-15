@@ -1,2 +1,2 @@
 # to be included by using <INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/TsConfig/Page/news-other-records.ts">
-mod.web_list.allowedNewTables = tx_news_domain_model_category,tx_news_domain_model_tag
+mod.web_list.allowedNewTables = tx_news_domain_model_category,tx_news_domain_model_tag,sys_note

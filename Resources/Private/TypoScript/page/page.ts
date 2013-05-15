@@ -47,16 +47,30 @@ page {
 		file4.media = screen,print
 		file5 = EXT:modernpackage/Resources/Public/Template/css/flexslider.css
 		file5.media = screen,print
+		file6 = EXT:modernpackage/Resources/Public/Template/css/responsiveTable.css
+		file6.media = screen,print
 	}
 
 	# JS files to be included
 	includeJSFooter {
-	#	file2 = EXT:modernpackage/Resources/Public/Template/js/bootstrap.js
-		file3 = EXT:modernpackage/Resources/Public/Template/js/bootstrap-dropdown.js
+		bootstrap = EXT:modernpackage/Resources/Public/Template/js/bootstrap.js
+		flexslider = EXT:modernpackage/Resources/Public/Template/js/jquery.flexslider-min.js
+		yoxview = EXT:modernpackage/Resources/Public/Template/js/jquery.yoxview-2.21.min.js
+		placeholder = EXT:modernpackage/Resources/Public/Template/js/placeholder.js
+		customjs = EXT:modernpackage/Resources/Public/Template/js/script.js
+	}
+
+	includeJS {
+		html5shiv = EXT:modernpackage/Resources/Public/Template/js/html5shiv.js
+		html5shiv {
+			allWrap = <!--[if lt IE 9]>|<![endif]-->
+			excludeFromConcatenation = 1
+			forceOnTop = 1
+		}
 	}
 
 	includeJSFooterlibs {
-	jQuery = EXT:modernpackage/Resources/Public/Template/js/jquery.js
+		jQuery = EXT:modernpackage/Resources/Public/Template/js/jquery-1.9.1.js
 	}
 
 

@@ -19,6 +19,16 @@ page.meta {
 	robots = INDEX,FOLLOW
 }
 
+# **********************************************************
+# <title> - Tag
+# **********************************************************
+includeLibs.pagetitle = EXT:modernpackage/Classes/PageTitle.php
+config.titleTagFunction = Tx_Modernpackage_PageTitle->getTitleTag
+config.titleTagFunction {
+	data = page:subtitle // page:title
+
+	noTrimWrap = |{$plugin.theme_configuration.general.pageTitle.prefix} | {$plugin.theme_configuration.general.pageTitle.suffix}|
+}
 
 # **********************************************************
 # Google Analytics

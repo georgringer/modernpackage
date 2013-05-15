@@ -12,6 +12,7 @@
 # **********************************************************
 
 # Add the CSS / JS files
+/*
 page {
 	includeCSS {
 		file5 = EXT:modernpackage/Resources/Public/Contrib/fancybox/jquery.fancybox-1.3.4.css
@@ -26,6 +27,7 @@ page {
 		enable_fancybox = EXT:modernpackage/Resources/Public/Template/js/enable_fancybox.js
 	}
 }
+*/
 
 # Change rendering of images to fit the needs of the lightbox requirements
 tt_content.image.20.1.imageLinkWrap {

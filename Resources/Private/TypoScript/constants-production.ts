@@ -12,15 +12,18 @@
 # **********************************************************
 
 plugin.theme_configuration {
-	company = Modern Package
-	popup = &copy; - Modern Package
-	title = Modern Package
 	url = http://localhost/master/
 
 	general {
+		adminPanel = 1
 		copyright_information.link = 242
 		googleanalytics = 1
 		googleanalytics.code = UA-XXXXXXXXXXX
+
+		pageTitle {
+			prefix = Modern Package -
+			suffix =
+		}
 	}
 
 	assets {

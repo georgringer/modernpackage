@@ -23,8 +23,7 @@ config {
 	disablePrefixComment = 1
 	meaningfulTempFilePrefix = 100
 
-	# Admin Panel
-	admPanel = 0
+	admPanel = {$plugin.theme_configuration.general.adminPanel}
 
 	# remove inline CSS/JS to external
 	removeDefaultJS = external
@@ -59,6 +58,11 @@ config {
 	typolinkCheckRootline = 1
 	content_from_pid_allowOutsideDomain = 1
 
+	# Cache
+	cache_clearAtMidnight = 1
+	cache_period = 1200
+	sendCacheHeaders = 1
+
 	headerComment (
 ######################################################################
 #                                   __                               #
@@ -66,7 +70,7 @@ config {
 #                |        |  _  |  _  ||  -__|   _|     |            #
 #                |__|__|__|_____|_____||_____|__| |__|__|            #
 #                                                                    #
-#                   modern TYPO3 theme by Georg Ringer               #
+#              https://github.com/georgringer/modernpackage          #
 ######################################################################
 	)
 

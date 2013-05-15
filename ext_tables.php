@@ -24,7 +24,7 @@ $GLOBALS['TBE_STYLES']['inDocStyles_TBEstyle'] .= '@import "' . t3lib_extMgm::ex
 /***************
  * Add icons to the page tree
  */
-$availableIcons = array('records');
+$availableIcons = array('system', 'layouts', 'menufolder');
 foreach($availableIcons as $icon) {
 	t3lib_SpriteManager::addTcaTypeIcon(
 		'pages',

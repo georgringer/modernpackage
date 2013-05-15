@@ -2,33 +2,34 @@
 /* Generel Styles
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 body {
-	position: relative;
-	padding-top: 40px;
+    position:    relative;
+    padding-top: 40px;
 }
 
 h2 {
-	font-size: 2.5em;
-	line-height: 1em;
+    font-size:   2.5em;
+    line-height: 1em;
 }
+
 h3 {
-	font-size: 1.7em;
-	line-height: 1em;
+    font-size:   1.7em;
+    line-height: 1em;
 }
 
 .container {
-	margin: 0 auto;
-	max-width: 1140px;
+    margin:    0 auto;
+    max-width: 1140px;
 }
 
 .clear {
-	clear: both;
+    clear: both;
 }
 
 video {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 400px;
+    display:      block;
+    margin-left:  auto;
+    margin-right: auto;
+    width:        400px;
 }
 
 /* 
@@ -36,66 +37,78 @@ video {
 */
 
 .topheader {
-	margin-bottom: 1em;
-}
-.topheader select {
-	width: 60px;
+    margin-bottom: 1em;
 }
 
-div.kontakt {
-	float: left;
+.topheader select {
+    width: 60px;
 }
+
+.contact-box {
+    display: inline;
+}
+
 .language {
-	width: 60px;
+    width: 60px;
 }
 
 .header .navbar {
-	margin-top: 1em;
+    margin-top: 1em;
 }
+
 .btn-navbar {
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .hidden {
-	display: none;
+    display: none;
 }
-/* 
+
+/*
  * Sidebar 
 */
 .sidebar h2 {
-	font-size: 1.2em;
-	color: #333;
-	line-height: 1.5em;
+    font-size:   1.2em;
+    color:       #333;
+    line-height: 1.5em;
 }
+
 .sidebar h3 {
-	font-size: 1em;
+    font-size: 1em;
 }
+
 .sidebarcontent {
-	border: 1px solid #E5E5E5;
-	border-radius: 4px 4px 4px 4px;
-	margin-bottom: 2px;
-	padding: 9px 15px;
-	margin-top: 1.5em;
+    border:        1px solid #E5E5E5;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 2px;
+    padding:       9px 15px;
+    margin-top:    1.5em;
 }
+
 .sidebar .accordion {
-	margin-top: 1.5em;
+    margin-top: 1.5em;
 }
+
 .sidebarcontent h3 {
-	font-size: 1em;
+    font-size: 1em;
 }
+
 .sidebar h3 {
-	background-color: #eee;
-	padding: 0.5em;
+    background-color: #EEE;
+    padding:          0.5em;
 }
+
 .sidebar h4 {
-	font-size: 1em;
+    font-size: 1em;
 }
+
 /*
  * Accordion
  */
 .icon-minus {
     background: url("../img/placeholder/accordion-sprites.png") no-repeat -29px 0;
 }
+
 .icon-plus {
     background: url("../img/placeholder/accordion-sprites.png") no-repeat -3px 0;
 }
@@ -107,88 +120,90 @@ div.kontakt {
  * Startseite 
 */
 .contactdata {
-	background-color: #eee;
-	padding-left: 1em;
+    background-color: #EEE;
+    padding-left:     1em;
 }
 
 .news-teaser {
-	margin-top: 3em;
+    margin-top: 3em;
 }
 
 .contactdata h2 > i {
-	margin-right: 0.5em;
+    margin-right: 0.5em;
 }
 
 .teaser h2, .contactdata h2 {
-	font-size: 1.8em;
+    font-size: 1.8em;
 }
+
 .news-teaser h3 {
-	font-size: 1.4em;
+    font-size: 1.4em;
 }
 
 /* 
  * News 
 */
-.hidden-news{
-	display:none;
+.hidden-news {
+    display: none;
 }
-.visible-news{
-	display:block;
+
+.visible-news {
+    display: block;
 }
+
 .checkbox .category ul li {
-	list-style: none;
+    list-style: none;
 }
 
 .news .newsinfo {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
+
 .news p {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 .morebttn a {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 40px;
+    display:      block;
+    margin-left:  auto;
+    margin-right: auto;
+    width:        40px;
 }
 
 .category ul {
-	list-style: none;
-}
-.category ul li input[type="radio"], input[type="checkbox"] {
-	margin: 0 0.3em 0 0;
+    list-style: none;
 }
 
-/* 
+/*
  * Slider  (Gallery)
 */
 .flexslider .flex-direction-nav .flex-prev {
-	left: 5px;
+    left: 5px;
 }
+
 .flexslider .flex-direction-nav .flex-next {
-	right: 5px;
+    right: 5px;
 }
 
 #carousel .flex-viewport .slides li img {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 /* 
  * Content 
 */
 .img figure {
-	float: left;
-	margin: 0 1em 1em 0;
+    float:  left;
+    margin: 0 1em 1em 0;
 }
 
 ul.nav li.dropdown:hover ul.dropdown-menu {
-	display: block;
-	margin-top: 0px
+    display:    block;
+    margin-top: 0px
 }
 
 .lead {
-	font-size: 1.2em;
-	line-height: 1.6em;
+    font-size:   1.2em;
+    line-height: 1.6em;
 }
 

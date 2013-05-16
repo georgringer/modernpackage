@@ -12,7 +12,7 @@
 # **********************************************************
 
 page {
-	meta.viewport = width=100%, minimum-scale=1.0, maximum-scale=1.0
+	meta.viewport = width=device-width, initial-scale=1.0
 	shortcutIcon = EXT:modernpackage/Resources/Public/Icons/favicon.ico
 
 	# page.config overrides default settings from indexed_search/ext_typoscript_setup.txt
@@ -49,8 +49,8 @@ config {
 
 	# Spam
 	spamProtectEmailAddresses = -2
-	spamProtectEmailAddresses_atSubst = <script type="text/javascript">obscureMid();</script>
-	spamProtectEmailAddresses_lastDotSubst = <script type="text/javascript">obscureEnd();</script>
+	spamProtectEmailAddresses_atSubst = <script type="text/javascript">document.write('@');</script>
+	spamProtectEmailAddresses_lastDotSubst = <script type="text/javascript">document.write('.');</script>
 
 	# check for valid L-params
 	linkVars = L(0-50)

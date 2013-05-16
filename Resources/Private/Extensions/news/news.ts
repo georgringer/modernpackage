@@ -13,10 +13,10 @@
 
 plugin.tx_news {
 	view {
-		templateRootPath = EXT:modernpackage/Resources/Private/Extensions/news/Templates/
-		partialRootPath = EXT:modernpackage/Resources/Private/Extensions/news/Partials/
-		layoutRootPath = EXT:modernpackage/Resources/Private/Extensions/news/Layouts/
-        widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath = EXT:modernpackage/Resources/Private/Extensions/news/
+		templateRootPath = EXT:modernpackage/Resources/Private/Extensions/news/main/Templates/
+		partialRootPath = EXT:modernpackage/Resources/Private/Extensions/news/main/Partials/
+		layoutRootPath = EXT:modernpackage/Resources/Private/Extensions/news/main/Layouts/
+        widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath = EXT:modernpackage/Resources/Private/Extensions/news/main/
 	}
 
 	settings {
@@ -32,6 +32,23 @@ plugin.tx_news {
 		}
 	}
 }
+
+[globalVar = TSFE:id = 1]
+plugin.tx_news {
+	view {
+		templateRootPath = EXT:modernpackage/Resources/Private/Extensions/news/home/Templates/
+	}
+	settings {
+		cropMaxCharacters = 100
+		list {
+			media.image {
+				maxWidth = 140
+				maxHeight = 120
+			}
+		}
+	}
+}
+[global]
 
 
 #-------------------------------------------------------------------------------

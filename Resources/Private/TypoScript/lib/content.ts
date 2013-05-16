@@ -87,3 +87,30 @@ lib.content.6 {
 	10 < styles.content.get
 	10.select.where = colPos=6
 }
+
+#-------------------------------------------------------------------------------
+#	CONTENT: Special Usecases
+#		Be aware in which templates those are used
+#-------------------------------------------------------------------------------
+
+#	CONTENT: 13 Addres
+#		Be aware in which templates those are used
+#-------------------------------------------------------------------------------
+
+lib.content.13 = COA
+lib.content.13 {
+	stdWrap.wrap = <div class="content-14-inner">|</div>
+	10 < styles.content.get
+	10.select.where = colPos=13
+	10.renderObj = COA
+	10.renderObj {
+		10 < lib.stdheader
+
+		20 = TEXT
+		20 {
+			wrap = <address>|</address>
+			field = bodytext
+			parseFunc < lib.parseFunc_RTE
+		}
+	}
+}

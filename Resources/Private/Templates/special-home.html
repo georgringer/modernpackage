@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<f:layout name="Default" />
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>TYPO3 Sitestarter Content</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/mediaqueries.css" rel="stylesheet">
+	<link href="css/yoxview.css" rel="stylesheet">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- Le fav and touch icons -->
+	<link rel="shortcut icon" href="img/favicon.png">
+
+</head>
+
+<body>
+<f:section name="body">
+
+	<div class="container"><!-- BEGIN: container -->
+		<f:render partial="Page/header" />
+
+		<section class="content"><!-- BEGIN: CONTENT -->
+
+			<f:cObject typoscriptObjectPath="lib.content.0">
+				<div class="flex-container"><!-- BEGIN: SLIDER -->
+					<div class="flexslider" id="slideshow">
+						<ul class="slides">
+							<li>
+								<img src="img/gallery/bootstrap-mdo-sfmoma-02.jpg" alt="">
+
+								<p class="flex-caption">Donec id elit non mi porto!</p>
+							</li>
+							<li>
+								<img src="img/gallery/bootstrap-mdo-sfmoma-01.jpg" alt="">
+
+								<p class="flex-caption">This image is so lorem ipsum!</p>
+							</li>
+							<li><img src="img/gallery/bootstrap-mdo-sfmoma-03.jpg" alt=""></li>
+						</ul>
+					</div>
+				</div>
+				<!-- END: SLIDER -->
+			</f:cObject>
+			<hr>
+
+			<section class="row-fluid teaser"> <!-- BEGIN: TEASER -->
+
+				<article class="span6 inner-teaser">
+					<div class="row-fluid">
+						<f:cObject typoscriptObjectPath="lib.content.11">
+							<div class="span6"><a href="#" class="thumbnail"><img src="img/placeholder/260x180.png" alt=""></a></div>
+							<div class="span6">
+								<h2>Auszug aus Bereich 1</h2>
+
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+									fermentum massa justo sit amet risus. Etiam porta sem malesuada magna. </p>
+
+								<p><a class="btn" href="#">View details &raquo;</a></p>
+							</div>
+						</f:cObject>
+					</div>
+				</article>
+
+				<article class="span6 inner-teaser">
+					<div class="row-fluid">
+						<f:cObject typoscriptObjectPath="lib.content.12">
+							<div class="span6"><a href="#" class="thumbnail"><img src="img/placeholder/260x180.png" alt=""></a></div>
+							<div class="span6">
+								<h2>Auszug aus Bereich 2</h2>
+
+								<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+									fermentum massa justo sit amet risus. Etiam porta sem malesuada magna. </p>
+
+								<p><a class="btn" href="#">View details &raquo;</a></p>
+							</div>
+						</f:cObject>
+					</div>
+				</article>
+			</section>
+			<!-- END: TEASER -->
+
+			<section class="news-teaser"><!-- BEGIN: NEWS -->
+				<div class="row-fluid hidden-desktop hidden-tablet">
+					<h2>News</h2>
+				</div>
+				<div class="row-fluid">
+					<f:cObject typoscriptObjectPath="lib.content.3">
+						<article class="span4 inner-news-teaser">
+							<header>
+								<h3>Aktuellste Meldung</h3>
+								<span class="muted"><small>21.03.2013</small></span>
+							</header>
+							<div class="row-fluid">
+								<div class="span5">
+									<a href="#" class="thumbnail"><img src="img/placeholder/140x120.png" alt=""></a>
+								</div>
+								<div class="span7">
+									<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris... </p>
+
+									<p><a class="btn" href="#">View details &raquo;</a></p>
+								</div>
+							</div>
+						</article>
+
+						<article class="span4 inner-news-teaser">
+							<header>
+								<h3>Aktuellste Meldung</h3>
+								<span class="muted"><small>21.03.2013</small></span>
+							</header>
+							<div class="row-fluid">
+								<div class="span5">
+									<a href="#" class="thumbnail"><img src="img/placeholder/140x120.png" alt=""></a>
+								</div>
+								<div class="span7">
+									<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris... </p>
+
+									<p><a class="btn" href="#">View details &raquo;</a></p>
+								</div>
+							</div>
+						</article>
+					</f:cObject>
+					<div class="span4 contactdata">
+						<f:cObject typoscriptObjectPath="lib.content.13"><!-- CONTACT -->
+							<h2>Kontaktdaten <i class="icon-envelope pull-right"></i></h2>
+							<address>
+								<p>Cyberhouse Gmbh<br />Hafenstraße 2a <br />4020 Linz <br /> Tel: +43 (0) 732 / 78 12 98 <br /> Tel: +43 (0) 732 / 78 12 98 -
+									220
+									<br>
+									<a href="mailto:office@cyberhouse.at">office@cyberhouse.at</a><br>
+									<a href="#">www.cyberhouse.at</a></p>
+							</address>
+						</f:cObject>
+					</div>
+				</div>
+
+			</section>
+			<!-- END: NEWS -->
+			<div class="row-fluid">
+				<a id="up" href="" class="pull-right">to top</a>
+			</div>
+			<hr>
+		</section>
+		<!-- END: CONTENT -->
+
+		<f:render partial="Page/footer" />
+
+	</div>
+	<!-- END: container -->
+</f:section>
+
+<!-- Le javascript
+================================================== -->
+<!-- ???  -->
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<!-- jquery -->
+<script src="js/jquery-1.9.1.js"></script>
+<!-- bootstrap -->
+<script src="js/bootstrap.js"></script>
+<!-- flexslider (gallery) -->
+<script src="js/jquery.flexslider-min.js"></script>
+<!-- Lightbox -->
+<script src="js/jquery.yoxview-2.21.min.js"></script>
+<!-- placeholder script (forms) -->
+<script src="js/placeholder.js"></script>
+<!-- custom scripts -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

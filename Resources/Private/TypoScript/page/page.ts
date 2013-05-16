@@ -29,6 +29,8 @@ page {
 			1.value = EXT:modernpackage/Resources/Private/Templates/content-1col.html
 			3 = TEXT
 			3.value = EXT:modernpackage/Resources/Private/Templates/content-3col.html
+			4 = TEXT
+			4.value = EXT:modernpackage/Resources/Private/Templates/special-home.html
 		}
 		#partialRootPath = EXT:modernpackage/Resources/Private/Templates/
 		layoutRootPath = EXT:modernpackage/Resources/Private/Templates/Layouts/

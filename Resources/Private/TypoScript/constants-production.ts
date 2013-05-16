@@ -40,7 +40,7 @@ plugin.theme_configuration {
 		realurl = 1
 
 		indexed_search {
-			form-target = 241
+			page = 30
 		}
 		news {
 			latest {

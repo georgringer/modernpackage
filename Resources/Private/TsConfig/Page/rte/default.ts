@@ -46,7 +46,7 @@ RTE.default.buttons.link.properties.class.allowedClasses {
 RTE.default {
 
 	## RTE Stylesheet für benutzerdefinierte Formatauszeichnungen
-    contentCSS = typo3conf/ext/theme_edugroup/Resources/Public/Css/rte.css
+    #contentCSS = typo3conf/ext/theme_edugroup/Resources/Public/Css/rte.css
 
 	## Markup options
 	enableWordClean = 1
@@ -59,8 +59,8 @@ RTE.default {
 	buttons.formatblock.removeItems = h1,h2,h5,h6,pre,address, DIV, P
 
 	# Buttons die gezeigt/versteckt werden
-	showButtons = bold, italic, orderedlist, unorderedlist, link, removeformat, cellmerge, findreplace, undo, redo
-	hideButtons = formatblock, blockstyle, blockstylelabel, textstyle, textstylelabel, insertcharacter,image,line, left, center, right, underline, insertparagraphafter, insertparagraphbefore, fontstyle, fontsize, strikethrough, lefttoright, righttoleft, bgcolor, textindicator, emoticon, user, spellcheck, inserttag, subscript, superscript, acronym, about, chMode, showhelp, copy, cut, paste, justifyfull, outdent, indent, textcolor, table, tableproperties, rowproperties, rowAinsertabove, rowinsertunder, rowdelete, rowsplit, columninsertbefore, columninsertafter, columndelete, columnsplit, cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, toggleborders
+	showButtons = bold, italic, left, center, right, orderedlist, unorderedlist, link, insertcharacter, removeformat, findreplace, undo, redo, outdent, indent
+	hideButtons = formatblock, blockstyle, blockstylelabel, textstyle, textstylelabel, image,line, underline, insertparagraphafter, insertparagraphbefore, fontstyle, fontsize, strikethrough, lefttoright, righttoleft, bgcolor, textindicator, emoticon, user, spellcheck, inserttag, subscript, superscript, acronym, about, chMode, showhelp, copy, cut, paste, justifyfull, textcolor, table, tableproperties, rowproperties, rowAinsertabove, rowinsertunder, rowdelete, rowsplit, columninsertbefore, columninsertafter, columndelete, columnsplit, cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, toggleborders, cellmerge,
 
 
 	# Hält die RTE Icons gegroupt zusammen

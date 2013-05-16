@@ -44,8 +44,15 @@ mod {
 #	Content elements
 #-------------------------------------------------------------------------------
 TCEFORM.tt_content {
-	# Reduce header layouts to default,1,2,3
-	header_layout.removeItems = 5
+	header_layout {
+		altLabels {
+			1 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.header_layout.1
+			2 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.header_layout.2
+			3 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.header_layout.3
+			4 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.header_layout.4
+			5 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.header_layout.5
+		}
+	}
 
 	# Sections
 	section_frame {
@@ -68,20 +75,30 @@ TCEFORM.tt_content {
 			23 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.box-success
 			24 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.box-info
 			25 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.box-error
+			26 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.toggle
 		}
 	}
 }
 
 
 #-------------------------------------------------------------------------------
+# Defaults for new elements
+#-------------------------------------------------------------------------------
+TCAdefaults {
+	tt_content {
+		header_layout = 2
+	}
+}
+
+#-------------------------------------------------------------------------------
 # Special backend condition to set defaults for elements created
 # in non main column
 #-------------------------------------------------------------------------------
-[globalVar = GP:defVals|tt_content|colPos = 1|2|3|4|5]
-TCAdefaults.tt_content {
-	header_layout = 3
-}
-[end]
+#[globalVar = GP:defVals|tt_content|colPos = 1|2|3|4|5]
+#TCAdefaults.tt_content {
+#	header_layout = 3
+#}
+#[end]
 
 
 

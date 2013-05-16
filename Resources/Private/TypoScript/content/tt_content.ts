@@ -57,6 +57,8 @@ tt_content {
 			24.value = alert alert-info alert-block
 			25 = TEXT
 			25.value = alert alert-error alert-block
+			26 = TEXT
+			26.value = toggle
 		}
 	}
 

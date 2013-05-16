@@ -24,7 +24,7 @@ lib.extensions.indexed_search.form {
 	10 {
 		wrap = <form class="navbar-search pull-right" action="|" method="post">
 		typolink {
-			parameter = {$plugin.theme_configuration.extensions.indexed_search.form-target}
+			parameter = {$plugin.theme_configuration.extensions.indexed_search.page}
 			returnLast = url
 		}
 	}
@@ -35,7 +35,7 @@ lib.extensions.indexed_search.form {
 		insertData = 1
 		value (
 			<label for="search" class="hidden">Search:</label>
-			<input type="text" class="search-query" placeholder="{LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:search-placeholder}">
+			<input name="tx_indexedsearch[sword]" type="text" class="search-query" placeholder="{LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:search-placeholder}">
 				<button class="btn btn-mini">{LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:search-submit}</button>
 			</form>
 		)

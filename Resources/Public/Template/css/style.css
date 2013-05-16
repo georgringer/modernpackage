@@ -223,3 +223,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
   margin: 0 0 20px;
   border-left: 5px solid #eeeeee;
 }
+
+.align-left {text-align: left;}
+.align-center {text-align: center}
+.align-right {text-align: right}

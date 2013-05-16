@@ -14,6 +14,12 @@
 page {
 	meta.viewport = width=100%, minimum-scale=1.0, maximum-scale=1.0
 	shortcutIcon = EXT:modernpackage/Resources/Public/Icons/favicon.ico
+
+	# page.config overrides default settings from indexed_search/ext_typoscript_setup.txt
+	config {
+		index_enable = 1
+		index_externals = 1
+	}
 }
 
 config {
@@ -45,10 +51,6 @@ config {
 	spamProtectEmailAddresses = -2
 	spamProtectEmailAddresses_atSubst = <script type="text/javascript">obscureMid();</script>
 	spamProtectEmailAddresses_lastDotSubst = <script type="text/javascript">obscureEnd();</script>
-
-	# indexed Search
-	index_enable = 1
-	index_externals = 1
 
 	# check for valid L-params
 	linkVars = L(0-50)

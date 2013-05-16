@@ -27,6 +27,8 @@ page {
 			default.value = EXT:modernpackage/Resources/Private/Templates/content-2col-60-40.html
 			1 = TEXT
 			1.value = EXT:modernpackage/Resources/Private/Templates/content-1col.html
+			3 = TEXT
+			3.value = EXT:modernpackage/Resources/Private/Templates/content-3col.html
 		}
 		#partialRootPath = EXT:modernpackage/Resources/Private/Templates/
 		layoutRootPath = EXT:modernpackage/Resources/Private/Templates/Layouts/
@@ -49,6 +51,8 @@ page {
 		file5.media = screen,print
 		file6 = EXT:modernpackage/Resources/Public/Template/css/responsiveTable.css
 		file6.media = screen,print
+		file7 = EXT:modernpackage/Resources/Public/Template/css/jquery-ui-1.10.3.custom.min.css
+		file7.media = screen,print
 	}
 
 	# JS files to be included
@@ -71,6 +75,7 @@ page {
 
 	includeJSFooterlibs {
 		jQuery = EXT:modernpackage/Resources/Public/Template/js/jquery-1.9.1.js
+		jQueryUi = EXT:modernpackage/Resources/Public/Template/js/jquery-ui-1.10.3.custom.min.js
 	}
 
 

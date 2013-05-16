@@ -22,12 +22,20 @@
 			<label index="belayout.columns.left">Left side</label>
 			<label index="belayout.columns.right">Right side</label>
 
+			<!-- Content element: Header Layout -->
+			<label index="tt_content.header_layout.1">Header 1</label>
+			<label index="tt_content.header_layout.2">Header 2</label>
+			<label index="tt_content.header_layout.3">Header 3</label>
+			<label index="tt_content.header_layout.4">Header 4</label>
+			<label index="tt_content.header_layout.5">Header 5</label>
+
 			<!-- Content element: Layout -->
 			<label index="tt_content.layout.quotation">Quotation</label>
 			<label index="tt_content.layout.box-warning">Box Warning</label>
 			<label index="tt_content.layout.box-success">Box Success</label>
 			<label index="tt_content.layout.box-info">Box Info</label>
 			<label index="tt_content.layout.box-error">Box Error</label>
+			<label index="tt_content.layout.toggle">Toggled element</label>
 
 			<!-- Content element: Section -->
 			<label index="tt_content.section.hidden">Hidden</label>

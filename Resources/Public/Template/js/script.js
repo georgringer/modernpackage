@@ -180,6 +180,14 @@ $(function () {
     FlexSlider.initCarousel('#carousel');
     Lightbox.init('.yoxview');
 
+//	$('div.toggle')
+	$( "div.toggle" )
+		.accordion({
+			collapsible: true,
+			heightStyle: 'content',
+			active: false
+		});
+
     var screenWidth = $(document).width();
     if (screenWidth <= 480) {
         $('.accordion .in').removeClass('in');

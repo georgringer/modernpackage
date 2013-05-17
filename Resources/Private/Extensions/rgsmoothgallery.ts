@@ -44,11 +44,11 @@ tt_content.image.20 {
 		singleStdWrap {
 			wrap = <li>|###CAPTION###</li>
 
-			append = USER
-			append {
-				stdWrap.if.isTrue.field = tx_rgsmoothgallery_rgsg
-				userFunc = Tx_Rgsmoothgallery_Rendering_ConfigurationRendering->user_rememberFile
-			}
+			#append = USER
+			#append {
+			#	stdWrap.if.isTrue.field = tx_rgsmoothgallery_rgsg
+			#	userFunc = Tx_Rgsmoothgallery_Rendering_ConfigurationRendering->user_rememberFile
+			#}
 		}
 
 		caption {

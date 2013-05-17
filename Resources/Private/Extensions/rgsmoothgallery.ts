@@ -26,7 +26,7 @@ tt_content.image.20 {
 
 	# Render just the image
 	rendering.rgsmoothgallerycaption {
-		allStdWrap.wrap = <div class="flexslider" id="slideshow"><ul class="slides">|</ul></div>
+		allStdWrap.dataWrap = <div class="csc-textpic-imagewrap" data-csc-images="{register:imageCount}" style="width:{field:imagewidth}px;"> <div class="flexslider" id="slideshow"><ul class="slides">|</ul></div> </div>
 		singleStdWrap {
 			wrap = <li>|###CAPTION###</li>
 		}

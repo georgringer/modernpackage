@@ -26,9 +26,29 @@ tt_content.image.20 {
 
 	# Render just the image
 	rendering.rgsmoothgallerycaption {
-		allStdWrap.dataWrap = <div class="csc-textpic-imagewrap" data-csc-images="{register:imageCount}" style="width:{register:rowWidthPlusTextMargin}px;"> <div class="flexslider" id="slideshow"><ul class="slides">|</ul></div> </div>
+		allStdWrap {
+			#append
+			dataWrap.cObject = COA
+			dataWrap.cObject {
+				stdWrap.wrap = <div class="csc-textpic-imagewrap" data-csc-images="{register:imageCount}" style="width:{register:rowWidthPlusTextMargin}px;">|</div>
+				10 = TEXT
+			 	10.value = <div class="flexslider" id="slideshow"><ul class="slides">|</ul></div>
+
+			#	20 = USER
+			#	20 {
+			#		stdWrap.if.isTrue.field = tx_rgsmoothgallery_rgsg
+			#		userFunc = Tx_Rgsmoothgallery_Rendering_ConfigurationRendering->user_renderThumbs
+			#	}
+			}
+		}
 		singleStdWrap {
 			wrap = <li>|###CAPTION###</li>
+
+			append = USER
+			append {
+				stdWrap.if.isTrue.field = tx_rgsmoothgallery_rgsg
+				userFunc = Tx_Rgsmoothgallery_Rendering_ConfigurationRendering->user_rememberFile
+			}
 		}
 
 		caption {

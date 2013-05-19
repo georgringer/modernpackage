@@ -157,7 +157,7 @@ lib.navigation.breadcrumb {
 		dontCheckPid = 1
 		tables = tx_news_domain_model_news
 		source.data = GP:tx_news_pi1|news
-		source.intVal = 1
+		source.intval = 1
 		conf.tx_news_domain_model_news = TEXT
 		conf.tx_news_domain_model_news {
 			field = title

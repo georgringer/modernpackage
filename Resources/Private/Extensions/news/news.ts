@@ -6,6 +6,8 @@
 #	either version 2 of the License, or (at your option) any later version.
 # ******************************************************************************
 
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:news/Configuration/TypoScript/setup.txt">
+
 
 # **********************************************************
 # Changes to EXT:news
@@ -28,6 +30,16 @@ plugin.tx_news {
 					maxWidth = 400
 					maxHeight = 350
 				}
+			}
+
+			rss.channel {
+				title = Dummy Title
+				description =
+				link = http://example.com
+				language = en_GB
+				copyright = TYPO3 News
+				category =
+				generator = TYPO3 EXT:news
 			}
 		}
 	}

@@ -123,5 +123,5 @@ TCEMAIN.permissions {
 #-------------------------------------------------------------------------------
 #	RTE
 #-------------------------------------------------------------------------------
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/TsConfig/Page/Rte/default.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/TsConfig/Page/rte/default.ts">
 

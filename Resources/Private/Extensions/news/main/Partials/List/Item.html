@@ -53,6 +53,14 @@
 		<h4>{newsItem.firstCategory.title}</h4>
 	</f:if>
 
+	<f:if condition="{newsItem.tags}">
+		<div class="tags">
+			<f:for each="{newsItem.tags}" as="tag">
+				<span class="label">{tag.title}</span>
+			</f:for>
+		</div>
+	</f:if>
+
 	<f:if condition="{newsItem.teaser}">
 		<f:then>
 			<f:format.html>

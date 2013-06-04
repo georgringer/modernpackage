@@ -51,7 +51,7 @@
 						<f:if condition="{newsItem.media}">
 							<f:then>
 								<div class="span5">
-									<f:render partial="Detail/MediaContainer" arguments="{media: newsItem.media, settings:settings}" />
+									<f:render partial="Detail/MediaContainer" arguments="{media: newsItem.mediaPreviews, settings:settings, renderPreview:1}" />
 								</div>
 								<div class="span7">
 									<f:if condition="{newsItem.teaser}">
@@ -79,6 +79,21 @@
 
 					<f:format.html>{newsItem.bodytext}</f:format.html>
 
+					<f:render partial="Detail/MediaContainer" arguments="{media: newsItem.nonMediaPreviews, settings:settings, renderPreview:0}" />
+
+					<f:if condition="{settings.detail.showSocialShareButtons}">
+						<div class="facebook">
+							<div class="like">
+								<n:social.facebook.like></n:social.facebook.like>
+							</div>
+							<div class="share">
+								<n:social.facebook.share>Share</n:social.facebook.share>
+							</div>
+							<div class="twitter">
+								<n:social.twitter>Twitter</n:social.twitter>
+							</div>
+						</div>
+					</f:if>
 				</section>
 
 				<section class="span3 sidebar">

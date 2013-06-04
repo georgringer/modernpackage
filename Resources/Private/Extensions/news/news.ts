@@ -24,7 +24,12 @@ plugin.tx_news {
 	settings {
 		cssFile >
 		list {
-			paginate.insertAbove = 0
+			paginate {
+				insertAbove = 0
+				insertBelow = 1
+				itemsPerPage = 10
+			}
+
 			media {
 				image {
 					maxWidth = 400
@@ -42,6 +47,15 @@ plugin.tx_news {
 				generator = TYPO3 EXT:news
 			}
 		}
+		detail {
+			media {
+				image {
+					maxWidth = 900
+					maxHeight = 600
+				}
+			}
+		}
+
 	}
 }
 

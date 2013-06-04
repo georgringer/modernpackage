@@ -1,18 +1,59 @@
+{namespace n=Tx_News_ViewHelpers}
+
 <f:if condition="{media}">
 	<!-- media files -->
-	<div class="news-img-wrap">
-		<f:for each="{media}" as="mediaElement">
-			<f:if condition="{mediaElement.type} == 0">
-				<f:render partial="Detail/MediaImage" arguments="{mediaElement: mediaElement, settings:settings}" />
-			</f:if>
-			<f:if condition="{mediaElement.type} == 1">
-				<f:render partial="Detail/MediaVideo" arguments="{mediaElement: mediaElement, settings:settings}" />
-			</f:if>
-			<f:if condition="{mediaElement.type} == 3">
-				<f:render partial="Detail/MediaDam" arguments="{mediaElement: mediaElement, settings:settings}" />
-			</f:if>
-		</f:for>
-	</div>
+	<f:if condition="{renderPreview}">
+		<f:then>
+			<div class="news-img-wrap">
+				<f:for each="{media}" as="mediaElement">
+					<f:if condition="{mediaElement.type} == 0">
+						<div class="mediaelement mediaelement-image thumbnail">
+							<f:image src="uploads/tx_news/{mediaElement.content}" title="{mediaElement.title}" alt="{mediaElement.alt}" maxWidth="{settings.detail.media.image.maxWidth}" maxHeight="{settings.detail.media.image.maxHeight}" />
+							<f:if condition="{mediaElement.caption}">
+								<div class="caption">{mediaElement.caption}</div>
+							</f:if>
+						</div>
+					</f:if>
+
+					<f:if condition="{mediaElement.type} == 1">
+						<div class="mediaelement">
+							<div class="mediaelement-video">
+								<n:mediaFactory classes="{settings.interfaces.media.video}" element="{mediaElement}" width="{settings.detail.media.video.width}" height="{settings.detail.media.video.height}" />
+							</div>
+
+							<f:if condition="{mediaElement.caption}">
+								<div class="medialement-alternative-content">
+									<p class="news-img-caption">
+										{mediaElement.caption} </p>
+								</div>
+							</f:if>
+						</div>
+					</f:if>
+				</f:for>
+			</div>
+		</f:then>
+		<f:else>
+			<div class="flexslider" id="slideshow">
+				<ul class="slides">
+					<f:for each="{media}" as="mediaElement">
+						<li>
+							<f:if condition="{mediaElement.type} == 0">
+								<f:image src="uploads/tx_news/{mediaElement.content}" title="{mediaElement.title}" alt="{mediaElement.alt}" maxWidth="{settings.detail.media.image.maxWidth}" maxHeight="{settings.detail.media.image.maxHeight}" />
+							</f:if>
+
+							<f:if condition="{mediaElement.type} == 1">
+								<n:mediaFactory classes="{settings.interfaces.media.video}" element="{mediaElement}" width="{settings.detail.media.video.width}" height="{settings.detail.media.video.height}" />
+							</f:if>
+
+							<f:if condition="{mediaElement.caption}">
+								<p class="flex-caption">{mediaElement.caption}</p>
+							</f:if>
+						</li>
+					</f:for>
+				</ul>
+			</div>
+		</f:else>
+	</f:if>
 </f:if>
 
 

@@ -19,7 +19,3 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/TypoScript/page/configuration.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/TypoScript/page/configuration_language.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/TypoScript/page/seo.ts">
-
-
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/TypoScript/page/debug.ts">
-

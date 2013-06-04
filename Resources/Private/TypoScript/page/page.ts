@@ -112,5 +112,16 @@ page {
 		}
 	}
 
+	headerData.5 = COA
+	headerData.5 {
+		stdWrap.noTrimWrap = |<!-- | -->|
+
+		10 = TEXT
+		10 {
+			insertData = 1
+			value = Page: {page:uid} | Pid: {page:pid} | Sys_language uid : {TSFE:sys_language_uid} | Sys_language content: {TSFE:sys_language_content}
+		}
+	}
+
 }
 

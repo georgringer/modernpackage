@@ -17,8 +17,9 @@ $GLOBALS['TCA']['backend_layout']['ctrl']['label_alt_force'] = 1;
 $GLOBALS['TCA']['backend_layout']['ctrl']['label_userFunc'] = 'Tx_Modernpackage_Hooks_ItemsProcFunc->getLabel';
 
 /***************
- * Include CSS styling for backend/login
+ * Include styling for backend/login
  */
+$GLOBALS['TBE_STYLES']['logo'] = '../typo3conf/ext/' . $_EXTKEY . '/Resources/Public/Backend/img/backend_logo.png';
 $GLOBALS['TBE_STYLES']['inDocStyles_TBEstyle'] .= '@import "' . t3lib_extMgm::extRelPath($_EXTKEY) . 'Resources/Public/Backend/css/login.css";';
 
 /***************

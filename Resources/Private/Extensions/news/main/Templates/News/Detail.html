@@ -99,11 +99,11 @@
 				<section class="span3 sidebar">
 					<div class="sidebarcontent">
 						<f:if condition="{newsItem.categories}">
-							<h3>Kategorien</h3>
+							<h3><f:translate key="categories" /></h3>
 							<f:render partial="Category/Items" arguments="{categories:newsItem.categories, settings:settings}" />
 						</f:if>
 						<f:if condition="{newsItem.tags}">
-							<h3>Tags</h3>
+							<h3><f:translate key="tags" /></h3>
 							<ul>
 								<f:for each="{newsItem.tags}" as="tag">
 									<li>{tag.title}</li>

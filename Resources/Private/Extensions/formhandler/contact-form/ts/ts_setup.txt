@@ -1,0 +1,80 @@
+plugin.fo = bar
+
+plugin.Tx_Formhandler.settings.predef.formhandler-contactform {
+
+	# This is the title of the predefined form shown in the dropdown box in the plugin options.
+	name = Contact Form
+
+	# All form fields are prefixed with this values (e.g. contact[name])
+	formValuesPrefix = contact
+
+	langFile.1 = TEXT
+	langFile.1.value = typo3conf/ext/modernpackage/Resources/Private/Extensions/formhandler/contact-form/lang/lang.xml
+
+	templateFile = TEXT
+	templateFile.value = typo3conf/ext/modernpackage/Resources/Private/Extensions/formhandler/contact-form/html/step-1.html
+
+	# The master template is a file containing the markup for specific field types or other sub templates (e.g. for emails). You can use these predefined markups in your HTML template for a specific form.
+	masterTemplateFile = TEXT
+	masterTemplateFile.value = typo3conf/ext/modernpackage/Resources/Private/Extensions/formhandler/contact-form/html/mastertemplate.html
+
+	# These wraps define how an error messages looks like. The message itself is set in the lang file.
+	singleErrorTemplate {
+		totalWrap = <div class="error">|</div>
+		singleWrap = <span class="message">|</span>
+	}
+
+	# This block defines the error checks performed when the user hits submit.
+	validators {
+		1.class = Validator_Default
+		1.config.fieldConf {
+			name.errorCheck.1 = required
+			email.errorCheck.1 = required
+			email.errorCheck.2 = email
+			message.errorCheck.1 = required
+		}
+	}
+
+	# Finishers are called after the form was submitted successfully (without errors).
+	finishers {
+
+		# Finisher_Mail sends emails to an admin and/or the user.
+		1.class = Finisher_Mail
+		1.config {
+			checkBinaryCrLf = message
+			admin {
+				templateFile = TEXT
+				templateFile.value = typo3conf/ext/modernpackage/Resources/Private/Extensions/formhandler/contact-form/html/email-admin.html
+				sender_email = {plugin.theme_configuration.extensions.formhandler.contact-form.email.admin.sender_email}
+				to_email = {plugin.theme_configuration.extensions.formhandler.contact-form.email.admin.to_email}
+				subject = TEXT
+				subject.data = LLL:typo3conf/ext/modernpackage/Resources/Private/Extensions/formhandler/contact-form/lang/lang.xml:email_admin_subject
+			}
+		}
+
+		# Finisher_Redirect will redirect the user to another page after the form was submitted successfully.
+		5.class = Finisher_Redirect
+		5.config {
+			redirectPage = {plugin.theme_configuration.extensions.formhandler.contact-form.redirectPage}
+		}
+	}
+
+}
+
+# If the user has chosen to receive a copy of the contact request, reconfigure Finisher_Mail to send an email to the user to.
+[globalVar = GP:contact|receive-copy = 1]
+plugin.Tx_Formhandler.settings.predef.formhandler-contactform {
+	finishers {
+		1.config {
+			user {
+				templateFile = TEXT
+				templateFile.value = typo3conf/ext/modernpackage/Resources/Private/Extensions/formhandler/contact-form/html/email-user.html
+				sender_email = {plugin.theme_configuration.extensions.formhandler.contact-form.email.user.sender_email}
+				to_email = email
+				subject = TEXT
+				subject.data = LLL:typo3conf/ext/modernpackage/Resources/Private/Extensions/formhandler/contact-form/lang/lang.xml:email_user_subject
+			}
+		}
+	}
+}
+[global]

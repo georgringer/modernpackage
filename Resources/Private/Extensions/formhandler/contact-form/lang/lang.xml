@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Language labels for Contact Form</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="label_fieldset">Contact Form</label>
+			<label index="name">Name:</label>
+			<label index="email">E-Mail:</label>
+			<label index="message">Your Message:</label>
+			<label index="receive-copy">I want to receive a copy of this request</label>
+			<label index="submit">Send</label>
+	
+			<label index="greetings">Dear</label>
+			<label index="email_user_subject">Your contact request</label>
+			<label index="email_user_text">We have received your request via the contact form on www.example.org. We will process your request and get in contact with you soon.</label>
+			<label index="email_user_footer">---------------------------------- This message was created automatically. --------------------------------</label>
+
+			<label index="email_admin_subject">Contact request</label>
+			<label index="email_admin_text">A user filled out the contact form on www.example.org.</label>
+			<label index="email_admin_footer">---------------------------------- This message was created automatically. --------------------------------</label>
+
+			<label index="error_name_required">Please enter your name!</label>
+			<label index="error_email_required">Please enter your email address!</label>
+			<label index="error_email_email">Please enter a valid email address!</label>
+			<label index="error_message_required">Please enter a message!</label>
+		</languageKey>
+	</data>
+</T3locallang>

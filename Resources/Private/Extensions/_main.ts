@@ -13,4 +13,5 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/Extensions/extbase.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/Extensions/indexed_search.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/Extensions/news/news.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/Extensions/formhandler/formhandler.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/Extensions/rgsmoothgallery.ts">

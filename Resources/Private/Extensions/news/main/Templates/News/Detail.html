@@ -99,11 +99,15 @@
 				<section class="span3 sidebar">
 					<div class="sidebarcontent">
 						<f:if condition="{newsItem.categories}">
-							<h3><f:translate key="categories" /></h3>
+							<h3>
+								<f:translate key="categories" />
+							</h3>
 							<f:render partial="Category/Items" arguments="{categories:newsItem.categories, settings:settings}" />
 						</f:if>
 						<f:if condition="{newsItem.tags}">
-							<h3><f:translate key="tags" /></h3>
+							<h3>
+								<f:translate key="tags" />
+							</h3>
 							<ul>
 								<f:for each="{newsItem.tags}" as="tag">
 									<li>{tag.title}</li>
@@ -138,6 +142,56 @@
 								</f:for>
 							</div>
 						</f:if>
+
+						<f:if condition="{newsItem.relatedFiles}">
+							<!-- Related files -->
+							<div class="news-related news-related-files">
+								<h3>
+									<f:translate key="related-files" />
+								</h3>
+								<ul>
+									<f:for each="{newsItem.relatedFiles}" as="relatedFile">
+										<li>
+									<span class="news-related-files-link">
+										<n:format.fileDownload file="uploads/tx_news/{relatedFile.file}" configuration="{settings.relatedFiles.download}">
+											<f:if condition="{relatedFile.title}">
+												<f:then>
+													{relatedFile.title}
+												</f:then>
+												<f:else>
+													{relatedFile.file}
+												</f:else>
+											</f:if>
+										</n:format.fileDownload>
+									</span>
+									<span class="news-related-files-size">
+										<n:format.fileSize file="uploads/tx_news/{relatedFile.file}" format="{settings.relatedFiles.fileSizeLabels}" />
+									</span>
+										</li>
+									</f:for>
+								</ul>
+							</div>
+						</f:if>
+
+						<f:if condition="{newsItem.relatedLinks}">
+							<!-- Related links -->
+							<div class="news-related news-related-links">
+								<h3>
+									<f:translate key="related-links" />
+								</h3>
+								<ul>
+									<f:for each="{newsItem.relatedLinks}" as="relatedLink">
+										<li>
+											<f:link.page pageUid="{relatedLink.uri}" title="{relatedLink.title}">{f:if(condition: relatedLink.title, then:
+												relatedLink.title, else: relatedLink.uri)}
+											</f:link.page>
+											<f:if condition="{relatedLink.description}"><span>{relatedLink.description}</span></f:if>
+										</li>
+									</f:for>
+								</ul>
+							</div>
+						</f:if>
+
 					</div>
 				</section>
 

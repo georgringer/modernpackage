@@ -13,10 +13,15 @@ lib.constants.permissions.groupid = 1
 
 
 #-------------------------------------------------------------------------------
-#	Backend Layouts
+#	Pages
 #-------------------------------------------------------------------------------
 TCEFORM.pages {
-	# Storagepage of layouts
+	alias.disabled = 1
+	categories.disabled = 1
+	shortcut_mode.removeItems = 0
+	doktype.removeItems = 6
+
+	# Backend Layouts
 	backend_layout.PAGE_TSCONFIG_ID >
 	backend_layout_next_level.PAGE_TSCONFIG_ID >
 
@@ -100,13 +105,6 @@ TCAdefaults {
 #}
 #[end]
 
-
-
-#-------------------------------------------------------------------------------
-#	Pages
-#-------------------------------------------------------------------------------
-# There is no need for the Alias field in page properties when we use RealURL
-TCEFORM.pages.alias.disabled = 1
 
 #-------------------------------------------------------------------------------
 #	Permissions

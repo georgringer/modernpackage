@@ -1,22 +1,29 @@
-
-<footer>
-	<div class="footer row-fluid">
-		<div class="span2 socialmedia">
-			<f:cObject typoscriptObjectPath="lib.navigation.socialmedia">
-				<a href="#"><img src="img/icon/facebook.jpg" alt="facebook"></a>
-				<a href="#"><img src="img/icon/twitter.jpg" alt="facebook"></a>
-			</f:cObject>
+<section class="container">
+	<div class="row-fluid">
+		<div class="span12">
+			<a id="scroll-to-top" href="" class="pull-right">to top</a>
 		</div>
-		<nav class="span10 footer_nav">
+	</div>
+</section>
+
+<footer class="container">
+	<div class="row">
+		<nav class="span10 links pull-right">
 			<ul class="nav nav-pills pull-right">
 				<f:cObject typoscriptObjectPath="lib.navigation.footer">
-					<li><a href="#">Impressum</a></li>
-					<li><a href="#">Kontakt</a></li>
-					<li><a href="#">Sitemap</a></li>
-					<li><a href="#">AGB</a></li>
-					<li class="hidden-phone"><a href="#">Seite drucken</a></li>
+				<li><a href="#">Impressum</a></li>
+				<li><a href="#">Kontakt</a></li>
+				<li><a href="#">Sitemap</a></li>
+				<li><a href="#">AGB</a></li>
+				<li class="hidden-phone"><a href="#">Seite drucken</a></li>
 				</f:cObject>
 			</ul>
 		</nav>
+		<div class="span2 socialmedia pull-left">
+			<f:cObject typoscriptObjectPath="lib.navigation.socialmedia">
+				<a href="#"><img src="img/placeholder/fb_icon.jpg" alt="facebook"></a>
+				<a href="#"><img src="img/placeholder/twitter_icon.jpg" alt="facebook"></a>
+			</f:cObject>
+		</div>
 	</div>
 </footer>

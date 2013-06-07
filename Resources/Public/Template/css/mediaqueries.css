@@ -1,161 +1,85 @@
+/* tablets and bigger */
+@media (min-width: 767px)  {
+
+    /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    /* News
+    /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+    .news:last-child {
+        border-bottom: 1px solid #D4D4D4;
+    }
+}
+
 /* tablets only */
 @media (min-width: 767px) and (max-width: 979px) {
+
     .flexslider .flex-control-nav li {
         margin: 0 1em;
     }
 }
 
-
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/* Max-width: 767px - Smartphones & small Tablets
+/* Smartphones & small Tablets
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 @media (max-width: 767px) {
-
-    #logo {
-        display: inline;
-        float:   left;
-        width:   40%;
+    .hidden {
+        width: 0;
+        height: 0;
+    }
+    header .left,
+    header .right {
+        width: 50%;
+        float: left;
     }
 
-    .navbar-inner {
+    footer .socialmedia {
+        text-align: center;
+    }
+
+    footer .links {
+        text-align: center;
+        float:      none !important;
+
+    }
+
+    footer .links ul {
+        display:  inline-block;
+        float:    none !important;
+        /* For IE, the outcast */
+        zoom:     1;
+        *display: inline;
+        margin-bottom: 0em;
+    }
+
+    /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    /* News
+    /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+    .news span {
+        display: block;
+        margin: 1em 0;
+        float: none;
+    }
+
+
+    /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    /* Navigation
+    /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+    #main-nav .btn-navbar {
+        top:      3em;
+        right:    1em;
+        position: absolute;
+    }
+
+    #main-nav .hide-collapse {
+        min-height: 0px;
         background: none;
         border:     none;
-        box-shadow: none;
     }
 
-    ul.language {
-        float:      left;
-        list-style: none;
-        margin:     0;
-    }
-
-    .navbar .language li {
-        display: inline;
-    }
-
-    .navbar .language li a {
-        color: #333;
-    }
-
-    .navbar .language li.active a, .navbar .language li a:hover {
-        text-decoration: underline;
-        font-weight:     bold;
-        color:           #08C;
-    }
-
-    .navbar {
-        margin-bottom: 0;
-    }
-
-    .searchlanguage .navbar-search {
-        width: 100%;
-    }
-
-    .nav-collapse {
-        background-color:   #FAFAFA;
-        background-image:   -moz-linear-gradient(top, #FFF, #F2F2F2);
-        background-image:   -webkit-gradient(linear, 0 0, 0 100%, from(#FFF), to(#F2F2F2));
-        background-image:   -webkit-linear-gradient(top, #FFF, #F2F2F2);
-        background-image:   -o-linear-gradient(top, #FFF, #F2F2F2);
-        background-image:   linear-gradient(to bottom, #FFF, #F2F2F2);
-        background-repeat:  repeat-x;
-        filter:             progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
-        *zoom:              1;
-        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-        -moz-box-shadow:    0 1px 4px rgba(0, 0, 0, 0.065);
-        box-shadow:         0 1px 4px rgba(0, 0, 0, 0.065);
-        margin:             0 0 2em;
-    }
-
-    .navbar-inner {
-        padding-left:  0;
-        padding-right: 0;
-    }
-
-    .header {
-        margin-bottom: 1em;
-        border-bottom: 1px solid #D4D4D4;
-    }
-
-    article {
-        margin-bottom: 1em;
-    }
-
-    .news-teaser {
-        margin-top: 0;
-    }
-
-    .news-teaser h2 {
-        margin-bottom: 1em;
-    }
-
-    .contactdata {
-        padding:      5px;
-        padding-left: 10px;
-    }
-
-    .nav-pills > li > a {
-        padding: 0 7px 0 7px;
-    }
-
-    footer .footer .socialmedia {
-        float: left;
-        width: 30%;
-    }
-
-    .checkbox {
-        padding-left: 0;
-    }
-
-    .sidebar {
-        margin-top: 1em;
-    }
-
-    .newsarrow > .span6:first-child {
-        float: left;
-        width: 47%;
-    }
-
-    .img figure {
-        margin: 0 1.5em 1.5em 0;
-    }
-
-    .header div.searchlanguage, .header .navbar {
-        float:       left;
-        margin-left: 5%;
-        width:       55%;
-    }
-
-    .navbar-search .search-query {
-        width:    100%;
-        position: relative;
-        left:     -5px;
-        padding:  4px 4px 4px 10px;
-    }
-
-    .nav-collapse {
-        left:     -81%;
-        position: relative;
-        top:      2em;
-        width:    179%;
-    }
-
-    footer {
-        margin-bottom: 2em;
-    }
-
-    .footer .footer_nav {
-        float: left;
-        width: 64%;
-    }
-
-    footer .footer .socialmedia {
-        float: left;
-        width: 33%;
-    }
-
-    /* FLEXISLIDER */
+    /* FLEXSLIDER */
     .flexslider .flex-control-nav li {
         display: inline-block;
         float:   left;
@@ -177,19 +101,16 @@
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/* Max-width: 480px - Smartphones
+/* Smartphones
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 @media (max-width: 480px) {
-
-
+    #search {
+        width: 50px;
+    }
 
     #carousel .flex-viewport {
         height: 60px;
-    }
-
-    article span.newsinfo {
-        width: 100%;
     }
 
     video {
@@ -200,13 +121,12 @@
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/* Max-width: 320px - old Smartphones
+/* old Smartphones
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 @media (max-width: 320px) {
     video {
         max-width:  235px;
         max-height: 155px;
     }
-
 }
 

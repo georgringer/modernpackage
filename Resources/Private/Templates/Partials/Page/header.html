@@ -1,72 +1,91 @@
-<header>
-	<div class="row-fluid header">
-		<div class="span4" id="logo">
+<header class="container">
+	<div class="row">
+		<div class="span4 left">
 			<f:cObject typoscriptObjectPath="lib.general.logo">
-				<h1>
-					<a href="#">
-						<img src="img/placeholder/260x120.png" alt="Logo">
-					</a>
-				</h1>
+				<a href="#" id="logo">
+					<img src="http://placehold.it/260x120" alt="Logo">
+				</a>
 			</f:cObject>
 		</div>
-		<div class="span4 hidden-phone">&nbsp;</div>
-		<div class="span4 searchlanguage">
-			<div class="pull-right hidden-phone"> <!-- CONTACT, LANGUAGE-->
-				<div class="contact-box"><a href="#">Kontakt</a> | Sprache:</div>
-				<select class="language">
-					<option>DE</option>
-					<option>EN</option>
-				</select>
-			</div>
-
+		<div class="span8 text-right right">
+			<form class="form-inline hidden-phone">
+				<a href="#">Kontakt</a> | Sprache:
+				<div class="btn-group btn-mini">
+					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+						DE
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="">DE</a></li>
+						<li><a href="">EN</a></li>
+					</ul>
+				</div>
+			</form>
 			<f:cObject typoscriptObjectPath="lib.extensions.indexed_search.form">
-				<form class="navbar-search pull-right">
-					<label for="search" class="hidden">Search:</label>
-					<input type="text" class="search-query" placeholder="Search" id="search">
+				<form class="form-search">
+					<div class="input-append">
+						<label for="search" class="hidden">Search</label>
+						<input type="text" class="search-query" placeholder="Search" id="search">
+						<button class="btn" type="button"><i class="icon-search"></i></button>
+					</div>
 				</form>
 			</f:cObject>
+			<ul class="visible-phone language pull-left">
+				<li class="active first"><a href="#">DE</a> |</li>
+				<li><a href="#">EN</a></li>
+			</ul>
+
 		</div>
-
-		<div class="clear row-fluid hidden-phone"></div>
-
-		<nav class="navbar row-fluid"><!-- BEGINN: NAVI -->
-			<div class="navbar-inner span12">
-				<div class="container">
-
-					<ul class="hidden-desktop hidden-tablet language">
-						<li class="active first"><a href="#">DE</a> |</li>
-						<li><a href="#">EN</a></li>
-					</ul>
-
-					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</a>
-
-					<div class="clear"></div>
-					<div class="nav-collapse collapse">
-						<ul class="nav">
-							<f:cObject typoscriptObjectPath="lib.navigation.main">
-								<li class="active"><a href="#">Startseite</a></li>
-								<li><a href="#">News</a></li>
-								<li class="dropdown">
-									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Service <b class="caret"></b></a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Link1</a></li>
-										<li><a href="#">Link2</a></li>
-										<li class="divider"></li>
-										<li><a href="#">Link3</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Kontakt</a></li>
-								<li><a href="#">Karriere</a></li>
-							</f:cObject>
-						</ul>
-					</div>
-
-				</div>
-			</div>
-		</nav>
 	</div>
 </header>
+
+<nav class="container navbar" id="main-nav">
+	<div class="navbar-inner hide-collapse">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+
+			<div class="nav-collapse collapse ">
+				<ul class="nav">
+					<f:cObject typoscriptObjectPath="lib.navigation.main">
+						<li class="active"><a href="#">Startseite</a></li>
+						<li><a href="#">News</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Service <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Link1</a></li>
+								<li class="dropdown-submenu">
+									<a href="#">More options</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Second level link</a></li>
+										<li><a href="#">Second level link</a></li>
+										<li><a href="#">Second level link</a></li>
+										<li><a href="#">Second level link</a></li>
+										<li><a href="#">Second level link</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a href="#">More options</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Second level link</a></li>
+										<li><a href="#">Second level link</a></li>
+										<li><a href="#">Second level link</a></li>
+										<li><a href="#">Second level link</a></li>
+										<li><a href="#">Second level link</a></li>
+									</ul>
+								</li>
+								<li class="divider"></li>
+								<li><a href="#">Link3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Kontakt</a></li>
+						<li><a href="#">Karriere</a></li>
+					</f:cObject>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>

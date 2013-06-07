@@ -171,7 +171,7 @@ var Lightbox = {
 
 $(function () {
 
-    Link.scrollToTop('#up');
+    Link.scrollToTop('#scroll-to-top');
     MoreButton.showContent('#load-content');
     Accordion.showContent('#accordionMobil');
     Accordion.hideContent('#accordionMobil');
@@ -180,18 +180,28 @@ $(function () {
     FlexSlider.initCarousel('#carousel');
     Lightbox.init('.yoxview');
 
-//	$('div.toggle')
-	$( "div.toggle" )
-		.accordion({
-			collapsible: true,
-			heightStyle: 'content',
-			active: false
-		});
-
     var screenWidth = $(document).width();
+
+    if(screenWidth <= 769) {
+        $('.dropdown-toggle').click(function () { $(this).next('.dropdown-menu').slideToggle(300); });
+    }
+
     if (screenWidth <= 480) {
         $('.accordion .in').removeClass('in');
         $('.accordion .icon-minus').removeClass('icon-minus').addClass('icon-plus');
     }
+
+    $('#main-nav').on('hidden', function () {
+        $('#main-nav > div').addClass('hide-collapse');
+        $('#main-nav .nav-collapse').hide();
+    });
+
+    $('#main-nav').on('show', function () {
+        $('#main-nav .nav-collapse').show();
+        $('#main-nav > div').removeClass('hide-collapse');
+    });
+
+    $('input, textarea').placeholder();
+
 
 });

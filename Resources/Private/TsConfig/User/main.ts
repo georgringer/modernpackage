@@ -59,3 +59,8 @@ options {
 	}
 }
 
+# Admin Panel
+admPanel {
+	enable.edit = 1
+	enable.info = 1
+}

@@ -44,11 +44,14 @@ RTE.default.buttons.link.properties.class.allowedClasses {
 
 ## RTE Konfiguration
 RTE.default {
+	
+	RTEHeightOverride = 500
+	RTEWidthOverride = 800
+	
+	# RTE Stylesheet für benutzerdefinierte Formatauszeichnungen
+	#contentCSS = typo3conf/ext/theme_modernpackage/Resources/Public/Css/rte.css
 
-	## RTE Stylesheet für benutzerdefinierte Formatauszeichnungen
-    #contentCSS = typo3conf/ext/theme_edugroup/Resources/Public/Css/rte.css
-
-	## Markup options
+	# Markup options
 	enableWordClean = 1
 	removeTrailingBR = 1
 	removeComments = 1

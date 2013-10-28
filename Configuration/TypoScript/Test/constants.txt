@@ -1,0 +1,3 @@
+# Production environment is still loaded but overlayed with the changes inside production
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/TypoScript/constants-production.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/TypoScript/constants-test.ts">

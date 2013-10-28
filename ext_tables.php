@@ -11,16 +11,14 @@ t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Development', 'T
 t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Production', 'Theme EXT:"' . $_EXTKEY . '" PRODUCTION');
 
 /***************
- * Make backend-layout selector multilanguage aware
- */
-t3lib_div::requireOnce(t3lib_extMgm::extPath($_EXTKEY) . 'Classes/Hooks/ItemsProcFunc.php');
-$GLOBALS['TCA']['backend_layout']['ctrl']['label_alt_force'] = 1;
-$GLOBALS['TCA']['backend_layout']['ctrl']['label_userFunc'] = 'Tx_Modernpackage_Hooks_ItemsProcFunc->getLabel';
-
-/***************
  * Include styling for backend/login
  */
-$GLOBALS['TBE_STYLES']['logo'] = '../typo3conf/ext/' . $_EXTKEY . '/Resources/Public/Backend/img/backend_logo.png';
+$context = \TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext()->__toString();
+if (!empty($context)) {
+	$GLOBALS['TBE_STYLES']['logo'] = '../typo3conf/ext/' . $_EXTKEY . '/Resources/Public/Backend/img/backend_logo_' . strtolower($context) . '.png';
+} else {
+	$GLOBALS['TBE_STYLES']['logo'] = '../typo3conf/ext/' . $_EXTKEY . '/Resources/Public/Backend/img/backend_logo.png';
+}
 $GLOBALS['TBE_STYLES']['inDocStyles_TBEstyle'] .= '@import "' . t3lib_extMgm::extRelPath($_EXTKEY) . 'Resources/Public/Backend/css/login.css";';
 
 /***************

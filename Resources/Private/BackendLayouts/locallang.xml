@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>backend</type>
+		<description>Language labels for backend layouts</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="1col">1 column</label>
+			<label index="2col75-25">2 columns (75-25)</label>
+			<label index="2col25-75">2 columns (25-75)</label>
+			<label index="3col">3 columns</label>
+		</languageKey>
+	</data>
+</T3locallang>

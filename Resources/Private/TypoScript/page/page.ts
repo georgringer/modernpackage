@@ -82,42 +82,39 @@ page {
 	bodyTagCObject   {
 		stdWrap.wrap = <body class="|">
 
-		# Add page UID
-		10 = TEXT
-		10 {
-			value = page-{field:uid}
-			insertData = 1
-			noTrimWrap = || |
-		}
+			# Add page UID
+			10 = TEXT
+			10 {
+				value = page-{field:uid}
+				insertData = 1
+				noTrimWrap = || |
+			}
 
-		# Add uid of the backend-layout
-		20 = TEXT
-		20 {
-			wrap = template-|
-			data = levelfield:-1, backend_layout_next_level, slide
-			override.field = backend_layout
-		}
+			# Add current language
+			20 = TEXT
+			20 {
+				value = language-{TSFE:sys_language_uid} languagecontent-{TSFE:sys_language_content}
+				insertData = 1
+				noTrimWrap = || |
+			}
+			# Add uid of the backend-layout
+			30 = TEXT
+			30 {
+				wrap = template-|
+				data = levelfield:-1, backend_layout_next_level, slide
+				override.field = backend_layout
+			}
 
-		# Add uid of optional FE-layout
-		30 = TEXT
-		30 {
-			fieldRequired = layout
-			value = layout-{field:layout}
-			insertData = 1
-			noTrimWrap = | ||
-		}
+			# Add uid of optional FE-layout
+			40 = TEXT
+			40 {
+				fieldRequired = layout
+				value = layout-{field:layout}
+				insertData = 1
+				noTrimWrap = | ||
+			}
 	}
 
-	headerData.5 = COA
-	headerData.5 {
-		stdWrap.noTrimWrap = |<!-- | -->|
-
-		10 = TEXT
-		10 {
-			insertData = 1
-			value = Page: {page:uid} | Pid: {page:pid} | Sys_language uid : {TSFE:sys_language_uid} | Sys_language content: {TSFE:sys_language_content}
-		}
-	}
 
 }
 

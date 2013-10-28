@@ -36,9 +36,8 @@ $EM_CONF[$_EXTKEY] = array(
 	'_md5_values_when_last_written' => '',
 	'constraints' => array(
 		'depends' => array(
-			'php' => '5.1.0-0.0.0',
 			'typo3' => '6.2.0-6.2.99',
-			'fluid' => '',
+			'belayout_fileprovider' => '0',
 		),
 		'conflicts' => array(
 		),

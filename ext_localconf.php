@@ -17,4 +17,6 @@ if (!empty($settings['setUserTSconfig'])) {
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_befunc.php']['getFlexFormDSClass'][$_EXTKEY] =
 	'EXT:' . $_EXTKEY . '/Classes/Hooks/T3libBefunc.php:Tx_Modernpackage_Hooks_T3libBefunc';
 
+// As long as backend layouts are not as file, use EXT: belayout_fileprovider
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['BackendLayoutFileProvider']['ext'][] =  $_EXTKEY;
 ?>

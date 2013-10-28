@@ -11,23 +11,17 @@ page {
 	# Page template
 	10 = FLUIDTEMPLATE
 	10 {
-		file.stdWrap.cObject = CASE
+		file.stdWrap.cObject = TEXT
 		file.stdWrap.cObject {
-			key.data = levelfield:-1, backend_layout_next_level, slide
-			key.override.field = backend_layout
-
-			default = TEXT
-			default.value = EXT:modernpackage/Resources/Private/Templates/content-2col-75-25.html
-			1 = TEXT
-			1.value = EXT:modernpackage/Resources/Private/Templates/content-1col.html
-			3 = TEXT
-			3.value = EXT:modernpackage/Resources/Private/Templates/content-3col.html
-			4 = TEXT
-			4.value = EXT:modernpackage/Resources/Private/Templates/special-home.html
-			5 = TEXT
-			5.value = EXT:modernpackage/Resources/Private/Templates/content-2col-25-75.html
+			data = levelfield:-1, backend_layout_next_level, slide
+			override.field = backend_layout
+			split {
+				token = file__
+				1.current = 1
+				1.wrap = |
+			}
+			wrap = EXT:modernpackage/Resources/Private/Templates/|.html
 		}
-		#partialRootPath = EXT:modernpackage/Resources/Private/Templates/
 		layoutRootPath = EXT:modernpackage/Resources/Private/Templates/Layouts/
 		variables {
 
@@ -97,12 +91,17 @@ page {
 				insertData = 1
 				noTrimWrap = || |
 			}
-			# Add uid of the backend-layout
+			# Add backend-layout
 			30 = TEXT
 			30 {
 				wrap = template-|
 				data = levelfield:-1, backend_layout_next_level, slide
 				override.field = backend_layout
+				split {
+					token = file__
+					1.current = 1
+					1.wrap = |
+				}
 			}
 
 			# Add uid of optional FE-layout

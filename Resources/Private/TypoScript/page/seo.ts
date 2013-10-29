@@ -27,7 +27,7 @@ config.titleTagFunction {
 # **********************************************************
 # Various icons, must be placed in root
 # **********************************************************
-#page {
+page {
 #	shortcutIcon = favicon.ico
 
 #	headerData.31 = TEXT
@@ -39,7 +39,24 @@ config.titleTagFunction {
 #		<link rel="apple-touch-icon" sizes="144x144" href="{$plugin.theme_configuration.url}apple-touch-icon-144x144.png" />
 #		<link rel="apple-touch-icon" sizes="153x153" href="{$plugin.theme_configuration.url}apple-touch-icon-153x153.png" />
 #	 )
-#}
+}
+
+# **********************************************************
+# Canonical Tag to current page
+# **********************************************************
+page.headerData.32 = TEXT
+page.headerData.32 {
+		typolink {
+			parameter.data = TSFE:id
+			addQueryString = 1
+			returnLast = url
+		}
+		noTrimWrap (
+|
+<link rel="canonical" href="|" />
+|
+)
+}
 
 
 # **********************************************************

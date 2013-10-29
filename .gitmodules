@@ -1,0 +1,3 @@
+[submodule "Resources/Public/Template/less/bootstrap"]
+	path = Resources/Public/Template/less/bootstrap
+	url = https://github.com/twbs/bootstrap.git

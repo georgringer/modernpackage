@@ -42,7 +42,9 @@ $EM_CONF[$_EXTKEY] = array(
 		'conflicts' => array(
 		),
 		'suggests' => array(
-			'news' => '1.3.0-',
+			'formhandler' => '',
+			'realurl' => '',
+			'news' => '2.2.1-2.9.99',
 		),
 	),
 	'suggests' => array(

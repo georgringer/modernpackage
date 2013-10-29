@@ -121,3 +121,7 @@ foreach ($ids as $id) {
 $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['fixedPostVars'][$id] = 'newsFixedPostVars';
 }
 */
+
+// Alternative domains
+//$TYPO3_CONF_VARS['EXTCONF']['realurl']['www.domain.tld'] = $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'];
+//$TYPO3_CONF_VARS['EXTCONF']['realurl']['www.domain.tld']['rootpage_id'] = 123;

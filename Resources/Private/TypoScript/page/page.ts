@@ -30,20 +30,8 @@ page {
 
 	# CSS files to be included
 	includeCSS {
-		file1 = EXT:modernpackage/Resources/Public/Template/css/bootstrap.min.css
+		file1 = EXT:modernpackage/Resources/Public/Template/css/styles.css
 		file1.media = screen,print
-		file2 = EXT:modernpackage/Resources/Public/Template/css/style.css
-		file2.media = screen,print
-		file3 = EXT:modernpackage/Resources/Public/Template/css/mediaqueries.css
-		file3.media = screen,print
-		file5 = EXT:modernpackage/Resources/Public/Template/css/flexslider.css
-		file5.media = screen,print
-		file6 = EXT:modernpackage/Resources/Public/Template/css/responsiveTable.css
-		file6.media = screen,print
-		file6 = EXT:modernpackage/Resources/Public/Template/css/yoxview.css
-		file6.media = screen,print
-		file8 = EXT:modernpackage/Resources/Public/Template/css/jquery-ui-1.10.3.custom.min.css
-		file8.media = screen,print
 	}
 
 	# JS files to be included

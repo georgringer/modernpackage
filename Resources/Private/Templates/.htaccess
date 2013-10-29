@@ -1,6 +1,0 @@
-allow from all
-
-RewriteEngine On
-RewriteRule ^css/(.*) ../../Public/Template/css/$1
-RewriteRule ^js/(.*) ../../Public/Template/js/$1
-RewriteRule ^img/(.*) ../../Public/Template/img/$1

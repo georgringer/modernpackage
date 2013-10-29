@@ -1,5 +1,3 @@
-plugin.fo = bar
-
 plugin.Tx_Formhandler.settings.predef.formhandler-contactform {
 
 	# This is the title of the predefined form shown in the dropdown box in the plugin options.
@@ -9,7 +7,7 @@ plugin.Tx_Formhandler.settings.predef.formhandler-contactform {
 	formValuesPrefix = contact
 
 	langFile.1 = TEXT
-	langFile.1.value = typo3conf/ext/modernpackage/Resources/Private/Extensions/formhandler/contact-form/lang/lang.xml
+	langFile.1.value = typo3conf/ext/modernpackage/Resources/Private/Extensions/formhandler/contact-form/language.xml
 
 	templateFile = TEXT
 	templateFile.value = typo3conf/ext/modernpackage/Resources/Private/Extensions/formhandler/contact-form/html/step-1.html
@@ -48,7 +46,7 @@ plugin.Tx_Formhandler.settings.predef.formhandler-contactform {
 				sender_email = {plugin.theme_configuration.extensions.formhandler.contact-form.email.admin.sender_email}
 				to_email = {plugin.theme_configuration.extensions.formhandler.contact-form.email.admin.to_email}
 				subject = TEXT
-				subject.data = LLL:typo3conf/ext/modernpackage/Resources/Private/Extensions/formhandler/contact-form/lang/lang.xml:email_admin_subject
+				subject.data = LLL:typo3conf/ext/modernpackage/Resources/Private/Extensions/formhandler/contact-form/language.xml:email_admin_subject
 			}
 		}
 
@@ -72,7 +70,7 @@ plugin.Tx_Formhandler.settings.predef.formhandler-contactform {
 				sender_email = {plugin.theme_configuration.extensions.formhandler.contact-form.email.user.sender_email}
 				to_email = email
 				subject = TEXT
-				subject.data = LLL:typo3conf/ext/modernpackage/Resources/Private/Extensions/formhandler/contact-form/lang/lang.xml:email_user_subject
+				subject.data = LLL:typo3conf/ext/modernpackage/Resources/Private/Extensions/formhandler/contact-form/language.xml:email_user_subject
 			}
 		}
 	}

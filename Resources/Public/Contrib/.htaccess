@@ -1,0 +1,2 @@
+
+RedirectMatch 403 ^.*/fancybox/demo/*$

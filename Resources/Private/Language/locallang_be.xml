@@ -8,7 +8,6 @@
 		<languageKey index="default" type="array">
 			<!-- Page Tree Icons -->
 			<label index="pagetree.system">[System] Collection</label>
-			<label index="pagetree.layouts">[System] Layouts</label>
 			<label index="pagetree.menufolder">[System] Menu directory</label>
 
 			<!-- table classes -->

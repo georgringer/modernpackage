@@ -28,7 +28,7 @@ $GLOBALS['TBE_STYLES']['inDocStyles_TBEstyle'] .= '@import "' . \TYPO3\CMS\Core\
 /***************
  * Add icons to the page tree
  */
-$availableIcons = array('system', 'layouts', 'menufolder');
+$availableIcons = array('system', 'menufolder');
 foreach($availableIcons as $icon) {
 	t3lib_SpriteManager::addTcaTypeIcon(
 		'pages',

@@ -1,3 +1,6 @@
 [submodule "Resources/Public/Template/less/bootstrap"]
 	path = Resources/Public/Template/less/bootstrap
 	url = https://github.com/twbs/bootstrap.git
+[submodule "Resources/Public/Contrib/fancybox"]
+	path = Resources/Public/Contrib/fancybox
+	url = https://github.com/fancyapps/fancyBox.git

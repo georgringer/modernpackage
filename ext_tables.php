@@ -39,5 +39,3 @@ foreach($availableIcons as $icon) {
 		1 => $icon,
 	);
 }
-
-?>

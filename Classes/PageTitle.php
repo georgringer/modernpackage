@@ -7,5 +7,3 @@ class Tx_Modernpackage_PageTitle {
 		return trim($pageTitle);
 	}
 }
-
-?>

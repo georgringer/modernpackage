@@ -13,4 +13,3 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_befunc.php']['getFl
 
 // As long as backend layouts are not as file, use EXT: belayout_fileprovider
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['BackendLayoutFileProvider']['ext'][] =  $_EXTKEY;
-?>

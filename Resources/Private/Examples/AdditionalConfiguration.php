@@ -22,5 +22,3 @@ $GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'] .= ',keywords,description
 // Additional settings for IM/GM
 $GLOBALS['TYPO3_CONF_VARS']['gdlib_png'] = '1';
 $GLOBALS['TYPO3_CONF_VARS']['GFX']['png_truecolor'] = '1';
-
-?>

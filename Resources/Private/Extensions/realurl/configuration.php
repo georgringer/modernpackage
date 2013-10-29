@@ -121,5 +121,3 @@ foreach ($ids as $id) {
 $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['fixedPostVars'][$id] = 'newsFixedPostVars';
 }
 */
-
-?>

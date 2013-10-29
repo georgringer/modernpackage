@@ -62,5 +62,3 @@ class Tx_Modernpackage_Hooks_T3libBefunc {
 	}
 
 }
-
-?>

@@ -5,7 +5,6 @@
 
 page {
 	meta.viewport = width=device-width, initial-scale=1.0
-	#shortcutIcon = favicon.ico
 
 	# page.config overrides default settings from indexed_search/ext_typoscript_setup.txt
 	config {

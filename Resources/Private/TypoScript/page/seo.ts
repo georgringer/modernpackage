@@ -23,6 +23,25 @@ config.titleTagFunction {
 	noTrimWrap = |{$plugin.theme_configuration.general.pageTitle.prefix} | {$plugin.theme_configuration.general.pageTitle.suffix}|
 }
 
+
+# **********************************************************
+# Various icons, must be placed in root
+# **********************************************************
+#page {
+#	shortcutIcon = favicon.ico
+
+#	headerData.31 = TEXT
+#	headerData.31.value (
+#		<link rel="icon" href="{$plugin.theme_configuration.url}favicon.ico" type="image/x-icon">
+#		<link rel="apple-touch-icon" sizes="57x57" href="{$plugin.theme_configuration.url}apple-touch-icon-57x57.png" />
+#		<link rel="apple-touch-icon" sizes="72x72" href="{$plugin.theme_configuration.url}apple-touch-icon-72x72.png" />
+#		<link rel="apple-touch-icon" sizes="114x114" href="{$plugin.theme_configuration.url}apple-touch-icon-114x114.png" />
+#		<link rel="apple-touch-icon" sizes="144x144" href="{$plugin.theme_configuration.url}apple-touch-icon-144x144.png" />
+#		<link rel="apple-touch-icon" sizes="153x153" href="{$plugin.theme_configuration.url}apple-touch-icon-153x153.png" />
+#	 )
+#}
+
+
 # **********************************************************
 # Google Analytics
 # **********************************************************

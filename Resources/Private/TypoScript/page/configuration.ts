@@ -22,6 +22,13 @@ config {
 
 	admPanel = {$plugin.theme_configuration.general.adminPanel}
 
+	# Language settings
+	sys_language_uid = {$plugin.theme_configuration.site.languageUid}
+	sys_language_mode = {$plugin.theme_configuration.site.languageMode}
+	language = {$plugin.theme_configuration.site.language}
+	locale_all = {$plugin.theme_configuration.site.locale}
+	htmlTag_langKey = {$plugin.theme_configuration.site.htmlTagLanguageKey}
+
 	# remove inline CSS/JS to external
 	removeDefaultJS = external
 	inlineStyle2TempFile = 1

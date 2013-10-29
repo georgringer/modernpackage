@@ -1,1 +1,2 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/TypoScript/constants-language.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/TypoScript/constants-production.ts">

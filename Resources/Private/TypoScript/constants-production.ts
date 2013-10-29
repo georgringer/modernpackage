@@ -8,7 +8,7 @@ styles.content.imgtext.maxW = 1200
 #	Constants of the PRODUCTION mode
 #-------------------------------------------------------------------------------
 plugin.theme_configuration {
-	url = http://localhost/master/
+	url = /
 
 	general {
 		adminPanel = 1

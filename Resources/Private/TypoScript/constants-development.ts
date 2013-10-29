@@ -7,7 +7,7 @@
 # *******************************************************************
 
 plugin.theme_configuration {
-	#url = http://dev.project.local/
+	url = /
 
 	general {
 		googleanalytics = 0

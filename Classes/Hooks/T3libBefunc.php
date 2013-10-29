@@ -1,4 +1,6 @@
 <?php
+
+namespace GeorgRinger\Modernpackage\Hooks;
 /***************************************************************
  *  Copyright notice
  *
@@ -22,7 +24,7 @@
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-class Tx_Modernpackage_Hooks_T3libBefunc {
+class T3libBefunc {
 
 	/**
 	 * Hook function of t3lib_befunc
@@ -42,7 +44,7 @@ class Tx_Modernpackage_Hooks_T3libBefunc {
 	}
 
 	/**
-	 * Update flexform configuration if a action is selected
+	 * Update flexform configuration to change the input field for a class to a select
 	 *
 	 * @param array|string &$dataStructure flexform structure
 	 * @param array $row row of current record

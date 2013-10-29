@@ -16,7 +16,7 @@ page.meta {
 # <title> - Tag
 # **********************************************************
 includeLibs.pagetitle = EXT:modernpackage/Classes/PageTitle.php
-config.titleTagFunction = Tx_Modernpackage_PageTitle->getTitleTag
+config.titleTagFunction = GeorgRinger\Modernpackage\PageTitle->getTitleTag
 config.titleTagFunction {
 	data = page:subtitle // page:title
 

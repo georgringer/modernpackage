@@ -83,3 +83,50 @@ lib.stdheader.10.stdWrap.override {
 	}
 }
 
+#-------------------------------------------------------------------------------
+#	Responsive images
+#-------------------------------------------------------------------------------
+tt_content {
+	image.20 {
+		1.params = class="img-responsive thumbnail"
+
+		addClassesCol >
+		addClassesCol.override.cObject = CASE
+		addClassesCol.override.cObject {
+			key.field = imagecols
+
+			1 = TEXT
+			1.value col-sm-12
+			2  = TEXT
+			2.value = col-sm-6
+			3 = TEXT
+			3.value = col-sm-4
+			4 = TEXT
+			4.value= col-sm-3
+			6 = TEXT
+			6.value = col-sm-2
+
+
+			default = TEXT
+			default.value = col-sm-3
+		}
+		rendering {
+			noCaption {
+				rowStdWrap.wrap = <div class="row"> | </div>
+				noRowsStdWrap.wrap = <div class="row csc-textpic-imagerow-none"> | </div>
+				lastRowStdWrap.wrap = <div class="row csc-textpic-imagerow-last"> | </div>
+				columnStdWrap.wrap = <div class="###CLASSES###"> | </div>
+			}
+
+			splitCaption {
+				rowStdWrap.wrap = <div class="row"> | </div>
+				noRowsStdWrap.wrap = <div class="row csc-textpic-imagerow-none"> | </div>
+				lastRowStdWrap.wrap = <div class="row csc-textpic-imagerow-last"> | </div>
+				columnStdWrap.wrap = <div class="###CLASSES###"> | </div>
+
+				singleStdWrap.wrap.override = <figure class="thumbnail###CLASSES###">|###CAPTION###</figure>
+				caption.wrap.override = <figcaption class="caption"> | </figcaption>
+			}
+		}
+	}
+}

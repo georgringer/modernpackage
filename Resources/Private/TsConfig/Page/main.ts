@@ -76,6 +76,10 @@ TCEFORM.tt_content {
 			26 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.toggle
 		}
 	}
+
+	imagecols {
+		removeItems = 5,7,8
+	}
 }
 
 

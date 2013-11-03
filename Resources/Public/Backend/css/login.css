@@ -2,42 +2,21 @@
 
 /* Background */
 body#typo3-index-php {
-	background: #017a95;
-}
-
-/* Hide some not necessary things */
-body#typo3-index-php #loginimage,
-body#typo3-index-php #loginbox-image,
-table#logintable p.c-info {
-	display: none;
+	/*background: #017a95;*/
 }
 
 /* main frame */
 body#typo3-index-php #t3-login-form {
-	max-width: 430px;
+	width: 100%;
 }
 
-/* inner frame holding the background image */
-#t3-login-form-outer {
-
-}
-
-body#typo3-index-php div#t3-login-image,
-.t3-login-box-border-bottom,
-body#typo3-index-php #t3-login-openIdLogo {
-	display: none;
-}
-
-.t3-login-box {
-	border: 0;
-	padding: 0;
-	margin: 0;
+#typo3-index-php .t3-login-logo {
+	margin-left: 50px;
 }
 
 body#typo3-index-php .t3-headline {
 	background: transparent;
 	border: 0;
-	/*	visibility: hidden;*/
 }
 
 .t3-login-box-body {
@@ -47,16 +26,16 @@ body#typo3-index-php .t3-headline {
 }
 
 body#typo3-index-php #t3-login-form-fields {
-	padding: 0;
-	margin-left: 30px;
 }
 
-body#typo3-index-php .t3-headline {
-	margin-top: 5px;
-}
 #typo3-index-php .t3-login-field input.t3-login-submit {
-	margin: 0 30px;
+	float: left;
 }
+
+#typo3-index-php .shadow {
+	padding: 15px 50px;
+}
+
 body#typo3-index-php .t3-headline h2 {
 	background: none;
 	color: #fff;
@@ -65,14 +44,9 @@ body#typo3-index-php .t3-headline h2 {
 	font-weight: normal;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	padding-left: 10px;
-	height: 25px;
 	overflow: hidden;
-	text-align:center
-}
-#typo3-index-php .shadow {
-	background: rgba(0, 0, 0, .3);
-	padding: 20px 10px;
+	text-align: left;
+	padding: 10px 0 0 0;
 }
 
 body#typo3-index-php #t3-login-process h2 {
@@ -80,108 +54,30 @@ body#typo3-index-php #t3-login-process h2 {
 	color: #fff;
 	font-style: italic;
 	font-weight: normal;
-	background-image: url(../img/ajax-loader.gif);
+	/*background-image: url(../img/ajax-loader.gif);*/
 }
 
 body#typo3-index-php .t3-login-field {
 	margin-top: 5px;
 }
 
-body#typo3-index-php .t3-login-field label {
-	color: #fff;
-	font-family: 'Share-Regular', Helvetica, sans-serif;
-	text-align: right;
-	margin-top: 2px;
-}
-
-body#typo3-index-php .t3-login-field input {
-	background-color: #ccc;
-	height: 16px;
-	font-size: 10px;
-}
-
-body#typo3-index-php .t3-login-submit {
-	padding: 2px 8px;
-	margin-top: 8px;
-}
-
 body#typo3-index-php .t3-login-field .t3-login-clearInputField a {
-	display: block;
-	width: 16px;
-	height: 16px;
-	cursor: pointer;
-}
-
-body#typo3-index-php .t3-login-field .t3-login-clearInputField img {
 	display: none;
 }
 
-body#typo3-index-php #t3-footer {
-	/*width: 580px;*/
-	/*margin: 0 150px 0;*/
-	/*border: 0;*/
-	/*top: 470px;*/
-	/*position: absolute;*/
-	border-color: #01333c;
-	background: rgba(1, 51, 60, 0.8);
-	margin: -50px 0 0 0;
-	padding: 0 10px;
-	height: 38px;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-}
-
-#typo3-index-php div#t3-copyright-notice {
-	border-top: 0;
-	margin-top: 4px;
-}
-
-body#typo3-index-php .t3-login-form-footer {
-	width: 116px;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	top: 85px;
-	left: 342px;
-}
-
-body#typo3-index-php .t3-login-form-footer a.switchToOpenId {
-	text-decoration: none;
-	color: #fff;
-}
-
-#typo3-index-php div#t3-copyright-notice {
-	color: #eee;
+#typo3-index-php div#t3-copyright-notice, #t3-meta-links {
+	margin: 4px 30px;
+	border: none;
 }
 
 #typo3-index-php div#t3-copyright-notice a,
 #typo3-index-php div#t3-copyright-notice a:hover {
-	color: #ccc;
-	text-decoration: none;
-}
-
-body#typo3-index-php .t3-login-form-footer a.switchToOpenId:hover,
-body#typo3-index-php #t3-meta-links a:hover {
-	color: red;
-	text-decoration: underline;
-}
-
-body#typo3-index-php #t3-meta-links a {
-	color: #fff;
-}
-
-#t3-meta-links {
-	display: none;
-}
-
-.shadow-box-top-428, .shadow-box-bottom-424 {
-	display: none;
+	/*color: #ccc;*/
 }
 
 /* Login Error */
 .t3-login-alert-error {
-	opacity: 0.9;
-	position: absolute;
-	top: -105px;
+	/*opacity: 0.9;*/
+	/*position: absolute;*/
+	/*top: -105px;*/
 }

@@ -54,7 +54,8 @@ body#typo3-index-php #t3-login-process h2 {
 	color: #fff;
 	font-style: italic;
 	font-weight: normal;
-	/*background-image: url(../img/ajax-loader.gif);*/
+	background: url(../img/ajax-loader.gif) 0 center no-repeat;
+	padding-left: 60px;
 }
 
 body#typo3-index-php .t3-login-field {

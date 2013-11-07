@@ -4,3 +4,6 @@
 [submodule "Resources/Public/Contrib/fancybox"]
 	path = Resources/Public/Contrib/fancybox
 	url = https://github.com/fancyapps/fancyBox.git
+[submodule "Resources/Public/Template/less/fontawesome"]
+	path = Resources/Public/Template/less/fontawesome
+	url = https://github.com/FortAwesome/Font-Awesome.git

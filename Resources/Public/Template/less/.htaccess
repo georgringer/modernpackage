@@ -1,1 +1,6 @@
-deny from all
+Order deny,allow
+Deny from all
+
+<Files  ~ "\.eot|.woff|.ttf|.svg$">
+  Allow from all
+</Files>

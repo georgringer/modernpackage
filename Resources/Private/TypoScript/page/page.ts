@@ -1,4 +1,3 @@
-
 # **********************************************************
 # General PAGE setup
 #
@@ -76,6 +75,13 @@ page {
 			20 = TEXT
 			20 {
 				value = language-{TSFE:sys_language_uid} languagecontent-{TSFE:sys_language_content}
+				insertData = 1
+				noTrimWrap = || |
+			}
+			# Add level
+			25 = TEXT
+			25 {
+				value = level- {level:0}
 				insertData = 1
 				noTrimWrap = || |
 			}

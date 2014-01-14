@@ -27,6 +27,9 @@ options {
 	# No alert box ad type change
 	alertPopups = 254
 
+	# Additional preview languages
+	#additionalpreviewlanguages = <uid list of languages>
+
 	# Page tree
 	pageTree {
 		# Shows the user db mount path above the mount itself (useful if you work a lot with user db mounts)

@@ -96,7 +96,7 @@ tt_content {
 			key.field = imagecols
 
 			1 = TEXT
-			1.value col-sm-12
+			1.value = col-sm-12
 			2  = TEXT
 			2.value = col-sm-6
 			3 = TEXT

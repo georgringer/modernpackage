@@ -1,0 +1,54 @@
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-image: url("img_Aura_weiss_big.png"), url("body-bg.jpg");
+	background-repeat: no-repeat, repeat-x;
+	background-position: center top, center top;
+	background-color: #E8E7E5;
+}
+
+html, body, div, h1, h3 {
+	padding: 0;
+	margin: 0;
+}
+
+.error-page {
+	background: url("error-page.png") no-repeat center 0 rgba(0, 0, 0, 0);
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 998px;
+}
+
+h1 {
+	font: 700 160px/100% 'Titillium Web';
+	padding-top: 296px;
+}
+
+h3 {
+	font: normal 45px/100% 'Titillium Web';
+	text-transform: uppercase;
+	padding-bottom: 40px;
+}
+
+a {
+	background: url("link-arrow.png") no-repeat scroll left 0.2em transparent;
+	font: 400 20px/100% 'Open Sans';
+	font-style: italic;
+	margin-top: 0;
+	float: left;
+	color: #1999b2;
+	text-decoration: none;
+	padding: 0 0 50px 20px;
+	margin-right: 60px;
+}
+
+.clear {
+	clear: both;
+}

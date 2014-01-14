@@ -12,5 +12,6 @@ if (!defined('TYPO3_MODE')) {
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_befunc.php']['getFlexFormDSClass'][$_EXTKEY] =
 	'GeorgRinger\\Modernpackage\\Hooks\T3libBefunc';
 
-// As long as backend layouts are not as file, use EXT: belayout_fileprovider
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['BackendLayoutFileProvider']['ext'][] =  $_EXTKEY;
+// Backend layouts
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['BackendLayoutDataProvider']['file']
+	= 'GeorgRinger\\Modernpackage\\View\BackendLayout\FileProvider';

@@ -126,6 +126,11 @@ class FileProvider implements DataProviderInterface {
 
 		foreach ($imageExtensions as $extension) {
 			$icon = $filePath . '.' . $extension;
+
+			// First check if icon is available in public folder
+			$iconPublic = str_replace('/Private/', '/Public/', $icon);
+			$icon = is_file($iconPublic) ? $iconPublic : $icon;
+
 			if (is_file($icon)) {
 				$icon = '../' . str_replace(PATH_site, '', $icon);
 				$backendLayout->setIconPath($icon);

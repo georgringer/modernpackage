@@ -58,6 +58,29 @@ page.headerData.32 {
 )
 }
 
+includeLibs.pagetitle = EXT:modernpackage/Classes/Page/AlternativeLanguageTag.php
+page.headerData.33 = USER
+page.headerData.33 {
+	userFunc = GeorgRinger\Modernpackage\Page\AlternativeLanguageTag->get
+
+	# Use either one of those, see below for its configuration
+	useRealurl = 1
+	useSimpleMode = 0
+
+	# Use the realurl mapping
+	realurl {
+		key = _DEFAULT
+		default = de
+	}
+
+	# Use the simple mapping
+	simpleMode {
+		#0 = en
+		#1 = de
+		#2 = fr
+		#3 = it
+	}
+}
 
 # **********************************************************
 # Google Analytics

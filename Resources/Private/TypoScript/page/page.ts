@@ -19,6 +19,7 @@ page {
 				1.current = 1
 				1.wrap = |
 			}
+			ifEmpty = 1col
 			wrap = EXT:modernpackage/Resources/Private/Templates/|.html
 		}
 		layoutRootPath = EXT:modernpackage/Resources/Private/Templates/Layouts/
@@ -81,7 +82,7 @@ page {
 			# Add level
 			25 = TEXT
 			25 {
-				value = level- {level:0}
+				value = level-{level:0}
 				insertData = 1
 				noTrimWrap = || |
 			}

@@ -24,7 +24,7 @@ namespace GeorgRinger\Modernpackage;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-class PageTitle {
+class TitleTag {
 
 	/**
 	 * Define the title tag
@@ -33,7 +33,7 @@ class PageTitle {
 	 * @param array $configuration
 	 * @return string
 	 */
-	public function getTitleTag($content, $configuration) {
+	public function get($content, $configuration) {
 		$pageTitle = $this->cObj->TEXT((array)$GLOBALS['TSFE']->tmpl->setup['config.']['titleTagFunction.']);
 		return trim($pageTitle);
 	}

@@ -15,8 +15,8 @@ page.meta {
 # **********************************************************
 # <title> - Tag
 # **********************************************************
-includeLibs.pagetitle = EXT:modernpackage/Classes/PageTitle.php
-config.titleTagFunction = GeorgRinger\Modernpackage\PageTitle->getTitleTag
+includeLibs.pagetitle = EXT:modernpackage/Classes/Page/PageTitle.php
+config.titleTagFunction = GeorgRinger\Modernpackage\Page\TitleTag->get
 config.titleTagFunction {
 	data = page:subtitle // page:title
 
@@ -58,7 +58,10 @@ page.headerData.32 {
 )
 }
 
-includeLibs.pagetitle = EXT:modernpackage/Classes/Page/AlternativeLanguageTag.php
+# **********************************************************
+# Alternative language tag, linking to translated pages
+# **********************************************************
+includeLibs.alternativepages = EXT:modernpackage/Classes/Page/AlternativeLanguageTag.php
 page.headerData.33 = USER
 page.headerData.33 {
 	userFunc = GeorgRinger\Modernpackage\Page\AlternativeLanguageTag->get

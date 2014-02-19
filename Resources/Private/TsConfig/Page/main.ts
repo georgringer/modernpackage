@@ -1,4 +1,3 @@
-
 # **********************************************************
 # Constants
 # **********************************************************
@@ -11,7 +10,6 @@ lib.constants.permissions.groupid = 1
 TCEFORM.pages {
 	alias.disabled = 1
 	categories.disabled = 1
-	shortcut_mode.removeItems = 0
 	doktype.removeItems = 6
 
 	# Backend Layouts

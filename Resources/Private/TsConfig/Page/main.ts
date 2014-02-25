@@ -11,6 +11,7 @@ TCEFORM.pages {
 	alias.disabled = 1
 	categories.disabled = 1
 	doktype.removeItems = 6
+	url_scheme.removeItems = 0
 
 	# Backend Layouts
 	backend_layout.PAGE_TSCONFIG_ID >

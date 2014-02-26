@@ -114,6 +114,12 @@ TCEMAIN.permissions {
 	group = 31
 }
 
+# Remove 'copy X' text
+TCEMAIN.table {
+	pages.disablePrependAtCopy = 1
+	tt_content.disablePrependAtCopy = 1
+}
+
 #-------------------------------------------------------------------------------
 #	RTE
 #-------------------------------------------------------------------------------

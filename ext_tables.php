@@ -39,3 +39,7 @@ foreach($availableIcons as $icon) {
 		1 => $icon,
 	);
 }
+
+// Remove copy text
+$GLOBALS['TCA']['tt_content']['columns']['header']['l10n_mode'] = '';
+$GLOBALS['TCA']['tt_content']['columns']['bodytext']['l10n_mode'] = '';

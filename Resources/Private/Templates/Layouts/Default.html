@@ -1,3 +1,144 @@
-<f:render partial="header" />
-<f:render section="body" />
-<f:render partial="footer" />
+<div class="wrapper">
+	<header>
+		<div class="container">
+			<div class="teaser">
+				<div class="logo">
+					<f:cObject typoscriptObjectPath="lib.general.logo">
+						<img src="http://placehold.it/264x140&text=logo" class="img-responsive" pagespeed_url_hash="539244832" />
+					</f:cObject>
+				</div>
+
+				<f:cObject typoscriptObjectPath="lib.general.headerImage">
+					<img src="http://placehold.it/1146x350/eeeeee image" class="img-responsive" pagespeed_url_hash="1803273077" />
+				</f:cObject>
+			</div>
+			<div class="navbar navbar-default" role="navigation">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only"><f:translate key="LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:general.menu-toggle" /></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<f:cObject typoscriptObjectPath="lib.navigation.main">
+							<li class="active"><a href="#">Home</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Navigation 02 <b class="caret"></b></a>
+								<ul class="dropdown-menu sub-menu">
+									<li><a href="#">Navigation 02 (a)</a>
+										<ul>
+											<li><a href="#">Navigation 2.1</a></li>
+											<li><a href="#">Navigation 2.2</a></li>
+											<li><a href="#">Navigation 2.3</a></li>
+											<li><a href="#">Navigation 2.4</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Navigation 02 (b)</a></li>
+									<li><a href="#">Navigation 02 (c)</a></li>
+									<li><a href="#">Navigation 02 (d)</a></li>
+								</ul>
+							</li>
+							<li><a href="#about">Navigation 03</a></li>
+							<li><a href="#contact">Navigation 04</a></li>
+						</f:cObject>
+					</ul>
+
+				</div>
+				<div class="search-loupe hidden-md hidden-lg">
+					<f:translate key="LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:general.show-search" />
+				</div>
+
+				<form class="navbar-form navbar-right" role="form" method="post" action="{f:cObject(typoscriptObjectPath:'lib.general.searchPageLink')}">
+					<div class="form-group">
+						<input name="tx_indexedsearch[sword]" type="search" placeholder="{f:translate(key:'LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:general.search-placeholder')}" class="form-control">
+					</div>
+
+					<button type="submit" class="btn btn-default">
+						<f:translate key="LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:general.search-submit" />
+					</button>
+				</form>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<f:if condition="{f:cObject(typoscriptObjectPath:'lib.navigation.show_breadcrumb')}">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<ol class="breadcrumb">
+							<f:cObject typoscriptObjectPath="lib.navigation.breadcrumb">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Navigation 03</a></li>
+								<li><a href="">Detailseite 06</a></li>
+								<li class="active">Subseite 03</li>
+							</f:cObject>
+						</ol>
+					</div>
+				</div>
+			</f:if>
+
+			<f:render section="content" />
+
+			<f:if condition="{f:cObject(typoscriptObjectPath:'lib.navigation.show_breadcrumb')}">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="bottom-links">
+							<a href="javascript:print();" class="arrow-small print">
+								<f:translate key="LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:general.print" />
+							</a>
+							<a href="#" class="arrow-small">
+								<f:translate key="LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:general.tip" />
+							</a>
+							<a href="#" class="arrow-small top">
+								<f:translate key="LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:general.toplink" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</f:if>
+		</div>
+	</main>
+</div>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="navbar-left">
+					<f:cObject typoscriptObjectPath="lib.navigation.service_footer">
+						<li><a href="#">Kontakt</a></li>
+						<li><a href="#">Impressum</a></li>
+						<li><a href="#">Sitemap</a></li>
+					</f:cObject>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-sm-12 col-xs-12">
+				<ul class="logo-bar">
+					<li><a href="#"><img src="http://placehold.it/50x50&amp;text=logo" class="img-responsive" pagespeed_url_hash="34010783"></a></li>
+					<li><a href="#"><img src="http://placehold.it/50x50&amp;text=logo" class="img-responsive" pagespeed_url_hash="34010783"></a></li>
+					<li><a href="#"><img src="http://placehold.it/50x50&amp;text=logo" class="img-responsive" pagespeed_url_hash="34010783"></a></li>
+					<li><a href="#"><img src="http://placehold.it/50x50&amp;text=logo" class="img-responsive" pagespeed_url_hash="34010783"></a></li>
+					<li><a href="#"><img src="http://placehold.it/50x50&amp;text=logo" class="img-responsive" pagespeed_url_hash="34010783"></a></li>
+					<li><a href="#"><img src="http://placehold.it/50x50&amp;text=logo" class="img-responsive" pagespeed_url_hash="34010783"></a></li>
+				</ul>
+			</div>
+			<div class="col-md-6 col-sm-12 col-xs-12">
+				<ul class="social-media">
+					<f:cObject typoscriptObjectPath="lib.navigation.socialmedia">
+						<li><a class="facebook" href="#" title="Facebook">Facebook</a></li>
+						<li><a class="twitter" href="#" title="Twitter">Twitter</a></li>
+						<li><a class="youtube" href="#" title="Youtube">Youtube</a></li>
+						<li><a class="google" href="#" title="Google+">Google+</a></li>
+						<li><a class="linkedin" href="#" title="LinkedIn">LinkedIn</a></li>
+					</f:cObject>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>

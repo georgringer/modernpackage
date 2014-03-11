@@ -1,6 +1,6 @@
 <?php
 
-namespace GeorgRinger\Modernpackage;
+namespace GeorgRinger\Modernpackage\Page;
 /***************************************************************
  *  Copyright notice
  *

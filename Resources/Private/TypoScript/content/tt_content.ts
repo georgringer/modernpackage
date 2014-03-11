@@ -61,7 +61,7 @@ tt_content {
 		20 = TEXT
 		20 {
 			wrap = <p class="csc-linkToTop no-print">|</p>
-			data = LLL:EXT:css_styled_content/pi1/locallang.xml:label.toTop
+			data = LLL:EXT:css_styled_content/pi1/locallang.xml:general.toplink
 			typolink {
 				parameter.dataWrap = {getIndpEnv:TYPO3_REQUEST_URL}#top
 			}

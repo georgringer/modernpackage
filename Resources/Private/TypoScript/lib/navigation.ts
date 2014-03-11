@@ -1,24 +1,13 @@
 
 # **********************************************************
 # Library for TypoScript about navigations.
-# Content:
-#	* Main navigation
-#	* Service navigation (top)
-#	* Breadcrumb
-#	* Sidebar
-#	* Language switch
-#	* Top menu
-#	* Footer menu
-#	* Social Media
 # **********************************************************
-
 
 #-------------------------------------------------------------------------------
 #	NAVIGATION: Main
 #-------------------------------------------------------------------------------
 lib.navigation.main = COA
 lib.navigation.main {
-
 	10 = HMENU
 	10 {
 		1 = TMENU
@@ -56,14 +45,26 @@ lib.navigation.main {
 
 		2 <.1
 		2 {
-			wrap = <ul class="dropdown-menu">|</ul>
+			wrap = <ul class="dropdown-menu sub-menu">|</ul>
 
 			SPC <.NO
 			SPC.wrapItemAndSub = <li class="divider">|</li>
 		}
 
 		3 <.2
+		3 {
+			wrap = <ul>|</ul>
+		}
 	}
+}
+
+#-------------------------------------------------------------------------------
+#	NAVIGATION: Breadcrumb: Hide if on root page
+#-------------------------------------------------------------------------------
+lib.navigation.show_breadcrumb = TEXT
+lib.navigation.show_breadcrumb {
+	value = {level:0}
+	insertData = 1
 }
 
 
@@ -130,7 +131,7 @@ lib.navigation.breadcrumb {
 
 			NO = 1
 			NO {
-				wrapItemAndSub = <li>| <span class="divider">/</span></li>
+				wrapItemAndSub = <li>|</li>
 				ATagTitle.field = subtitle // title
 				stdWrap.htmlSpecialChars = 1
 			}
@@ -156,7 +157,7 @@ lib.navigation.breadcrumb {
 			field = title
 			htmlSpecialChars = 1
 		}
-		wrap =  <li class="last">|</li>
+		wrap =  <li class="active">|</li>
 	}
 }
 
@@ -166,41 +167,42 @@ lib.navigation.breadcrumb {
 #-------------------------------------------------------------------------------
 lib.navigation.sidebar = COA
 lib.navigation.sidebar {
-	stdWrap.wrap = <ul class="nav-sidebar">|</ul>
-
 	10 = HMENU
 	10 {
+		entryLevel = 1
+
 		1 = TMENU
 		1 {
+			wrap = <ul class="list-group subnavi">|</ul>
 			noBlur = 1
 
 			NO = 1
 			NO {
-					wrapItemAndSub = <li>|</li>
+					wrapItemAndSub = <li class="list-group-item">|</li>
 					ATagTitle.field = subtitle // title
 					stdWrap.htmlSpecialChars = 1
 			}
 
 			ACT <.NO
-			ACT.wrapItemAndSub = <li class="active">|</li>
+			ACT.wrapItemAndSub = <li class="list-group-item active">|</li>
 			ACT.ATagParams = class="active"
 			ACT.ATagBeforeWrap = 1
 
-			CUR <.ACT
-			CUR.ATagParams = class="selected"
-
 			IFSUB <.NO
-			IFSUB.wrapItemAndSub = <li class="hassub">|</li>
+			IFSUB.wrapItemAndSub = <li class="list-group-item has-sub">|</li>
 
 			ACTIFSUB <.ACT
-			ACTIFSUB.wrapItemAndSub = <li class="activesub">|</li>
-
-			SPC <.NO
-			SPC.wrapItemAndSub = <li class="nav-header">|</li>
+			ACTIFSUB.wrapItemAndSub = <li class="list-group-item active has-sub">|</li>
 		}
 
 		2 <.1
-		2.wrap = <ul>|</ul>
+		2 {
+			wrap = <ul>|</ul>
+			NO.wrapItemAndSub = <li>|</li>
+			IFSUB.wrapItemAndSub = <li class="has-sub">|</li>
+			ACT.wrapItemAndSub = <li class="active">|</li>
+			ACTIFSUB.wrapItemAndSub = <li class="active">|</li>
+		}
 
 		3 <.2
 	}
@@ -215,7 +217,7 @@ lib.navigation.languageswitch {
 	5 = TEXT
 	5 {
 		wrap = <a href="#" class="dropdown-toggle" data-toggle="dropdown">|<b class="caret"></b></a>
-		data = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:language_switch-label
+		data = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:general.language_switch-label
 	}
 
 	# Language menu
@@ -246,40 +248,10 @@ lib.navigation.languageswitch {
 
 
 #-------------------------------------------------------------------------------
-#	NAVIGATION: Top
-#-------------------------------------------------------------------------------
-lib.navigation.top = COA
-lib.navigation.top {
-	10 = HMENU
-	10 {
-		special = directory
-		special.value = {$plugin.theme_configuration.navigation.top}
-
-		1 = TMENU
-		1 {
-			noBlur = 1
-			expAll = 1
-
-			NO = 1
-			NO {
-				wrapItemAndSub = <li>|</li>
-				ATagTitle.field = subtitle // title
-				stdWrap.htmlSpecialChars = 1
-			}
-		}
-	}
-
-	20 = TEXT
-	20 {
-	}
-}
-
-
-#-------------------------------------------------------------------------------
 #	NAVIGATION: Footer
 #-------------------------------------------------------------------------------
-lib.navigation.footer = COA
-lib.navigation.footer {
+lib.navigation.service_footer = COA
+lib.navigation.service_footer {
 	10 = HMENU
 	10 {
 		special = directory
@@ -298,12 +270,6 @@ lib.navigation.footer {
 			}
 		}
 	}
-
-	20 = TEXT
-	20 {
-		data = LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:print
-		wrap = <li class="hidden-phone"><a href="javascript:window.print()">|</a></li>
-	}
 }
 
 
@@ -312,28 +278,47 @@ lib.navigation.footer {
 #-------------------------------------------------------------------------------
 lib.navigation.socialmedia = COA
 lib.navigation.socialmedia {
-	10 = IMAGE
+	10 = TEXT
 	10 {
-		file = EXT:modernpackage/Resources/Public/Template/img/icons/facebook.jpg
-		altText = Facebook
-		stdWrap.typolink.parameter = http://www.facebook.com
-		stdWrap.typolink.target = _blank
-		#stdWrap.typolink.ATagParams = onclick="_gaq.push(['_trackSocial', 'facebook', 'socialicon']);"
+		wrap = <li>|</li>
+		value = Facebook
+		stdWrap.typolink {
+			parameter = http://www.facebook.com
+			target = _blank
+			ATagParams = class="facebook" onclick="_gaq.push(['_trackSocial', 'facebook', 'socialicon']);"
+		}
 	}
-	20 = IMAGE
+	20 <.10
 	20 {
-		file = EXT:modernpackage/Resources/Public/Template/img/icons/youtube.jpg
-		altText = Youtube
-		stdWrap.typolink.parameter = http://www.youtube.com/
-		stdWrap.typolink.target = _blank
-		#stdWrap.typolink.ATagParams = onclick="_gaq.push(['_trackSocial', 'youtube', 'socialicon']);"
+		value = Youtube
+		stdWrap.typolink {
+			parameter = http://www.youtube.com/
+			ATagParams = class="youtube" onclick="_gaq.push(['_trackSocial', 'youtube', 'socialicon']);"
+		}
 	}
-	30 = IMAGE
+	30 <.10
 	30 {
-		file =  EXT:modernpackage/Resources/Public/Template/img/icons/twitter.jpg
-		altText = Twitter
-		stdWrap.typolink.parameter = http://twitter.com/
-		stdWrap.typolink.target = _blank
-		#stdWrap.typolink.ATagParams = onclick="_gaq.push(['_trackSocial', 'twitter', 'socialicon']);"
+		value = Twitter
+		stdWrap.typolink {
+			parameter = http://twitter.com/
+			ATagParams = class="twitter" onclick="_gaq.push(['_trackSocial', 'twitter', 'socialicon']);"
+		}
+	}
+	40 <.10
+	40 {
+		value = LinkedIn
+		stdWrap.typolink {
+			parameter = http://linkedin.com/
+			ATagParams = class="linkedin" onclick="_gaq.push(['_trackSocial', 'linkedin', 'socialicon']);"
+		}
+	}
+	50 <.10
+	50 {
+		value = Google+
+		stdWrap.typolink {
+			parameter = http://plus.google.com
+			ATagParams = class="google" onclick="_gaq.push(['_trackSocial', 'google+', 'socialicon']);"
+		}
 	}
 }
+

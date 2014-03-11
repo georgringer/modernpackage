@@ -59,7 +59,6 @@ config {
 	content_from_pid_allowOutsideDomain = 1
 
 	# Cache
-	cache_clearAtMidnight = 1
 	cache_period = 1200
 	sendCacheHeaders = 1
 

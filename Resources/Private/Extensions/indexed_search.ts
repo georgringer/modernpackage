@@ -35,8 +35,8 @@ lib.extensions.indexed_search.form {
 		insertData = 1
 		value (
 			<label for="search" class="hidden">Search:</label>
-			<input name="tx_indexedsearch[sword]" type="text" class="search-query" placeholder="{LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:search-placeholder}">
-				<button class="btn btn-mini">{LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:search-submit}</button>
+			<input name="tx_indexedsearch[sword]" type="text" class="search-query" placeholder="{LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:general.search-placeholder}">
+				<button class="btn btn-mini">{LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:general.search-submit}</button>
 			</form>
 		)
 	}

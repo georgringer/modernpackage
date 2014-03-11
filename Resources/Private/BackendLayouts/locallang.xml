@@ -8,7 +8,7 @@
 		<languageKey index="default" type="array">
 			<label index="1col">1 column</label>
 			<label index="2col75-25">2 columns (75-25)</label>
-			<label index="2col25-75">2 columns (25-75)</label>
+			<label index="2col">1 column with menu left</label>
 			<label index="3col">3 columns</label>
 		</languageKey>
 	</data>

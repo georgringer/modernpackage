@@ -30,32 +30,62 @@ page {
 
 	# CSS files to be included
 	includeCSS {
-		file1 = EXT:modernpackage/Resources/Public/Template/css/styles.css
-		file1.media = screen,print
-	}
+		style = EXT:modernpackage/Resources/Public/Template/css/style.css
+		style.media = screen,print
+		print = EXT:modernpackage/Resources/Public/Template/css/print.css
+		print.media = print
 
-	# JS files to be included
-	includeJSFooter {
-		bootstrap = EXT:modernpackage/Resources/Public/Template/js/bootstrap.min.js
-		flexslider = EXT:modernpackage/Resources/Public/Template/js/jquery.flexslider-min.js
-		yoxview = EXT:modernpackage/Resources/Public/Template/js/jquery.yoxview-2.21.min.js
-		placeholder = EXT:modernpackage/Resources/Public/Template/js/jquery.placeholder.min.js
-		responsive = EXT:modernpackage/Resources/Public/Template/js/respond.min.js
-		customjs = EXT:modernpackage/Resources/Public/Template/js/script.js
+		bootstrap-ie7 = EXT:modernpackage/Resources/Public/Template/css/bootstrap-ie7.css
+		bootstrap-ie7 {
+			allWrap =<!--[if lt IE 8]>|<![endif]-->
+			excludeFromConcatenation = 1
+		}
+		ie7 = EXT:modernpackage/Resources/Public/Template/css/ie7.css
+		ie7 {
+			allWrap =<!--[if lt IE 8]>|<![endif]-->
+			excludeFromConcatenation = 1
+		}
 	}
 
 	includeJS {
+		modernizer = EXT:modernpackage/Resources/Public/Template/js/modernizer.js
+		modernizer {
+			forceOnTop = 1
+		}
+		jQuery = EXT:modernpackage/Resources/Public/Template/js/jquery-1.10.2.min.js
+		jQuery {
+			forceOnTop = 1
+		}
 		html5shiv = EXT:modernpackage/Resources/Public/Template/js/html5shiv.js
 		html5shiv {
 			allWrap = <!--[if lt IE 9]>|<![endif]-->
 			excludeFromConcatenation = 1
-			forceOnTop = 1
+		}
+		respondjs = EXT:modernpackage/Resources/Public/Template/js/respond.js
+		respondjs {
+			allWrap = <!--[if lt IE 9]>|<![endif]-->
+			excludeFromConcatenation = 1
+		}
+		html5shiv-printshiv = EXT:modernpackage/Resources/Public/Template/js/html5shiv-printshiv.js
+		html5shiv-printshiv {
+			allWrap =<!--[if lt IE 8]>|<![endif]-->
+			excludeFromConcatenation = 1
 		}
 	}
 
 	includeJSFooterlibs {
-		jQuery = EXT:modernpackage/Resources/Public/Template/js/jquery-1.9.1.js
-		jQueryUi = EXT:modernpackage/Resources/Public/Template/js/jquery-ui-1.10.3.custom.min.js
+		jQueryUi = EXT:modernpackage/Resources/Public/Template/js/jquery-ui-1.10.3.js
+	}
+
+	# JS files to be included
+	includeJSFooter {
+		tab = EXT:modernpackage/Resources/Public/Template/js/tab.js
+		tooltip = EXT:modernpackage/Resources/Public/Template/js/tooltip.js
+		popover = EXT:modernpackage/Resources/Public/Template/js/popover.js
+		dropdown = EXT:modernpackage/Resources/Public/Template/js/dropdown.js
+		transitions = EXT:modernpackage/Resources/Public/Template/js/transitions.js
+		collapse = EXT:modernpackage/Resources/Public/Template/js/collapse.js
+
 	}
 
 

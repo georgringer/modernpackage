@@ -15,7 +15,7 @@ backend_layout {
 				}
 				3 {
 					name = LLL:EXT:cms/locallang_ttc.xlf:colPos.I.2
-					colPos = 3
+					colPos = 2
 				}
 			}
 		}

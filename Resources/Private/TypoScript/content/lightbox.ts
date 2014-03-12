@@ -4,23 +4,12 @@
 # and fancybox, see http://fancybox.net/ for details
 # **********************************************************
 
-# Add the CSS / JS files
-page {
-	includeCSS {
-		fancybox = EXT:theme_blog/Resources/Public/Contrib/fancybox/source/jquery.fancybox.css
-	}
-
-	includeJSFooter {
-		fancybox = EXT:theme_blog/Resources/Public/Contrib/fancybox/source/jquery.fancybox.pack.js
-	}
-}
-
 # Change rendering of images to fit the needs of the lightbox requirements
 tt_content.image.20.1.imageLinkWrap {
 	JSwindow = 0
 	directImageLink = 1
 	linkParams.ATagParams {
-		dataWrap = class= "fancybox" rel="group{field:uid}"
+		dataWrap = class= "fancybox" data-fancybox-group="group{field:uid}"
 	}
 }
 

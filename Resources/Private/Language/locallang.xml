@@ -18,9 +18,47 @@
 			<label index="general.download">Download</label>
 			<label index="general.menu-toggle">Toggle</label>
 			<label index="general.show-search">Show search</label>
+
+			<!--Forms -->
+			<label index="form.submit">Submit</label>
+			<label index="form.select">Select</label>
+			<label index="form.required">required</label>
+			<label index="form.requiredfields">required fields</label>
+			<label index="form.title">Title</label>
+			<label index="form.name">Name</label>
+			<label index="form.firstName">First name</label>
+			<label index="form.lastName">Last name</label>
+			<label index="form.gender">Gender</label>
+			<label index="form.sex">Gender</label>
+			<label index="form.gender.male">male</label>
+			<label index="form.gender.female">female</label>
+			<label index="form.company">Company</label>
+			<label index="form.street">Street</label>
+			<label index="form.zip">Zip</label>
+			<label index="form.address">Address</label>
+			<label index="form.city">City</label>
+			<label index="form.state">State</label>
+			<label index="form.zipOrCity">Zip or city</label>
+			<label index="form.country">Country</label>
+			<label index="form.state">State</label>
+			<label index="form.telephone">Telephone</label>
+			<label index="form.mobile">Mobile</label>
+			<label index="form.fax">Fax</label>
+			<label index="form.email">Email</label>
+			<label index="form.web">Web</label>
+			<label index="form.birthday">Birthday</label>
+			<label index="form.birthday.day">Day</label>
+			<label index="form.birthday.month">Month</label>
+			<label index="form.birthday.year">Year</label>
+			<label index="form.username">Username</label>
+			<label index="form.password">Password</label>
+			<label index="form.passwordConfirm">Confirm password</label>
+			<label index="form.passwordNew">New password</label>
+			<label index="form.message">Message</label>
+			<label index="form.captcha">Security check</label>
 		</languageKey>
 
-<!-- DE -->
+		<!-- DE -->
 		<languageKey index="de" type="array">
 			<label index="general.print">Drucken</label>
 			<label index="general.language">Sprache</label>
@@ -29,8 +67,42 @@
 			<label index="general.tip">Seite weiterempfehlen</label>
 			<label index="general.pdflink">Als PDF</label>
 			<label index="general.download">Download</label>
-		</languageKey>
 
+			<!--Forms (formhandler) -->
+			<label index="form.submit">Absenden</label>
+			<label index="form.select">Auswählen</label>
+			<label index="form.required">erforderlich</label>
+			<label index="form.requiredfields">Pflichtfelder</label>
+			<label index="form.title">Anrede</label>
+			<label index="form.name">Name</label>
+			<label index="form.firstName">Vorname</label>
+			<label index="form.lastName">Nachname</label>
+			<label index="form.gender">Geschlecht</label>
+			<label index="form.sex">Geschlecht</label>
+			<label index="form.gender.male">männlich</label>
+			<label index="form.gender.female">weiblich</label>
+			<label index="form.company">Unternehmen</label>
+			<label index="form.street">Straße</label>
+			<label index="form.zip">PLZ</label>
+
+			<label index="form.city">Stadt</label>
+			<label index="form.zipOrCity">PLZ oder Stadt</label>
+			<label index="form.country">Land</label>
+			<label index="form.telephone">Telefon</label>
+			<label index="form.mobile">Mobiltelefon</label>
+			<label index="form.fax">Fax</label>
+			<label index="form.email">Email</label>
+			<label index="form.web">Web</label>
+			<label index="form.birthday">Geburtstag</label>
+			<label index="form.birthday.day">Tag</label>
+			<label index="form.birthday.month">Monat</label>
+			<label index="form.birthday.year">Jahr</label>
+			<label index="form.username">Benutzername</label>
+			<label index="form.password">Passwort</label>
+			<label index="form.passwordConfirm">Passwort bestätigen</label>
+			<label index="form.message">Nachricht</label>
+			<label index="form.captcha">Sicherheitsprüfung</label>
+		</languageKey>
 
 		<languageKey index="fi" type="array">
 			<label index="general.print">Tulosta</label>
@@ -50,6 +122,40 @@
 			<label index="general.tip">Recomendar esta página</label>
 			<label index="general.pdflink">Como PDF</label>
 			<label index="general.download">Descarga</label>
+
+			<!--Forms (formhandler) -->
+			<label index="form.submit">Enviar</label>
+			<label index="form.select">Seleccionar</label>
+			<label index="form.required">obligatorio</label>
+			<label index="form.requiredfields">campos obligatorios</label>
+			<label index="form.title">Título</label>
+			<label index="form.name">Nombre</label>
+			<label index="form.firstName">Nombre</label>
+			<label index="form.lastName">Apellidos</label>
+			<label index="form.gender">Sexo</label>
+			<label index="form.sex">Sexo</label>
+			<label index="form.gender.male">hombre</label>
+			<label index="form.gender.female">mujer</label>
+			<label index="form.company">Empresa</label>
+			<label index="form.street">Dirección</label>
+			<label index="form.zip">Código postal</label>
+			<label index="form.city">Población</label>
+			<label index="form.zipOrCity">Código postal o población</label>
+			<label index="form.country">País</label>
+			<label index="form.telephone">Teléfono</label>
+			<label index="form.mobile">Móvil</label>
+			<label index="form.fax">Fax</label>
+			<label index="form.email">Correo electrónico</label>
+			<label index="form.web">Web</label>
+			<label index="form.birthday">Fecha de nacimiento</label>
+			<label index="form.birthday.day">Día</label>
+			<label index="form.birthday.month">Mes</label>
+			<label index="form.birthday.year">Año</label>
+			<label index="form.username">Nombre de usuario</label>
+			<label index="form.password">Contraseña</label>
+			<label index="form.passwordConfirm">Confirmar contraseña</label>
+			<label index="form.message">Mensaje</label>
+			<label index="form.captcha">Comprobación de seguridad</label>
 		</languageKey>
 
 		<languageKey index="pt" type="array">
@@ -80,8 +186,41 @@
 			<label index="general.tip">Consiglia questa pagina</label>
 			<label index="general.pdflink">in formato PDF</label>
 			<label index="general.download">Download</label>
-		</languageKey>
 
+			<!--Forms (formhandler) -->
+			<label index="form.submit">Invia</label>
+			<label index="form.select">Scegliere</label>
+			<label index="form.required">obbligatorio</label>
+			<label index="form.requiredfields">campi obbligatori</label>
+			<label index="form.title">Titolo</label>
+			<label index="form.name">Nome</label>
+			<label index="form.firstName">Nome</label>
+			<label index="form.lastName">Cognome</label>
+			<label index="form.gender">Genere</label>
+			<label index="form.sex">Genere</label>
+			<label index="form.gender.male">uomo</label>
+			<label index="form.gender.female">donna</label>
+			<label index="form.company">Azienda</label>
+			<label index="form.street">Indirizzo</label>
+			<label index="form.zip">CAP</label>
+			<label index="form.city">Località</label>
+			<label index="form.zipOrCity">CAP o località</label>
+			<label index="form.country">Paese</label>
+			<label index="form.telephone">Telefono</label>
+			<label index="form.mobile">Cellulare</label>
+			<label index="form.fax">Fax</label>
+			<label index="form.email">E-mail</label>
+			<label index="form.web">Web</label>
+			<label index="form.birthday">Data di nascita</label>
+			<label index="form.birthday.day">Giorno</label>
+			<label index="form.birthday.month">Mese</label>
+			<label index="form.birthday.year">Anno</label>
+			<label index="form.username">Nome utente</label>
+			<label index="form.password">Password</label>
+			<label index="form.passwordConfirm">Conferma la password</label>
+			<label index="form.message">Messaggio</label>
+			<label index="form.captcha">Controllo di sicurezza</label>
+		</languageKey>
 
 		<languageKey index="fr" type="array">
 			<label index="general.print">Imprimer</label>
@@ -91,6 +230,40 @@
 			<label index="general.tip">Recommander cette page</label>
 			<label index="general.pdflink">Au format PDF</label>
 			<label index="general.download">Télécharger</label>
+
+			<!--Forms (formhandler) -->
+			<label index="form.submit">Soumettre</label>
+			<label index="form.select">Sélectionner</label>
+			<label index="form.required">obligatoire</label>
+			<label index="form.requiredfields">champs obligatoires</label>
+			<label index="form.title">Titre</label>
+			<label index="form.name">Nom</label>
+			<label index="form.firstName">Prénom</label>
+			<label index="form.lastName">Nom de famille</label>
+			<label index="form.gender">Sexe</label>
+			<label index="form.sex">Sexe</label>
+			<label index="form.gender.male">homme</label>
+			<label index="form.gender.female">femme</label>
+			<label index="form.company">Compagnie</label>
+			<label index="form.street">Rue</label>
+			<label index="form.zip">Code postal</label>
+			<label index="form.city">Ville</label>
+			<label index="form.zipOrCity">Code postal ou ville</label>
+			<label index="form.country">Pays</label>
+			<label index="form.telephone">Téléphone</label>
+			<label index="form.mobile">Mobile</label>
+			<label index="form.fax">Fax</label>
+			<label index="form.email">Email</label>
+			<label index="form.web">Web</label>
+			<label index="form.birthday">Date de naissante</label>
+			<label index="form.birthday.day">Jour</label>
+			<label index="form.birthday.month">Mois</label>
+			<label index="form.birthday.year">Année</label>
+			<label index="form.username">Nom d&apos;utilisateur</label>
+			<label index="form.password">Mot de passe</label>
+			<label index="form.passwordConfirm">Confirmez le mot de passe</label>
+			<label index="form.message">Un message</label>
+			<label index="form.captcha">Vérification de sécurité</label>
 		</languageKey>
 
 		<languageKey index="nl" type="array">
@@ -101,6 +274,39 @@
 			<label index="general.tip">Pagina aanbevelen</label>
 			<label index="general.pdflink">Als PDF</label>
 			<label index="general.download">Download</label>
+
+			<!--Forms -->
+			<label index="form.submit">Versturen</label>
+			<label index="form.required">verplicht</label>
+			<label index="form.requiredfields">verplichte velden</label>
+			<label index="form.title">Titel</label>
+			<label index="form.name">Naam</label>
+			<label index="form.firstName">Voornaam</label>
+			<label index="form.lastName">Achternaam</label>
+			<label index="form.gender">Geslacht</label>
+			<label index="form.sex">Geslacht</label>
+			<label index="form.gender.male">man</label>
+			<label index="form.gender.female">vrouw</label>
+			<label index="form.company">Bedrijf</label>
+			<label index="form.street">Straat</label>
+			<label index="form.zip">Postcode</label>
+			<label index="form.city">Plaats</label>
+			<label index="form.zipOrCity">Postcode of plaats</label>
+			<label index="form.country">Land</label>
+			<label index="form.telephone">Telefoon</label>
+			<label index="form.mobile">Mobiel</label>
+			<label index="form.fax">Fax</label>
+			<label index="form.email">E-mail</label>
+			<label index="form.web">Web</label>
+			<label index="form.birthday">Geboortedatum</label>
+			<label index="form.birthday.day">Dag</label>
+			<label index="form.birthday.month">Maand</label>
+			<label index="form.birthday.year">Jaar</label>
+			<label index="form.username">Gebruikersnaam</label>
+			<label index="form.password">Wachtwoord</label>
+			<label index="form.passwordConfirm">Wachtwoord 2</label>
+			<label index="form.message">Bericht</label>
+			<label index="form.captcha">Veiligheidscontrole</label>
 		</languageKey>
 
 		<languageKey index="cs" type="array">
@@ -111,7 +317,6 @@
 			<label index="general.tip">Doporučit tuto stránku</label>
 			<label index="general.pdflink">Jako PDF</label>
 		</languageKey>
-
 
 		<languageKey index="sk" type="array">
 			<label index="general.print">Tlač</label>

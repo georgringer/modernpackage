@@ -88,7 +88,7 @@ lib.stdheader.10.stdWrap.override {
 #-------------------------------------------------------------------------------
 tt_content {
 	image.20 {
-		1.params = class="img-responsive thumbnail"
+		1.params = class="thumbnail"
 
 		addClassesCol >
 		addClassesCol.override.cObject = CASE
@@ -105,7 +105,6 @@ tt_content {
 			4.value= col-sm-3
 			6 = TEXT
 			6.value = col-sm-2
-
 
 			default = TEXT
 			default.value = col-sm-3

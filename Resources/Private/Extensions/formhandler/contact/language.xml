@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Language labels for Contact Form</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<!--Errors-->
+			<label index="error_email_required">Please add your email address</label>
+			<label index="error_email_email">The given email address is not valid</label>
+			<label index="error_firstName_required">Please add your first name</label>
+			<label index="error_lastName_required">Please add your last name</label>
+			<label index="error_street_required">Please add your street</label>
+			<label index="error_zip_required">Please add your zip code</label>
+			<label index="error_city_required">Please add your city</label>
+			<label index="error_country_required">Please add your country</label>
+			<label index="error_telephone_required">Please add your telephone number</label>
+			<label index="error_captchafield_captcha">Please fill in the correct captcha</label>
+			<label index="error_message_required">Please enter a message</label>
+
+			<!--Text after submit-->
+			<label index="messageAfterSubmit.header">Thanks for your interest</label>
+			<label index="messageAfterSubmit.text">We will get back to you as soon as possible!</label>
+
+			<!--Emails-->
+			<label index="email_admin_subject">Email from website</label>
+			<label index="email_admin_text">The following request has just been filled out:</label>
+			<label index="email_user_subject">We got your mail!</label>
+			<label index="email_user_greetings">Dear!</label>
+			<label index="email_user_text">Thanks for your request. We will evaluate your data. As a backup here is the data you sent us.</label>
+			<label index="email_user_footer">This mail has been created automatically. All the best!</label>
+		</languageKey>
+
+		<languageKey index="de" type="array">
+			<!--Errors-->
+			<label index="error_email_required">Bitte fügen Sie Ihre e-Mail-Adresse hinzu</label>
+			<label index="error_email_email">Die angeführte e-Mail-Adresse ist nicht gültig</label>
+			<label index="error_firstName_required">Bitte führen Sie Ihren Vornamen an</label>
+			<label index="error_lastName_required">Bitte führen Sie Ihren Nachnamen an</label>
+			<label index="error_street_required">Bitte fügen Sie Ihre Straße hinzu</label>
+			<label index="error_zip_required">Bitte fügen Sie Ihre PLZ an</label>
+			<label index="error_city_required">Bitte fügen Sie Ihre Stadt an</label>
+			<label index="error_country_required">Bitte fügen Sie Ihr Land an</label>
+			<label index="error_telephone_required">Bitte fügen Sie Ihre Telefonnummer an</label>
+			<label index="error_captchafield_captcha">Bitte fügen Sie den korrekten Sicherheitscode ein</label>
+
+			<!--Text after submit-->
+			<label index="messageAfterSubmit.header">Vielen Dank für Ihre Anfrage!</label>
+			<label index="messageAfterSubmit.text">Wir werden sie so rasch wie möglich beantworten.</label>
+
+			<!--Emails-->
+			<label index="email_admin_text">Die folgende Anfrage wurde gerade ausgefüllt:</label>
+			<label index="email_user_subject">Wir haben Ihre e-Mail erhalten!</label>
+			<label index="email_user_greetings">Sehr geehrte Damen und Herren!</label>
+			<label index="email_user_text">Vielen Dank für Ihre Anfrage. Wir werden Ihre Anfrage in kürze bearbeiten. Unten angeführt finden Sie ihre angegebenen Daten.</label>
+			<label index="email_user_footer">Diese e-Mail wurde automatisch generiert. Vielen Dank!</label>
+		</languageKey>
+
+		<languageKey index="fr" type="array">
+			<!--Errors-->
+			<label index="error_email_required">Merci d’indiquer votre adresse email</label>
+			<label index="error_email_email">L’adresse email indiquée n’est pas valide</label>
+			<label index="error_firstName_required">Merci d’indiquer votre prénom</label>
+			<label index="error_lastName_required">Merci d’indiquer votre nom</label>
+			<label index="error_street_required">Merci d’indiquer votre rue</label>
+			<label index="error_zip_required">Merci d’indiquer votre code postal</label>
+			<label index="error_city_required">Merci d’indiquer votre ville</label>
+			<label index="error_country_required">Merci d’indiquer votre pays</label>
+			<label index="error_captchafield_captcha">Merci de renseigner le correct code de sécurité</label>
+
+			<!--Text after submit-->
+			<label index="messageAfterSubmit.header">Merci pour votre intérêt</label>
+			<label index="messageAfterSubmit.text">Nous reviendrons vers vous dés que possible!</label>
+
+			<!--Emails-->
+			<label index="email_admin_text">La demande suivante a été complétée:</label>
+			<label index="email_user_subject">Nous avons reçu votre email!</label>
+			<label index="email_user_greetings">Cher!</label>
+			<label index="email_user_text">Merci pour votre demande. Nous allons évaluer vos données. Pour rappel, voici les informations que vous nous avez communiquées.</label>
+			<label index="email_user_footer">Cet email a été généré automatiquement. Cordialement!</label>
+
+		</languageKey>
+
+		<languageKey index="it" type="array">
+			<!--Errors-->
+			<label index="error_email_required">Aggiungi l'indirizzo email</label>
+			<label index="error_email_email">L'indirizzo email indicato non é valido</label>
+			<label index="error_firstName_required">Aggiungi il Nome</label>
+			<label index="error_lastName_required">Aggiungi il Cognome</label>
+			<label index="error_street_required">Aggiungi l'indirizzo (via/piazza)</label>
+			<label index="error_zip_required">Aggiungi il CAP</label>
+			<label index="error_city_required">Aggiungi la Cittá</label>
+			<label index="error_country_required">Aggiungi la Nazione</label>
+			<label index="error_captchafield_captcha">Inserisci il codice di sicurezza corretto</label>
+
+			<!--Text after submit-->
+			<label index="messageAfterSubmit.header">Grazie per la richiesta</label>
+			<label index="messageAfterSubmit.text">Sarai contattato prima possibile!</label>
+
+			<!--Emails-->
+			<label index="email_admin_text">La seguente richiesta é stata completata:</label>
+			<label index="email_user_subject">Abbiamo ricevuto la Sua email!</label>
+			<label index="email_user_greetings">Gentile</label>
+			<label index="email_user_text">Grazie per la Sua richiesta che valuteremo al piú presto. Di seguito puó trovare il riassunto dei dati forniti.</label>
+			<label index="email_user_footer">Questa email é stata creata automaticamente. Cordiali saluti!</label>
+		</languageKey>
+
+		<languageKey index="es" type="array">
+			<!--Errors-->
+			<label index="error_email_required">Pro favor agregue su correo electrónico</label>
+			<label index="error_email_email">El correo electrónico escrito no es válido</label>
+			<label index="error_firstName_required">Pro favor agregue su nombre</label>
+			<label index="error_lastName_required">Por favor agregue su apellido</label>
+			<label index="error_street_required">Por favor agregue su dirección</label>
+			<label index="error_zip_required">Por favor agregue su código postal</label>
+			<label index="error_city_required">Por favor agregue su ciudad</label>
+			<label index="error_country_required">Por favor agregue su país</label>
+			<label index="error_captchafield_captcha">Por favor escriba el codigo de securidad</label>
+
+			<!--Text after submit-->
+			<label index="messageAfterSubmit.header">Gracias por su interés</label>
+			<label index="messageAfterSubmit.text">Nos comunicaremos con usted lo antes posible</label>
+
+			<!--Emails-->
+			<label index="email_admin_text">La siguiente solicitud fue enviada:</label>
+			<label index="email_user_subject">¡Recibimos su correo!</label>
+			<label index="email_user_greetings">¡Querido(a)!</label>
+			<label index="email_user_text">Gracias por su solicitud. Evaluaremos su información. Como confimación, aquí está la información que nos ha enviado.</label>
+			<label index="email_user_footer">Este correo es creado automaticamente. ¡Saludos!</label>
+		</languageKey>
+	</data>
+</T3locallang>

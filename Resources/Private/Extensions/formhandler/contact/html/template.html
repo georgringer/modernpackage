@@ -1,0 +1,64 @@
+<!-- ###TEMPLATE_FORM1### -->
+<form action="###REL_URL###" method="post">
+	<div class="row">
+		<div class="form-group ###is_error_firstName### col-md-6">
+			<label for="firstName">###LLL:form.firstName### ###required_firstName###</label>
+			<input type="text" class="form-control" id="firstName" required="" minlength="2" placeholder="###LLL:form.firstName###" name="###formValuesPrefix###[firstName]" value="###value_firstName###">
+			###error_firstName###
+		</div>
+
+		<div class="form-group ###is_error_lastName### col-md-6">
+			<label for="lastName">###LLL:form.lastName### ###required_lastName###</label>
+			<input type="text" class="form-control" id="lastName" required="" minlength="2" placeholder="###LLL:form.lastName###" name="###formValuesPrefix###[lastName]" value="###value_lastName###">
+			###error_lastName###
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="form-group ###is_error_street### col-md-12">
+			<label for="street">###LLL:form.street### ###required_street###</label>
+			<input type="text" class="form-control" id="street" required="" placeholder="###LLL:form.street###" name="###formValuesPrefix###[street]">
+			###error_street###
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="form-group ###is_error_zip### col-md-4">
+			<label for="zip">###LLL:form.zip### ###required_zip###</label>
+			<input type="text" class="form-control" id="zip" required="" placeholder="###LLL:form.zip###" name="###formValuesPrefix###[zip]">
+			###error_zip###
+		</div>
+		<div class="form-group ###is_error_city### col-md-8">
+			<label for="city">###LLL:form.city### ###required_ciy###</label>
+			<input type="text" class="form-control" id="city" required="" placeholder="###LLL:form.city###" name="###formValuesPrefix###[city]">
+			###error_city###
+		</div>
+	</div>
+	<div class="row">
+		<div class="form-group ###is_error_email### col-md-6">
+			<label for="email">###LLL:form.email### ###required_email###</label>
+			<input type="email" class="form-control" id="email" required="" placeholder="###LLL:form.email###" name="###formValuesPrefix###[email]">
+			###error_email###
+		</div>
+		<div class="form-group ###is_error_telephone### col-md-6">
+			<label for="telephone">###LLL:form.telephone### ###required_telephone###</label>
+			<input type="text" class="form-control" id="telephone" required="" placeholder="###LLL:form.telephone###" name="###formValuesPrefix###[telephone]">
+			###error_telephone###
+		</div>
+	</div>
+	<div class="row">
+		<div class="form-group ###is_error_message### col-md-12">
+			<label for="message">###LLL:form.message### ###required_message###</label>
+			<textarea class="form-control" id="message" rows="3" required="" minlength="5" name="###formValuesPrefix###[message]"></textarea>
+			###error_message###
+		</div>
+	</div>
+
+	<input type="submit" class="btn btn-default" value="###LLL:form.submit###">
+</form><!-- ###TEMPLATE_FORM1### -->
+
+
+<!-- ###TEMPLATE_SUBMITTEDOK### begin -->
+<h4>###LLL:messageAfterSubmit.header###</h4>
+<p>###LLL:messageAfterSubmit.text###</p>
+<!-- ###TEMPLATE_SUBMITTEDOK### end -->

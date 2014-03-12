@@ -1,43 +1,49 @@
-# ******************************************************************************
-#	(c) 2012 Georg Ringer <typo3@ringerge.org>
-#
-#	You can redistribute it and/or modify it under the terms of the
-#	GNU General Public License as published by the Free Software Foundation;
-#	either version 2 of the License, or (at your option) any later version.
-# ******************************************************************************
 
 # **********************************************************
-# Library for indexed_search snippets
-# Content:
-#	* Search box
+# Library for indexed_search
 # **********************************************************
 
 
-#-------------------------------------------------------------------------------
-#	EXT:indexed_search Searchform
-#-------------------------------------------------------------------------------
-lib.extensions.indexed_search.form = COA
-lib.extensions.indexed_search.form {
+plugin.tx_indexedsearch {
+	templateFile = EXT:modernpackage/Resources/Private/Extensions/indexed_search/template.html
 
-	# Open form tag and set URL to target page
-	10 = TEXT
-	10 {
-		wrap = <form class="navbar-search pull-right" action="|" method="post">
-		typolink {
-			parameter = {$plugin.theme_configuration.extensions.indexed_search.page}
-			returnLast = url
-		}
+	show {
+		rules = 0
+		parsetimes = 0
+		L2sections = 0
+		L1sections = 0
+		LxALLtypes = 0
+		clearSearchBox = 0
+		clearSearchBox.enableSubSearchCheckBox = 0
+		forbiddenRecords = 0
+		alwaysShowPageLinks = 0
+		advancedSearchLink = 0
+		resultNumber = 0
+		mediaList =
 	}
 
-	# Add rest of template
-	20 = TEXT
-	20 {
-		insertData = 1
-		value (
-			<label for="search" class="hidden">Search:</label>
-			<input name="tx_indexedsearch[sword]" type="text" class="search-query" placeholder="{LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:general.search-placeholder}">
-				<button class="btn btn-mini">{LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:general.search-submit}</button>
-			</form>
-		)
+	# Blinding of option-selectors / values in these (advanced search) (see $optValues array in source code for options + extResume checkbox)
+	blind {
+		type = 0
+		defOp = 0
+		sections = 0
+		freeIndexUid = 1
+		media = 0
+		order = 0
+		group = 0
+		lang = 0
+		desc = 0
+		results = 0
+		# defOp.1=1
+		# extResume=1
+	}
+	search {
+		rootPidList =
+		page_links = 10
+		detect_sys_domain_records = 0
+		defaultFreeIndexUidList = -1
+		skipExtendToSubpagesChecking = 0
+		exactCount = 1
+		targetPid.data = TSFE:id
 	}
 }

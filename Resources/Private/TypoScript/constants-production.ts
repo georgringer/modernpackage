@@ -18,12 +18,11 @@ plugin.theme_configuration {
 
 	general {
 		adminPanel = 1
-		copyright_information.link = 242
 		googleanalytics = 1
 		googleanalytics.code = UA-XXXXXXXXXXX
 
 		pageTitle {
-			prefix = Modern Package -
+			prefix = modernpackage -
 			suffix =
 		}
 	}
@@ -36,8 +35,6 @@ plugin.theme_configuration {
 	navigation {
 		searchPage = 19
 		footer = 6
-
-		#top = 17
 	}
 
 	extensions {
@@ -56,7 +53,10 @@ plugin.theme_configuration {
 		}
 
 		formhandler {
-			contact-form {
+			contact {
+				debug = 0
+				sendEmailToUser = 0
+
 				email {
 					user {
 						# User email sender: Email address to use as sender address for the user email.
@@ -71,9 +71,6 @@ plugin.theme_configuration {
 						to_email =
 					}
 				}
-
-				# Redirect Page: Page ID to redirect after successful form submission.
-				redirectPage =
 			}
 		}
 

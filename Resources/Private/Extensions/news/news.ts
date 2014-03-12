@@ -44,8 +44,8 @@ plugin.tx_news {
 
 			media {
 				image {
-					maxWidth = 400
-					maxHeight = 350
+					maxWidth = 260
+					maxHeight = 190
 				}
 			}
 
@@ -62,8 +62,8 @@ plugin.tx_news {
 		detail {
 			media {
 				image {
-					maxWidth = 900
-					maxHeight = 600
+					maxWidth = 400
+					maxHeight = 300
 				}
 			}
 		}

@@ -11,7 +11,7 @@ plugin.theme_configuration {
 
 	general {
 		googleanalytics = 0
-		pageTitle.prefix = !!DEV!! Modern Package -
+		pageTitle.prefix = !!DEV!! modernpackage -
 	}
 
 	assets {
@@ -21,6 +21,12 @@ plugin.theme_configuration {
 
 	extensions {
 		realurl = 1
+
+		formhandler {
+			contact {
+				debug = 0
+			}
+		}
 	}
 }
 

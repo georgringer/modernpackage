@@ -1,10 +1,5 @@
 
 #-------------------------------------------------------------------------------
-#	General Constants
-#-------------------------------------------------------------------------------
-styles.content.imgtext.maxW = 1200
-
-#-------------------------------------------------------------------------------
 #	Constants of the PRODUCTION mode
 #-------------------------------------------------------------------------------
 plugin.theme_configuration {
@@ -12,12 +7,11 @@ plugin.theme_configuration {
 
 	general {
 		adminPanel = 1
-		copyright_information.link = 242
 		googleanalytics = 1
 		googleanalytics.code = UA-XXXXXXXXXXX
 
 		pageTitle {
-			prefix = Modern Package -
+			prefix = !!TESTING!! modernpackage -
 			suffix =
 		}
 	}
@@ -27,28 +21,12 @@ plugin.theme_configuration {
 		compress = 1
 	}
 
-	navigation {
-		top = 17
-		footer = 12
-	}
-
 	extensions {
 		realurl = 1
 
-		indexed_search {
-			page = 30
-		}
-		news {
-			latest {
-				limit = 3
-				detailPid = 259
-				startingpoint = 260
-				cropMaxCharacters = 120
-			}
-		}
-
 		formhandler {
-			contact-form {
+			contact {
+				debug = 0
 				email {
 					user {
 						# User email sender: Email address to use as sender address for the user email.
@@ -63,9 +41,6 @@ plugin.theme_configuration {
 						to_email =
 					}
 				}
-
-				# Redirect Page: Page ID to redirect after successful form submission.
-				redirectPage =
 			}
 		}
 

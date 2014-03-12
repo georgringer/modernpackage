@@ -75,10 +75,6 @@ page {
 
 	includeJSFooterlibs {
 		jQueryUi = EXT:modernpackage/Resources/Public/Template/js/jquery-ui-1.10.3.js
-	}
-
-	# JS files to be included
-	includeJSFooter {
 		tab = EXT:modernpackage/Resources/Public/Template/js/tab.js
 		tooltip = EXT:modernpackage/Resources/Public/Template/js/tooltip.js
 		popover = EXT:modernpackage/Resources/Public/Template/js/popover.js
@@ -86,6 +82,17 @@ page {
 		transitions = EXT:modernpackage/Resources/Public/Template/js/transitions.js
 		collapse = EXT:modernpackage/Resources/Public/Template/js/collapse.js
 
+		fancybox = EXT:modernpackage/Resources/Public/Template/js/jquery.fancybox.js
+		flexslider = EXT:modernpackage/Resources/Public/Template/js/flexslider.js
+		jqueryvalidatemin = EXT:modernpackage/Resources/Public/Template/js/jquery.validate.min.js
+		placeholder = EXT:modernpackage/Resources/Public/Template/js/placeholder.min.js
+		ias = EXT:modernpackage/Resources/Public/Template/js/jquery-ias.min.js
+		responsive-images = EXT:modernpackage/Resources/Public/Template/js/responsive-images.js
+	}
+
+	# JS files to be included
+	includeJSFooter {
+		custom = EXT:modernpackage/Resources/Public/Template/js/custom.js
 	}
 
 

@@ -59,16 +59,6 @@ lib.navigation.main {
 }
 
 #-------------------------------------------------------------------------------
-#	NAVIGATION: Breadcrumb: Hide if on root page
-#-------------------------------------------------------------------------------
-lib.navigation.show_breadcrumb = TEXT
-lib.navigation.show_breadcrumb {
-	value = {level:0}
-	insertData = 1
-}
-
-
-#-------------------------------------------------------------------------------
 #	NAVIGATION: Service navigation TOP
 #-------------------------------------------------------------------------------
 lib.navigation.service-top = COA
@@ -131,14 +121,15 @@ lib.navigation.breadcrumb {
 
 			NO = 1
 			NO {
-				wrapItemAndSub = <li>|</li>
+				wrapItemAndSub = <li typeof="v:Breadcrumb">|</li>
 				ATagTitle.field = subtitle // title
+				ATagParams = rel="v:url" property="v:title"
 				stdWrap.htmlSpecialChars = 1
 			}
 
 			CUR <.NO
 			CUR {
-				wrapItemAndSub = <li class="active">|</li>
+				wrapItemAndSub = <li>|</li>
 				doNotLinkIt = 1
 			}
 		}
@@ -156,11 +147,19 @@ lib.navigation.breadcrumb {
 		conf.tx_news_domain_model_news {
 			field = title
 			htmlSpecialChars = 1
+			wrap =  <li class="active">|</li>
 		}
-		wrap =  <li class="active">|</li>
 	}
 }
 
+#-------------------------------------------------------------------------------
+#	NAVIGATION: Breadcrumb: Hide if on root page
+#-------------------------------------------------------------------------------
+lib.navigation.show_breadcrumb = TEXT
+lib.navigation.show_breadcrumb {
+	value = {level:0}
+	insertData = 1
+}
 
 #-------------------------------------------------------------------------------
 #	NAVIGATION: Sidebar
@@ -322,3 +321,32 @@ lib.navigation.socialmedia {
 	}
 }
 
+#-------------------------------------------------------------------------------
+#	NAVIGATION: Core Sitemaps
+#-------------------------------------------------------------------------------
+tt_content.menu.20 {
+
+	# Type "Sitemap"
+	2 >
+	2 = HMENU
+	2 {
+		1 = TMENU
+		1 {
+			expAll = 1
+			wrap = <ul class="sitemap">|</ul>
+			NO {
+				stdWrap.htmlSpecialChars = 1
+				wrapItemAndSub = <li>|</li>
+				ATagTitle.field = description // title
+			}
+		}
+		2 < .1
+		2.wrap = <ul>|</ul>
+		3 < .2
+		4 < .2
+		5 < .2
+		6 < .2
+		7 < .2
+	}
+
+}

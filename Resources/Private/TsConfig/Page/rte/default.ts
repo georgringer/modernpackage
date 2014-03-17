@@ -1,7 +1,7 @@
 #*** RTE Classe des Interface (Ausrichtung)
 RTE.classes {
 	green {
-		name = Grün
+		name = Green
 		value = color:#d2d443;
 	}
 }
@@ -44,10 +44,10 @@ RTE.default.buttons.link.properties.class.allowedClasses {
 
 ## RTE Konfiguration
 RTE.default {
-	
+
 	RTEHeightOverride = 500
 	RTEWidthOverride = 800
-	
+
 	# RTE Stylesheet für benutzerdefinierte Formatauszeichnungen
 	#contentCSS = typo3conf/ext/theme_modernpackage/Resources/Public/Css/rte.css
 
@@ -58,19 +58,19 @@ RTE.default {
 	removeTags = center, sdfield
 	removeTagsAndContents = style,script
 
-	hidePStyleItems = h1,h2,h5,h6,pre,address, DIV, P
-	buttons.formatblock.removeItems = h1,h2,h5,h6,pre,address, DIV, P
+	hidePStyleItems = h1,h2,h5,h6,address, DIV, P
+	buttons.formatblock.removeItems = h1,h2,h3,h4,h5,h6,address, DIV, P,article,section,aside,footer,header,nav
 
 	# Buttons die gezeigt/versteckt werden
-	showButtons = bold, italic, left, center, right, orderedlist, unorderedlist, link, insertcharacter, removeformat, findreplace, undo, redo, outdent, indent,chMode
-	hideButtons = formatblock, blockstyle, blockstylelabel, textstyle, textstylelabel, image,line, underline, insertparagraphafter, insertparagraphbefore, fontstyle, fontsize, strikethrough, lefttoright, righttoleft, bgcolor, textindicator, emoticon, user, spellcheck, inserttag, subscript, superscript, acronym, about, showhelp, copy, cut, paste, justifyfull, textcolor, table, tableproperties, rowproperties, rowAinsertabove, rowinsertunder, rowdelete, rowsplit, columninsertbefore, columninsertafter, columndelete, columnsplit, cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, toggleborders, cellmerge,
+	showButtons = formatblock, blockstyle, bold, italic, left, center, right, orderedlist, unorderedlist, link, insertcharacter, removeformat, undo, redo, outdent, indent,chMode
+	hideButtons = textstyle,image,line, underline, textstylelabel, blockstylelabel,insertparagraphafter, insertparagraphbefore, fontstyle, fontsize, strikethrough, lefttoright, righttoleft, bgcolor, textindicator, emoticon, user, spellcheck, inserttag, subscript, superscript, acronym, about, showhelp, copy, cut, paste, justifyfull, textcolor, table, tableproperties, rowproperties, rowAinsertabove, rowinsertunder, rowdelete, rowsplit, columninsertbefore, columninsertafter, columndelete, columnsplit, cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, toggleborders, cellmerge,findreplace
 
 
 	# Hält die RTE Icons gegroupt zusammen
 	keepButtonGroupTogether = 1
 
 	# blendet Statusbar in htmlarea aus
-	showStatusBar =  0
+	showStatusBar =  1
 	useCSS = 1
 
 	## Add styles Left, center and right alignment of text in paragraphs and cells.
@@ -85,7 +85,7 @@ RTE.default {
 
 	proc {
 		# tags die erlaubt / verboten sind
-		allowTags = font,table, thead, tbody, tr, th, td, h1, h2, h3, h4, h5, h6, div, p, br, span, ul, ol, li, re, blockquote, strong, em, b, i, u, sub, sup, strike, a, img, nobr, hr, tt, q, cite, abbr, acronym, center
+		allowTags = pre,font,table, thead, tbody, tr, th, td, h1, h2, h3, h4, h5, h6, div, p, br, span, ul, ol, li, re, blockquote, strong, em, b, i, u, sub, sup, strike, a, img, nobr, hr, tt, q, cite, abbr, acronym, center
 		denyTags =
 
 		# br wird nicht zu p konvertiert

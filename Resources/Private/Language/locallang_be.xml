@@ -29,12 +29,10 @@
 			<label index="tt_content.header_layout.5">Header 5</label>
 
 			<!-- Content element: Layout -->
-			<label index="tt_content.layout.quotation">Quotation</label>
-			<label index="tt_content.layout.box-warning">Box Warning</label>
 			<label index="tt_content.layout.box-success">Box Success</label>
-			<label index="tt_content.layout.box-info">Box Info</label>
-			<label index="tt_content.layout.box-error">Box Error</label>
-			<label index="tt_content.layout.toggle">Toggled element</label>
+			<label index="tt_content.layout.box-info">Box Information</label>
+			<label index="tt_content.layout.box-warning">Box Warning</label>
+			<label index="tt_content.layout.box-danger">Box Danger</label>
 
 			<!-- Content element: Section -->
 			<label index="tt_content.section.hidden">Hidden</label>

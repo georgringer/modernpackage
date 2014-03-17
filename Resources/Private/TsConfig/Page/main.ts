@@ -67,12 +67,10 @@ TCEFORM.tt_content {
 	layout {
 		removeItems = 1,2,3
 		addItems {
-			21 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.quotation
 			22 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.box-warning
 			23 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.box-success
 			24 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.box-info
-			25 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.box-error
-			26 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.toggle
+			25 = LLL:EXT:modernpackage/Resources/Private/Language/locallang_be.xml:tt_content.layout.box-danger
 		}
 	}
 

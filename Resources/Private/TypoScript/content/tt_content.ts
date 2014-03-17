@@ -36,18 +36,14 @@ tt_content {
 		default.20.40 {
 			key.field = layout
 
-			21 = TEXT
-			21.value = box citation
 			22 = TEXT
-			22.value = alert alert-block
+			22.value = alert bg-warning
 			23 = TEXT
-			23.value = alert alert-success alert-block
+			23.value = alert bg-success
 			24 = TEXT
-			24.value = alert alert-info alert-block
+			24.value = alert bg-info
 			25 = TEXT
-			25.value = alert alert-error alert-block
-			26 = TEXT
-			26.value = toggle
+			25.value = alert bg-danger
 		}
 	}
 

@@ -9,7 +9,7 @@
 			<label index="1col">1 column</label>
 			<label index="2col75-25">2 columns (75-25)</label>
 			<label index="2col">1 column with menu left</label>
-			<label index="3col">3 columns</label>
+			<label index="2col-menu-left">2 columns with menu left</label>
 		</languageKey>
 	</data>
 </T3locallang>

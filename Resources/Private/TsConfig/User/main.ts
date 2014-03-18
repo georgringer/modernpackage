@@ -23,6 +23,7 @@ mod.web_layout.menu.function {
 options {
 	# Allow creation of new folders in Element Browser
 	createFoldersInEB = 1
+	enableBookmarks = 0
 
 	# No alert box ad type change
 	alertPopups = 254

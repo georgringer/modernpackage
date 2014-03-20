@@ -69,7 +69,7 @@ plugin.Tx_Formhandler.settings.predef.formhandler-contactform {
 			user {
 				templateFile = TEXT
 				templateFile.value = typo3conf/ext/modernpackage/Resources/Private/Extensions/formhandler/contact/html/email-user.html
-				sender_email = {plugin.theme_configuration.extensions.formhandler.contact.email.user.sender_email}
+				sender_email = {$plugin.theme_configuration.extensions.formhandler.contact.email.user.sender_email}
 				to_email = email
 				subject = TEXT
 				subject.data = LLL:typo3conf/ext/modernpackage/Resources/Private/Extensions/formhandler/contact/language.xml:email_user_subject

@@ -146,6 +146,15 @@ page {
 			}
 	}
 
-
 }
 
+# **********************************************************
+# Issue Collector, e.g. JIRA
+# **********************************************************
+[globalVar = TSFE : beUserLogin > 0]
+	page.includeJS.issueCollector = {$plugin.theme_configuration.general.issueCollectorJsPath}
+	page.includeJS.issueCollector {
+		excludeFromConcatenation = 1
+		external = 1
+	}
+[global]

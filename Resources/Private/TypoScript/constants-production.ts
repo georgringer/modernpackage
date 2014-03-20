@@ -20,6 +20,7 @@ plugin.theme_configuration {
 		adminPanel = 1
 		googleanalytics = 1
 		googleanalytics.code = UA-XXXXXXXXXXX
+		issueCollectorJsPath =
 
 		pageTitle {
 			prefix = modernpackage -

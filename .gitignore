@@ -1,3 +1,5 @@
 .idea/
 atlassian-ide-plugin.xml
 Resources/Public/Template/img/placeholder/test*
+Resources/Private/Frontend/node_modules/
+

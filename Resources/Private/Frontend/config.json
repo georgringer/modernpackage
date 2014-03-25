@@ -1,0 +1,38 @@
+{
+	"dir": {
+		"dest": "../../Public/Template",
+		"src": "."
+	},
+
+	"task": {
+		"imagemin": {
+			"optimizationLevel": 5
+		}
+	},
+
+	"copy": [
+		"src/*.php",
+		"src/*.html",
+		"src/*.md",
+		"src/*.json",
+		"sec/*.txt",
+		"src/.*"
+	],
+
+    "node_modules": {
+        "copy": [{
+            "from": "node_modules/twitter-bootstrap-3.0.0/dist/js/bootstrap.min.js",
+            "to": "../../Public/Template/js"
+        }, {
+            "from": "node_modules/jquery/dist/jquery.min.js",
+            "to": "../../Public/Template/js"
+        }]
+    },
+
+    "header": {
+        "message": "<% if (/(script|custom)\\.js/.test(file.path)) { %>\n/*\n  ___|\\ \\   / __ )  ____|  _ \\  |   |  _ \\  |   |  ___|  ____|\n |     \\   /  __ \\  __|   |   | |   | |   | |   |\\___ \\  __|  \n |        |   |   | |     __ <  ___ | |   | |   |      | |    \n\\____|   _|   ___/ _____|_| \\_\\_|  _|\\___/ \\___/ _____/ _____|\n*/\n\n<% } %>"
+    },
+
+    "uglify_css": true,
+    "uglify_js": true
+}

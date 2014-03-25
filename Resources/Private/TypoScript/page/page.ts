@@ -30,71 +30,42 @@ page {
 
 	# CSS files to be included
 	includeCSS {
-		style = EXT:modernpackage/Resources/Public/Template/css/style.css
-		style.media = screen,print
-		print = EXT:modernpackage/Resources/Public/Template/css/print.css
-		print.media = print
+		file1 = EXT:modernpackage/Resources/Public/Template/css/style.css
+		file1.media = screen,print
 
-		bootstrap-ie7 = EXT:modernpackage/Resources/Public/Template/css/bootstrap-ie7.css
-		bootstrap-ie7 {
-			allWrap =<!--[if lt IE 8]>|<![endif]-->
-			excludeFromConcatenation = 1
-		}
-		ie7 = EXT:modernpackage/Resources/Public/Template/css/ie7.css
-		ie7 {
-			allWrap =<!--[if lt IE 8]>|<![endif]-->
-			excludeFromConcatenation = 1
-		}
-	}
-
-	includeJS {
-		modernizer = EXT:modernpackage/Resources/Public/Template/js/modernizer.js
-		modernizer {
-			forceOnTop = 1
-		}
-		jQuery = EXT:modernpackage/Resources/Public/Template/js/jquery-1.10.2.min.js
-		jQuery {
-			forceOnTop = 1
-		}
-		html5shiv = EXT:modernpackage/Resources/Public/Template/js/html5shiv.js
-		html5shiv {
-			allWrap = <!--[if lt IE 9]>|<![endif]-->
-			excludeFromConcatenation = 1
-		}
-		respondjs = EXT:modernpackage/Resources/Public/Template/js/respond.js
-		respondjs {
-			allWrap = <!--[if lt IE 9]>|<![endif]-->
-			excludeFromConcatenation = 1
-		}
-		html5shiv-printshiv = EXT:modernpackage/Resources/Public/Template/js/html5shiv-printshiv.js
-		html5shiv-printshiv {
-			allWrap =<!--[if lt IE 8]>|<![endif]-->
-			excludeFromConcatenation = 1
-		}
-	}
-
-	includeJSFooterlibs {
-		jQueryUi = EXT:modernpackage/Resources/Public/Template/js/jquery-ui-1.10.3.js
-		tab = EXT:modernpackage/Resources/Public/Template/js/tab.js
-		tooltip = EXT:modernpackage/Resources/Public/Template/js/tooltip.js
-		popover = EXT:modernpackage/Resources/Public/Template/js/popover.js
-		dropdown = EXT:modernpackage/Resources/Public/Template/js/dropdown.js
-		transitions = EXT:modernpackage/Resources/Public/Template/js/transitions.js
-		collapse = EXT:modernpackage/Resources/Public/Template/js/collapse.js
-
-		fancybox = EXT:modernpackage/Resources/Public/Template/js/jquery.fancybox.js
-		flexslider = EXT:modernpackage/Resources/Public/Template/js/flexslider.js
-		jqueryvalidatemin = EXT:modernpackage/Resources/Public/Template/js/jquery.validate.min.js
-		placeholder = EXT:modernpackage/Resources/Public/Template/js/placeholder.min.js
-		ias = EXT:modernpackage/Resources/Public/Template/js/jquery-ias.min.js
-		responsive-images = EXT:modernpackage/Resources/Public/Template/js/responsive-images.js
+		file2 = EXT:modernpackage/Resources/Public/Template/css/print.css
+		file2.media = print
 	}
 
 	# JS files to be included
 	includeJSFooter {
-		custom = EXT:modernpackage/Resources/Public/Template/js/custom.js
+		jQuery = EXT:modernpackage/Resources/Public/Template/js/jquery.min.js
+		jQueryUI = EXT:modernpackage/Resources/Public/Template/js/jquery-ui-1.10.3.js
+		bootstrap = EXT:modernpackage/Resources/Public/Template/js/bootstrap.min.js
+		fancybox = EXT:modernpackage/Resources/Public/Template/js/jquery.fancybox.js
+		flexslider = EXT:modernpackage/Resources/Public/Template/js/jquery.flexslider.js
+		validate = EXT:modernpackage/Resources/Public/Template/js/jquery.validate.js
+		placeholder = EXT:modernpackage/Resources/Public/Template/js/placeholder.js
+		ias = EXT:modernpackage/Resources/Public/Template/js/jquery-ias.js
+		util = EXT:modernpackage/Resources/Public/Template/js/util.js
+		typo3 = EXT:modernpackage/Resources/Public/Template/js/typo3.js
+		customjs = EXT:modernpackage/Resources/Public/Template/js/script.js
 	}
 
+	includeJS {
+		html5shiv = EXT:modernpackage/Resources/Public/Template/js/html5shiv.js
+		html5shiv {
+			allWrap = <!--[if lt IE 9]>|<![endif]-->
+			excludeFromConcatenation = 1
+			forceOnTop = 1
+		}
+		html5shiv-printshiv = EXT:modernpackage/Resources/Public/Template/js/html5shiv-printshiv.js
+		html5shiv-printshiv {
+			allWrap = <!--[if lt IE 8]>|<![endif]-->
+			excludeFromConcatenation = 1
+			forceOnTop = 1
+		}
+	}
 
 	# Add some good classes to the bodytag to make a styling of special pages easier
 	bodyTagCObject = COA

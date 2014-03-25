@@ -30,8 +30,10 @@ config {
 	htmlTag_langKey = {$plugin.theme_configuration.site.htmlTagLanguageKey}
 
 	# remove inline CSS/JS to external
-	removeDefaultJS = external
+	removeDefaultJS = 1
 	inlineStyle2TempFile = 1
+	removeDefaultCss = 1
+	removePageCss = 1
 	compressJs = {$plugin.theme_configuration.assets.compress}
 	compressCss = {$plugin.theme_configuration.assets.compress}
 	concatenateJs = {$plugin.theme_configuration.assets.merge}
@@ -47,8 +49,8 @@ config {
 
 	# Spam
 	spamProtectEmailAddresses = -2
-	spamProtectEmailAddresses_atSubst = <script type="text/javascript">document.write('@');</script>
-	spamProtectEmailAddresses_lastDotSubst = <script type="text/javascript">document.write('.');</script>
+	spamProtectEmailAddresses_atSubst = <span class="obfuscate-mid"> [AT] </span>
+	spamProtectEmailAddresses_lastDotSubst = <span class="obfuscate-end"> [DOT] </span>
 
 	# check for valid L-params
 	linkVars = L(0-50)

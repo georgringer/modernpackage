@@ -1,6 +1,6 @@
 /*                                                               *
  * This file is brought to you by Georg Großberger               *
- * (c) 2014 Cynerhouse GmbH                                      *
+ * (c) 2014 Cyberhouse GmbH                                      *
  *                                                               *
  * It is free software; you can redistribute it and/or modify it *
  * under the terms of the MIT License / X11 License              *

@@ -31,6 +31,6 @@ startGulp();
 
 process.on('exit', function() {
 	if (gulp) {
-		gulp.exit();
+		gulp.kill();
 	}
 });

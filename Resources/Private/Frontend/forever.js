@@ -7,10 +7,25 @@
  *                                                               */
 
 var spawn = require('child_process').spawn,
-	gulp;
+	gulp,
+	workingDirectory = process.cwd();
+
+if (process.argv.length > 2) {
+	var possibleWorkingDirectory = process.argv[2];
+	if (!/^([a-zA-Z]:|\/)/.test(possibleWorkingDirectory)) {
+		possibleWorkingDirectory = require("path").join(workingDirectory, possibleWorkingDirectory);
+	}
+
+	var stat = require("fs").statSync(possibleWorkingDirectory);
+
+	if (stat && stat.isDirectory()) {
+		workingDirectory = possibleWorkingDirectory;
+		process.chdir(workingDirectory);
+	}
+}
 
 function startGulp() {
-	gulp = spawn("gulp", ["server"], {cwd: __dirname});
+	gulp = spawn("gulp", ["server"], {cwd: workingDirectory});
 
 	gulp.stdout.on('data', function (data) {
 		console.log(data.toString());

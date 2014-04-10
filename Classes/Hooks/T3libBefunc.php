@@ -1,5 +1,4 @@
 <?php
-
 namespace GeorgRinger\Modernpackage\Hooks;
 /***************************************************************
  *  Copyright notice
@@ -62,5 +61,4 @@ class T3libBefunc {
 			'maxitems' => 1,
 		);
 	}
-
 }

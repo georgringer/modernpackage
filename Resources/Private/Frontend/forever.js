@@ -6,7 +6,7 @@
  * under the terms of the MIT License / X11 License              *
  *                                                               */
 
-var spawn = require('child_process').spawn,
+var spawn = require("child_process").spawn,
 	gulp,
 	workingDirectory = process.cwd();
 
@@ -27,16 +27,16 @@ if (process.argv.length > 2) {
 function startGulp() {
 	gulp = spawn("gulp", ["server"], {cwd: workingDirectory});
 
-	gulp.stdout.on('data', function (data) {
+	gulp.stdout.on("data", function (data) {
 		console.log(data.toString());
 	});
 
-	gulp.stderr.on('data', function (data) {
+	gulp.stderr.on("data", function (data) {
 		console.log(data.toString());
 	});
 
-	gulp.on('close', function (code) {
-		console.log('server shut down with exit code ' + code + ", restarting now");
+	gulp.on("close", function (code) {
+		console.log("server shut down with exit code " + code + ", restarting now");
 		gulp = null;
 		startGulp();
 	});
@@ -44,7 +44,7 @@ function startGulp() {
 
 startGulp();
 
-process.on('exit', function() {
+process.on("exit", function() {
 	if (gulp) {
 		gulp.kill();
 	}

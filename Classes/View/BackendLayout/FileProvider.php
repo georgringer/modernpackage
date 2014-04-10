@@ -1,7 +1,5 @@
 <?php
-
 namespace GeorgRinger\Modernpackage\View\BackendLayout;
-
 /***************************************************************
  *  Copyright notice
  *
@@ -74,7 +72,6 @@ class FileProvider implements DataProviderInterface {
 		}
 	}
 
-
 	/**
 	 * Creates a new backend layout using the given record data.
 	 *
@@ -93,7 +90,6 @@ class FileProvider implements DataProviderInterface {
 		return $backendLayout;
 	}
 
-
 	/**
 	 * Get all files
 	 *
@@ -108,10 +104,8 @@ class FileProvider implements DataProviderInterface {
 		foreach ($filesOfDirectory as $file) {
 			$this->addFileToCollection($file, $fileCollection);
 		}
-
 		return $fileCollection;
 	}
-
 
 	/**
 	 * Add an optional icon to the BackendLayout
@@ -160,7 +154,6 @@ class FileProvider implements DataProviderInterface {
 				}
 			}
 		}
-
 		return $title;
 	}
 
@@ -177,5 +170,4 @@ class FileProvider implements DataProviderInterface {
 		}
 		$fileCollection[$key] = $file;
 	}
-
 }

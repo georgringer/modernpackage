@@ -30,7 +30,7 @@ $GLOBALS['TBE_STYLES']['inDocStyles_TBEstyle'] .= '@import "' . \TYPO3\CMS\Core\
  */
 $availableIcons = array('system', 'menufolder');
 foreach($availableIcons as $icon) {
-	t3lib_SpriteManager::addTcaTypeIcon(
+	\TYPO3\CMS\Backend\Sprite\SpriteManager::addTcaTypeIcon(
 		'pages',
 		'contains-' . $icon,
 		\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY) . 'Resources/Public/Icons/PageTree/' . $icon . '.png');

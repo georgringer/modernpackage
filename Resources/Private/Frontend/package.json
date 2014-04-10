@@ -4,7 +4,7 @@
   "description": "Dependencies for the frontend workflow",
   "author": "Ralph Harrer <ralph.harrer@cyberhouse.at> (http://www.ralphharrer.at)",
   "devDependencies": {
-      "gulp": "3.5",
+      "gulp": "~3.6",
       "gulp-util": "~2.2.13",
       "gulp-clean": "~0.2.4 ",
       "gulp-imagemin": "~0.1.4",

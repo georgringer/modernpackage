@@ -23,7 +23,7 @@ namespace GeorgRinger\Modernpackage\Hooks;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-class T3libBefunc {
+class BackendUtilityHook {
 
 	/**
 	 * Hook function of t3lib_befunc

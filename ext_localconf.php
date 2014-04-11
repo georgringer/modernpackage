@@ -16,7 +16,7 @@ if ($context === 'Development' || $context === 'Testing') {
 
 // Modify flexform values
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_befunc.php']['getFlexFormDSClass'][$_EXTKEY] =
-	'GeorgRinger\\Modernpackage\\Hooks\\T3libBefunc';
+	'GeorgRinger\\Modernpackage\\Hooks\\BackendUtilityHook';
 
 // Backend layouts
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['BackendLayoutDataProvider']['file']

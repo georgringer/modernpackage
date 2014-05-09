@@ -1,5 +1,9 @@
 <?php
+
 namespace GeorgRinger\Modernpackage\Page;
+
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+
 /***************************************************************
  *  Copyright notice
  *
@@ -22,10 +26,6 @@ namespace GeorgRinger\Modernpackage\Page;
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
-
-use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
-
 class AlternativeLanguageTag {
 
 	protected $languages = array();
@@ -73,7 +73,7 @@ class AlternativeLanguageTag {
 				'additionalParams' => '&L=' . $uid,
 				'addQueryString' => 1
 			);
-			$link = $GLOBALS['TSFE']->cObj->typolink_URL($linkConfiguration);
+			$link = $this->cObj->typolink_URL($linkConfiguration);
 			$headers[] = sprintf('<link rel="alternate" href="%s" hreflang="%s" />', htmlspecialchars($link), htmlspecialchars($hrefLang));
 		}
 		return $headers;
@@ -126,17 +126,17 @@ class AlternativeLanguageTag {
 	 * @return void
 	 */
 	protected function getConfigurationFromRealurl($configuration) {
-		if (!ExtensionManagementUtility::isLoaded('realurl')) {
-			throw new \RuntimeException('EXT:realurl is not installed', 1390223248);
+		if (!\t3lib_extMgm::isLoaded('realurl')) {
+			return;
 		}
 		if (!is_array($configuration)) {
-			throw new \RuntimeException('No realurl configuration found', 1390223249);
+			return;
 		}
 		if (!isset($configuration['key'])) {
-			throw new \RuntimeException('No key of the realurl configuration found', 1390223250);
+			return;
 		}
 		if (!\is_array($GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl'][$configuration['key']]['preVars'][0])) {
-			throw new \RuntimeException(sprintf('No realurl configuration found with key "%s"', $configuration['key']), 1390223251);
+			return;
 		}
 
 		$languages = $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl'][$configuration['key']]['preVars'][0]['valueMap'];

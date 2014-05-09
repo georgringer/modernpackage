@@ -1,9 +1,5 @@
 <?php
-
 namespace GeorgRinger\Modernpackage\Page;
-
-use TYPO3\CMS\Core\Utility\GeneralUtility;
-
 /***************************************************************
  *  Copyright notice
  *
@@ -26,6 +22,10 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
+
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+
 class AlternativeLanguageTag {
 
 	protected $languages = array();
@@ -126,7 +126,7 @@ class AlternativeLanguageTag {
 	 * @return void
 	 */
 	protected function getConfigurationFromRealurl($configuration) {
-		if (!\t3lib_extMgm::isLoaded('realurl')) {
+		if (!ExtensionManagementUtility::isLoaded('realurl')) {
 			return;
 		}
 		if (!is_array($configuration)) {

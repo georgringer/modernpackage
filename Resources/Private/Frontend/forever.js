@@ -22,17 +22,19 @@ if (process.argv.length > 2) {
 		workingDirectory = possibleWorkingDirectory;
 		process.chdir(workingDirectory);
 	}
+	stat = null;
+	possibleWorkingDirectory = null;
 }
 
 function startGulp() {
 	gulp = spawn("gulp", ["server"], {cwd: workingDirectory});
 
 	gulp.stdout.on("data", function (data) {
-		console.log(data.toString());
+		process.stdout.write(data);
 	});
 
 	gulp.stderr.on("data", function (data) {
-		console.log(data.toString());
+		process.stderr.write(data);
 	});
 
 	gulp.on("close", function (code) {

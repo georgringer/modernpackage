@@ -16,7 +16,6 @@ page.meta {
 	keywords.override.data = register:newsKeywords
 	description.field = description
 	abstract.field = abstract
-	robots = INDEX,FOLLOW
 }
 
 # **********************************************************

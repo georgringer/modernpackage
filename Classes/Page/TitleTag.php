@@ -1,5 +1,4 @@
 <?php
-
 namespace GeorgRinger\Modernpackage\Page;
 /***************************************************************
  *  Copyright notice
@@ -34,7 +33,7 @@ class TitleTag {
 	 * @return string
 	 */
 	public function get($content, $configuration) {
-		$pageTitle = $this->cObj->TEXT((array)$GLOBALS['TSFE']->tmpl->setup['config.']['titleTagFunction.']);
+		$pageTitle = $GLOBALS['TSFE']->cObj->TEXT((array)$GLOBALS['TSFE']->tmpl->setup['config.']['titleTagFunction.']);
 		return trim($pageTitle);
 	}
 }

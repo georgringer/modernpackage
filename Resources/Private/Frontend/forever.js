@@ -6,22 +6,39 @@
  * under the terms of the MIT License / X11 License              *
  *                                                               */
 
-var spawn = require('child_process').spawn,
-	gulp;
+var spawn = require("child_process").spawn,
+	gulp,
+	workingDirectory = process.cwd();
+
+if (process.argv.length > 2) {
+	var possibleWorkingDirectory = process.argv[2];
+	if (!/^([a-zA-Z]:|\/)/.test(possibleWorkingDirectory)) {
+		possibleWorkingDirectory = require("path").join(workingDirectory, possibleWorkingDirectory);
+	}
+
+	var stat = require("fs").statSync(possibleWorkingDirectory);
+
+	if (stat && stat.isDirectory()) {
+		workingDirectory = possibleWorkingDirectory;
+		process.chdir(workingDirectory);
+	}
+	stat = null;
+	possibleWorkingDirectory = null;
+}
 
 function startGulp() {
-	gulp = spawn("gulp", ["server"], {cwd: __dirname});
+	gulp = spawn("gulp", ["server"], {cwd: workingDirectory});
 
-	gulp.stdout.on('data', function (data) {
-		console.log(data.toString());
+	gulp.stdout.on("data", function (data) {
+		process.stdout.write(data);
 	});
 
-	gulp.stderr.on('data', function (data) {
-		console.log(data.toString());
+	gulp.stderr.on("data", function (data) {
+		process.stderr.write(data);
 	});
 
-	gulp.on('close', function (code) {
-		console.log('server shut down with exit code ' + code + ", restarting now");
+	gulp.on("close", function (code) {
+		console.log("server shut down with exit code " + code + ", restarting now");
 		gulp = null;
 		startGulp();
 	});
@@ -29,8 +46,8 @@ function startGulp() {
 
 startGulp();
 
-process.on('exit', function() {
+process.on("exit", function() {
 	if (gulp) {
-		gulp.exit();
+		gulp.kill();
 	}
 });

@@ -46,8 +46,8 @@ options {
 		disableIconLinkToContextmenu = 0
 
 		# Disable the filter feature in the top panel
-		hideFilter = 1
-
+		hideFilter = 0
+		
 		# Shows the domain name as a suffix of the title if available
 		showDomainNameWithTitle = 1
 

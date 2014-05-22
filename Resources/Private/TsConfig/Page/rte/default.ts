@@ -95,7 +95,7 @@ RTE.default {
 		allowTagsOutside = img,hr,span
 
 		# erlaubte attribute in p, div tags
-		keepPDIVattribs = align,class,style,id,span
+		keepPDIVattribs = align,class,style,id
 
 		# List all class selectors that are allowed on the way to the database
 		allowedClasses (

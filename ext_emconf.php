@@ -43,7 +43,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'suggests' => array(
 			'formhandler' => '',
 			'realurl' => '',
-			'news' => '2.2.1-2.9.99',
+			'news' => '3.0.0',
 		),
 	),
 	'suggests' => array(

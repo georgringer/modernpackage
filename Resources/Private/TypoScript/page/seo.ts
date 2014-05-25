@@ -48,6 +48,7 @@ page.headerData.32 {
 		typolink {
 			parameter.data = TSFE:id
 			addQueryString = 1
+			addQueryString.exclude = id
 			returnLast = url
 		}
 		noTrimWrap (

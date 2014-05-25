@@ -1,6 +1,6 @@
 
 #-------------------------------------------------------------------------------
-#	Include constants of used extendions
+#	Include constants of used extensions
 #-------------------------------------------------------------------------------
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:news/Configuration/TypoScript/constants.txt">
 

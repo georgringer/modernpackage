@@ -85,7 +85,7 @@ lib.content.6 {
 #		Be aware in which templates those are used
 #-------------------------------------------------------------------------------
 
-#	CONTENT: 13 Addres
+#	CONTENT: 13 Address
 #		Be aware in which templates those are used
 #-------------------------------------------------------------------------------
 
